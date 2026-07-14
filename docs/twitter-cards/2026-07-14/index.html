@@ -1,460 +1,106 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Twitter/X cards - @zbutcher</title><style>
-:root{--bg:#07111f;--card:#0e1828;--panel:#081120;--text:#f8fafc;--muted:#9fb0c8;--line:rgba(148,163,184,.25);--blue:#1d9bf0}
-*{box-sizing:border-box}body{margin:0;background:#06101d;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif}
-.wrap{width:100%;padding:16px}
-.hero{padding:22px 24px;border:1px solid var(--line);border-radius:22px;background:#0b1626;margin-bottom:16px}
-.hero h1{margin:0 0 12px;font-size:clamp(2.2rem,4.8vw,5.8rem);line-height:.9;letter-spacing:-.06em}
-.summary{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
-.sum-item{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:rgba(15,23,42,.55);border-radius:999px;padding:8px 12px;color:var(--muted);font-size:.86rem;font-weight:750;cursor:pointer;user-select:none;transition:transform .12s ease, filter .12s ease, background .12s ease, border-color .12s ease}
-.sum-item b{color:#fff;font-size:.95rem}
-.sum-item:hover{filter:brightness(1.12);transform:translateY(-1px)}
-.sum-item.original{border-color:rgba(29,155,240,.4)}.sum-item.quote{border-color:rgba(251,146,60,.4)}.sum-item.repost{border-color:rgba(34,197,94,.4)}.sum-item.reply{border-color:rgba(167,139,250,.4)}
-.sum-item.original.active{background:rgba(29,155,240,.18);border-color:rgba(29,155,240,.75);color:#fff}
-.sum-item.quote.active{background:rgba(251,146,60,.16);border-color:rgba(251,146,60,.75);color:#fff}
-.sum-item.repost.active{background:rgba(34,197,94,.16);border-color:rgba(34,197,94,.75);color:#fff}
-.sum-item.reply.active{background:rgba(167,139,250,.16);border-color:rgba(167,139,250,.75);color:#fff}
-.filter-hint{width:100%;color:var(--muted);font-size:.8rem;margin-top:2px}
-.masonry{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:start}
-.card{display:flex;flex-direction:column;width:100%;margin:0;padding:16px;border:1px solid var(--line);border-radius:20px;background:var(--card);box-shadow:0 12px 32px rgba(0,0,0,.22);overflow:hidden;cursor:pointer}
-.card:focus{outline:2px solid rgba(56,189,248,.55); outline-offset:2px}
-.card.quote{border-color:rgba(251,146,60,.58)}.card.repost{border-color:rgba(34,197,94,.55)}.card.original{border-color:rgba(29,155,240,.5)}.card.reply{border-color:rgba(167,139,250,.55)}
-.card.is-hidden{display:none !important}
-.top{display:flex;align-items:center;margin-bottom:10px}
-.top-left{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.num{font-weight:950;color:var(--blue);font-size:1.85rem;letter-spacing:-.04em;line-height:1}
-.badge{display:inline-flex;align-items:center;justify-content:center;min-width:88px;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;font-weight:950;border:1px solid rgba(29,155,240,.35);background:rgba(29,155,240,.14);padding:7px 12px;border-radius:999px;color:#dbeafe}
-.badge.original{color:#dbeafe;border-color:rgba(29,155,240,.45);background:rgba(29,155,240,.16)}
-.badge.quote{color:#fed7aa;border-color:rgba(251,146,60,.5);background:rgba(251,146,60,.14)}
-.badge.repost{color:#bbf7d0;border-color:rgba(34,197,94,.5);background:rgba(34,197,94,.14)}
-.badge.reply{color:#ddd6fe;border-color:rgba(167,139,250,.5);background:rgba(167,139,250,.14)}
-.badge-link,.badge-link:visited,.badge-link:hover,.badge-link:active,.badge-link:focus{text-decoration:none;outline:none;color:inherit}
-.badge-link:hover{filter:brightness(1.12);transform:translateY(-1px)}
-.author{display:flex;align-items:center;gap:9px}.avatar{width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:#172033}
-.author strong{display:block;font-size:.95rem}.author span,time{display:block;color:var(--muted);font-size:.8rem}time{margin:8px 0}
-.main-text,.ref-text{font-size:.96rem;line-height:1.36;overflow-wrap:anywhere}
-.clamp-main{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:5;overflow:hidden;max-height:7.0em}
-.clamp-ref{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;overflow:hidden;max-height:9.8em}
-.clamp-nested{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden;max-height:5.6em}
-.repost-note{display:inline-block;color:#c7d2fe;font-weight:750}
-.media-gallery{display:grid;grid-template-columns:1fr;gap:8px;margin-top:10px}
-.media-gallery.count-2,.media-gallery.count-3,.media-gallery.count-4{grid-template-columns:repeat(2,minmax(0,1fr))}
-.media-gallery figure{margin:0;border:1px solid rgba(148,163,184,.28);border-radius:14px;background:#020617;overflow:hidden;aspect-ratio:16/10}
-.media-gallery img{width:100%;height:100%;display:block;object-fit:cover}
-.media-gallery.count-1 figure{aspect-ratio:16/9}
-.ref-gallery{margin-top:10px}.ref-gallery figure{aspect-ratio:16/9}
-.ref-panel{margin-top:12px;padding:12px;border:1px solid rgba(255,255,255,.18);border-radius:16px;background:var(--panel)}
-.ref-panel.nested{margin-top:10px;background:rgba(2,6,23,.55);border-style:dashed}
-.quote .ref-panel{border-color:rgba(251,146,60,.38)}.repost .ref-panel{border-color:rgba(34,197,94,.38)}.reply .ref-panel{border-color:rgba(167,139,250,.38)}
-.ref-label{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;font-weight:950;color:#dbeafe;margin-bottom:8px}
-.ref-author-link{text-decoration:none;color:var(--text)}.ref-text{margin-top:9px}
-.metrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;color:var(--muted);font-size:.76rem}.metrics b{color:#fff}
-.fallback-link{text-decoration:none;color:#7dd3fc}
-@media(max-width:1400px){.masonry{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:980px){.masonry{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:620px){.wrap{padding:10px}.hero{padding:16px}.masonry{grid-template-columns:1fr}.media-gallery.count-2,.media-gallery.count-3,.media-gallery.count-4{grid-template-columns:1fr}}
-
-.badge-link{position:relative;z-index:5;pointer-events:auto}
-.ref-panel a,.ref-author-link,.fallback-link{position:relative;z-index:4;pointer-events:auto}
-
-.card{position:relative}
-.card-stretch{position:absolute;inset:0;z-index:1;border-radius:inherit;background:transparent;text-indent:-9999px;overflow:hidden}
-.card-content,.card .top,.card .top-left,.card .badge,.card .badge-link,.card .author,.card .ref-panel,.card .ref-author-link,.card .fallback-link,.card a,.card button{position:relative;z-index:2}
-.badge-link{pointer-events:auto;z-index:5}
-.ref-panel,.ref-panel *{position:relative;z-index:3}
-.sum-item{position:relative;z-index:2}
-
-/* click model: empty card body -> my tweet via stretch link; pills/links stay clickable */
-.card{position:relative}
-.card-stretch{position:absolute;inset:0;z-index:1;border-radius:inherit;background:transparent;text-indent:-9999px;overflow:hidden}
-.card-content{position:relative;z-index:2;pointer-events:none}
-.card-content a,
-.card-content button,
-.card .badge,
-.card .badge-link,
-.card .ref-panel a,
-.card .ref-author-link,
-.card .fallback-link,
-.card .sum-item{pointer-events:auto;position:relative;z-index:5}
-.badge-link{z-index:6}
-</style></head><body><main class="wrap"><section class="hero"><h1>Twitter/X cards - @zbutcher</h1><div class="summary"><button type="button" class="sum-item original" data-filter="original"><b>6</b> originals</button><button type="button" class="sum-item quote" data-filter="quote"><b>8</b> quotes</button><button type="button" class="sum-item repost" data-filter="repost"><b>5</b> reposts</button><button type="button" class="sum-item reply" data-filter="reply"><b>1</b> replies</button></div></section><section class="masonry"><article class="card repost" data-type="repost" data-href="https://x.com/zbutcher/status/2076914105664016617">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076914105664016617" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Twitter/X cards - @Teknium</title><meta name="description" content="Latest 10 @Teknium tweets rendered as cards."><style>
+:root{--bg:#06070b;--panel:#10131d;--panel2:#151a27;--text:#f7fbff;--muted:#aeb9ca;--line:#2a3345;--accent:#66e3ff;--pink:#ff6ad5;--green:#63f7a8}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 10% 0%,#162a5a 0,#06070b 35%,#05060a 100%);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text)}.wrap{max-width:1500px;margin:auto;padding:36px 22px 80px}.hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,rgba(102,227,255,.20),rgba(255,106,213,.10)),rgba(16,19,29,.86);padding:34px;box-shadow:0 28px 90px rgba(0,0,0,.4)}h1{font-size:clamp(38px,6vw,86px);line-height:.9;letter-spacing:-.06em;margin:0}.sub{font-size:20px;line-height:1.45;color:#e3edf9;max-width:960px}.meta{color:var(--muted)}.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.chip{border:1px solid #44506a;background:#0b0f18;color:#eaf6ff;border-radius:999px;padding:10px 14px;font-weight:800}.chip.active{background:var(--accent);color:#041017}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:22px}@media(max-width:1180px){.grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.grid{grid-template-columns:1fr}.hero{padding:24px}}
+.card{position:relative;border:1px solid var(--line);background:rgba(16,19,29,.92);border-radius:24px;overflow:hidden;min-height:430px;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-3px);border-color:#67e8f9}.card-stretch{position:absolute;inset:0;z-index:1;text-decoration:none}.card-content{position:relative;z-index:2;pointer-events:none;padding:18px;display:flex;flex-direction:column;gap:12px;min-height:430px}.card-content a,.card-content button{pointer-events:auto;position:relative;z-index:3}.top{display:flex;justify-content:space-between;gap:10px;align-items:center}.top-left{display:flex;gap:8px;align-items:center}.num{font-weight:950;color:#fff;background:#222b3d;border:1px solid #3b465d;border-radius:12px;padding:7px 9px}.badge{text-decoration:none;border-radius:999px;padding:7px 10px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;background:rgba(102,227,255,.14);color:#b9f4ff;border:1px solid rgba(102,227,255,.35)}.badge:hover,.badge:focus{text-decoration:none}.date{font-size:12px;color:var(--muted);text-align:right}.headline{font-size:19px;line-height:1.12;font-weight:900;text-decoration:none;color:#fff}.headline:hover{color:#9eeaff}.tweet-text{font-size:15px;line-height:1.45;color:#f4f8ff;margin:0;display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden;white-space:pre-wrap}.media-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.media-grid img{width:100%;aspect-ratio:1.35;object-fit:cover;border-radius:16px;border:1px solid #2f3a50}.link-card{display:block;text-decoration:none;border:1px solid #344159;border-radius:16px;background:#0b101a;padding:12px;color:#eef6ff}.link-card span{display:block;font-size:12px;color:#8ea2bd;margin-bottom:4px}.link-card b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.metrics{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px;color:#d7e4f7;font-size:13px}.metrics span{background:#0b101a;border:1px solid #293449;border-radius:999px;padding:7px 9px}.is-hidden{display:none}.footer{margin-top:26px;color:#9eabc0;text-align:center}
+</style></head><body><main class="wrap"><section class="hero"><p class="meta">Generated Jul 14, 2026 · 2:09 AM PDT · Source: TechTwitter + X links</p><h1>Twitter/X cards - @Teknium</h1><p class="sub">Latest 10 recent @Teknium posts available from the TechTwitter profile feed, rendered as a compact, clickable HTML card gallery. Click a card to open the original post on X; click the title to open the TechTwitter detail page.</p><div class="chips"><button class="chip active" data-filter="all">All 10</button><button class="chip" data-filter="original">Originals 10</button></div><p class="meta" id="filterStatus">Showing all cards.</p></section><section class="grid" id="cards"><article class="card original" data-type="original" data-href="https://x.com/Teknium/status/2075392507794624803">
+      <a class="card-stretch" href="https://x.com/Teknium/status/2075392507794624803" target="_blank" rel="noopener" aria-label="Open tweet on X"></a>
       <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">01</span><a class="badge repost badge-link" href="https://x.com/martin_casado/status/2076735097026548161" target="_blank" rel="noopener" title="Open source on X">repost</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 14, 2026 · 6:18 AM UTC</time>
-      <div class="main-text clamp-main"><span class="repost-note">Reposted @martin_casado</span></div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">reposted original</div>
-      <a class="ref-author-link" href="https://x.com/martin_casado/status/2076735097026548161" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1556885485888237568/HH1iBQNp_normal.jpg" alt=""><div><strong>martin_casado ✓</strong><span>@martin_casado</span></div></div></a>
-      <div class="ref-text clamp-ref">This is incredible. Brittani is an artist, not a developer.<br><br>But with Fable in Cursor (plus a lot of her art) she&#x27;s managed a large, immersive 3D world. https://t.co/V8EInYTEmh</div>
-      
-      <div class="ref-panel nested">
-          <div class="ref-label">quoted original</div>
-          <a class="ref-author-link" href="https://x.com/BrittaniNatali/status/2076708268840493560" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1888169528112087040/nyBNA3R3_normal.jpg" alt=""><div><strong>Brittani Natali ✓</strong><span>@BrittaniNatali</span></div></div></a>
-          <div class="ref-text clamp-nested">World Labs + Fable + Threejs 😮‍💨 https://t.co/FT6QU9Qyw6</div>
-          <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/amplify_video_thumb/2076708212146098176/img/BMaDmtOv7n-ExmVT.jpg" alt="tweet media" loading="lazy"></figure></div>
-        </div>
-    </div>
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>11</b> reposts</span><span><b>0</b> quotes</span><span><b>0</b> views</span></div>
-    </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076853300025299410">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076853300025299410" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
+        <div class="top"><div class="top-left"><span class="num">01</span><a class="badge original badge-link" href="https://x.com/Teknium/status/2075392507794624803" target="_blank" rel="noopener">original</a></div><span class="date">Jul 9, 2026 · 6:31 PM PDT</span></div>
+        <a class="headline" href="https://www.techtwitter.com/tweet/f94b7cb0-b6aa-4c4d-9d66-f2576072a641" target="_blank" rel="noopener">Sol outperforms Fable for Hermes Agent development tasks</a>
+        <p class="tweet-text">Early days using Sol for Hermes Agent dev, and so far.. I think I like it more than Fable. \n\nI&#x27;ve been using claude models for at least the last year primarily, but I just tried it on a relatively common heavy task - and Fable simply refused me of course, but, Sol not only didn&#x27;t refuse but felt way more thorough, and its obviously way cheaper, and faster.\n\nWill be probably trying Sol out for the rest of the week to see how I feel about it across a lot more dev tasks in Hermes Agent.</p>
+        
+        
+        <div class="metrics"><span>♡ 605</span><span>↻ 18</span><span>💬 74</span><span>🔖 54</span></div>
+      </div>
+    </article><article class="card original" data-type="original" data-href="https://x.com/Teknium/status/2075381154669293979">
+      <a class="card-stretch" href="https://x.com/Teknium/status/2075381154669293979" target="_blank" rel="noopener" aria-label="Open tweet on X"></a>
       <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">02</span><a class="badge quote badge-link" href="https://x.com/Zephyr_hg/status/2076405725157298441" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 14, 2026 · 2:16 AM UTC</time>
-      <div class="main-text clamp-main">Interesting watch and cool take on where things are head&#x27;n 🤖👍 #aiagents https://t.co/rkwyLhEiV4</div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">quoted original</div>
-      <a class="ref-author-link" href="https://x.com/Zephyr_hg/status/2076405725157298441" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1741076613939277824/vs_v9C1j_normal.jpg" alt=""><div><strong>Zephyr ✓</strong><span>@Zephyr_hg</span></div></div></a>
-      <div class="ref-text clamp-ref">Jacob Bank, former Google product lead:<br><br>&quot;Let&#x27;s say I had four people at $12,500 per month each. That would be $50,000 a month, and my AI bill is $500 a month.&quot;<br><br>He runs 40 AI marketing agents as the only marketing person at his company.<br><br>In a 15-minute talk…</div>
-      <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/amplify_video_thumb/2076405553065021440/img/8MEc0oNH-oqVmBye.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-    </div>
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>2</b> views</span></div>
-    </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076850828728848493">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076850828728848493" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
+        <div class="top"><div class="top-left"><span class="num">02</span><a class="badge original badge-link" href="https://x.com/Teknium/status/2075381154669293979" target="_blank" rel="noopener">original</a></div><span class="date">Jul 9, 2026 · 5:46 PM PDT</span></div>
+        <a class="headline" href="https://www.techtwitter.com/tweet/113ab62d-efdd-43a4-8375-e69810323356" target="_blank" rel="noopener">Sol and Terra Perform Similarly in Hermes Agent PR Reviews</a>
+        <p class="tweet-text">Did a quick 5 PR review test benchmark of Sol vs Terra in Hermes Agent for Hermes Agent PRs\n\nBoth are quite good. (Fable judged)</p>
+        <div class="media-grid"><img loading="lazy" src="https://pbs.twimg.com/media/HM08FWKaYAQiCkP.png" alt="Tweet media"></div>
+        
+        <div class="metrics"><span>♡ 328</span><span>↻ 10</span><span>💬 30</span><span>🔖 31</span></div>
+      </div>
+    </article><article class="card original" data-type="original" data-href="https://x.com/Teknium/status/2071728785578479683">
+      <a class="card-stretch" href="https://x.com/Teknium/status/2071728785578479683" target="_blank" rel="noopener" aria-label="Open tweet on X"></a>
       <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">03</span><a class="badge quote badge-link" href="https://x.com/runwayml/status/2076679161070891218" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 14, 2026 · 2:06 AM UTC</time>
-      <div class="main-text clamp-main">Excellent little story 🎬 @runwayml (as an editor am curious why they never quickly foxed the leg if they had it so long but that&#x27;s just me 😂 #ai https://t.co/paowv2aonQ</div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">quoted original</div>
-      <a class="ref-author-link" href="https://x.com/runwayml/status/2076679161070891218" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1999115192232292353/zOq5-uwB_normal.jpg" alt=""><div><strong>Runway ✓</strong><span>@runwayml</span></div></div></a>
-      <div class="ref-text clamp-ref">Everyone. Every object. Everything has a story to tell. With Runway, you can share yours, no matter what it is. <br><br>FLICKER is a short film about a lamp with a past. Imperfect and all-but-forgotten, FLICKER tells the story of what it means to bring light to…</div>
-      <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/amplify_video_thumb/2076678235278954496/img/HAEIH74J-Zi7EXll.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-    </div>
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>8</b> views</span></div>
-    </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076849721919119406">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076849721919119406" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
+        <div class="top"><div class="top-left"><span class="num">03</span><a class="badge original badge-link" href="https://x.com/Teknium/status/2071728785578479683" target="_blank" rel="noopener">original</a></div><span class="date">Jun 29, 2026 · 3:53 PM PDT</span></div>
+        <a class="headline" href="https://www.techtwitter.com/tweet/685d3154-756f-417f-b911-1a8f16e17ab2" target="_blank" rel="noopener">Hermes Agent improves database concurrency for multi-agent tasks</a>
+        <p class="tweet-text">Hermes Agent now has no problem with scaling huge multi-agent kanban runs, large concurrent sessions, and more with this new update to database concurrency!\n\nInstall Hermes Agent or update now and give it a try!</p>
+        <div class="media-grid"><img loading="lazy" src="https://pbs.twimg.com/media/HMBCSxibIAAglhX.jpg" alt="Tweet media"></div>
+        
+        <div class="metrics"><span>♡ 157</span><span>↻ 10</span><span>💬 23</span><span>🔖 39</span></div>
+      </div>
+    </article><article class="card original" data-type="original" data-href="https://x.com/Teknium/status/2071470678554128852">
+      <a class="card-stretch" href="https://x.com/Teknium/status/2071470678554128852" target="_blank" rel="noopener" aria-label="Open tweet on X"></a>
       <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">04</span><a class="badge quote badge-link" href="https://x.com/iamlukethedev/status/2076498531867906070" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 14, 2026 · 2:02 AM UTC</time>
-      <div class="main-text clamp-main">Looks fun Luke - WELL DONE!!! @iamlukethedev #hermesagent #aiagents #ai.  . https://t.co/Zit2c2c3a7</div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">quoted original</div>
-      <a class="ref-author-link" href="https://x.com/iamlukethedev/status/2076498531867906070" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1978432948836749312/hfXIZ_5S_normal.jpg" alt=""><div><strong>Luke The Dev ✓</strong><span>@iamlukethedev</span></div></div></a>
-      <div class="ref-text clamp-ref">I made restarting Hermes Gateway playable<br><br>Instead of opening a terminal…<br><br>I walk into Hermes Agora, control my player, and restart the gateway from the 3D office<br><br>Completely unnecessary<br><br>Way more fun 😂<br><br>This is the idea behind Hermes Agora:<br>turn agent…</div>
-      <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/amplify_video_thumb/2076497266270142464/img/lnVSq_0h6OzChtZg.jpg" alt="tweet media" loading="lazy"></figure></div>
-      <div class="ref-panel nested">
-          <div class="ref-label">quoted original</div>
-          <a class="ref-author-link" href="https://x.com/iamlukethedev/status/2073190191502881269" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1978432948836749312/hfXIZ_5S_normal.jpg" alt=""><div><strong>Luke The Dev ✓</strong><span>@iamlukethedev</span></div></div></a>
-          <div class="ref-text clamp-nested">I gave my AI agents guns<br><br>Hermes Agora now has Anger Mode<br><br>Probably a bad idea but GTA VI is coming soon so why not?<br><br>Same office<br>Same agents<br>Same desks<br><br>Except now you can switch…</div>
-          <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/amplify_video_thumb/2073189784743493632/img/Ows8nHJ9CNUI3kJH.jpg" alt="tweet media" loading="lazy"></figure></div>
-        </div>
-    </div>
-      <div class="metrics"><span><b>1</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>204</b> views</span></div>
-    </div></article><article class="card repost" data-type="repost" data-href="https://x.com/zbutcher/status/2076847905118531957">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076847905118531957" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
+        <div class="top"><div class="top-left"><span class="num">04</span><a class="badge original badge-link" href="https://x.com/Teknium/status/2071470678554128852" target="_blank" rel="noopener">original</a></div><span class="date">Jun 28, 2026 · 10:47 PM PDT</span></div>
+        <a class="headline" href="https://www.techtwitter.com/tweet/93790fb9-d15c-4523-817a-0046da9704aa" target="_blank" rel="noopener">Hermes Stripe Integration Overview</a>
+        <p class="tweet-text">Nice video by @WesRoth on Hermes&#x27; Stripe integrations! Check it out:\n\nhttps://www.youtube.com/watch?v=st_HMMt0T7g</p>
+        
+        <a class="link-card" href="https://www.youtube.com/watch?v=st_HMMt0T7g" target="_blank" rel="noopener"><span>youtube.com</span><b>- YouTube</b></a>
+        <div class="metrics"><span>♡ 43</span><span>↻ 1</span><span>💬 5</span><span>🔖 23</span></div>
+      </div>
+    </article><article class="card original" data-type="original" data-href="https://x.com/Teknium/status/2070559754414637390">
+      <a class="card-stretch" href="https://x.com/Teknium/status/2070559754414637390" target="_blank" rel="noopener" aria-label="Open tweet on X"></a>
       <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">05</span><a class="badge repost badge-link" href="https://x.com/clankrmedia/status/2076593164744376707" target="_blank" rel="noopener" title="Open source on X">repost</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 14, 2026 · 1:55 AM UTC</time>
-      <div class="main-text clamp-main"><span class="repost-note">Reposted @clankrmedia</span></div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">reposted original</div>
-      <a class="ref-author-link" href="https://x.com/clankrmedia/status/2076593164744376707" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/2063347037966671872/VFpHBAn8_normal.jpg" alt=""><div><strong>clankr ✓</strong><span>@clankrmedia</span></div></div></a>
-      <div class="ref-text clamp-ref">Researchers built a soft floating robot for indoor interaction.<br><br>It uses helium and flapping fins instead of propellers.<br><br>The result is quiet, lightweight, and safe to touch.<br><br>It can follow people, give reminders, and act as a study buddy.<br><br>Published at ACM…</div>
-      <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/amplify_video_thumb/2076593063309246465/img/Jd2lWU-vn2CD0rp0.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-    </div>
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>530</b> reposts</span><span><b>0</b> quotes</span><span><b>0</b> views</span></div>
-    </div></article><article class="card repost" data-type="repost" data-href="https://x.com/zbutcher/status/2076846782336905663">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076846782336905663" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
+        <div class="top"><div class="top-left"><span class="num">05</span><a class="badge original badge-link" href="https://x.com/Teknium/status/2070559754414637390" target="_blank" rel="noopener">original</a></div><span class="date">Jun 26, 2026 · 10:28 AM PDT</span></div>
+        <a class="headline" href="https://www.techtwitter.com/tweet/e72aca84-af8f-4bb3-abc8-789ac636ea41" target="_blank" rel="noopener">Hermes Agent Kanban escalates repeated blocks to humans</a>
+        <p class="tweet-text">Hermes Agent&#x27;s Kanban got a bit better today!  \n\nAdded typed block reasons and a recurrence counter to Kanban tasks so that repeated same-cause blocks escalate to a human instead of looping forever, while dependency blocks auto-resume when their parent completes.</p>
+        <div class="media-grid"><img loading="lazy" src="https://pbs.twimg.com/media/HLwbGUra0AA-zYk.jpg" alt="Tweet media"></div>
+        
+        <div class="metrics"><span>♡ 233</span><span>↻ 12</span><span>💬 16</span><span>🔖 95</span></div>
+      </div>
+    </article><article class="card original" data-type="original" data-href="https://x.com/Teknium/status/2067709161119551615">
+      <a class="card-stretch" href="https://x.com/Teknium/status/2067709161119551615" target="_blank" rel="noopener" aria-label="Open tweet on X"></a>
       <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">06</span><a class="badge repost badge-link" href="https://x.com/auf/status/2076638860621086822" target="_blank" rel="noopener" title="Open source on X">repost</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 14, 2026 · 1:50 AM UTC</time>
-      <div class="main-text clamp-main"><span class="repost-note">Reposted @auf</span></div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">reposted original</div>
-      <a class="ref-author-link" href="https://x.com/auf/status/2076638860621086822" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/2052383197174841345/KzLfyBtr_normal.jpg" alt=""><div><strong>Alf</strong><span>@auf</span></div></div></a>
-      <div class="ref-text clamp-ref">Obrigado, Sam Neill, por olhar pra uma paisagem vazia com tanta emoção que me fez acreditar, naquela sala escura de cinema em 1993, que dinossauros eram reais https://t.co/4hibCb3mLr</div>
-      <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/ext_tw_video_thumb/1887181350639198208/pu/img/LvFNUfykBi2ScK9a.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-    </div>
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>6,406</b> reposts</span><span><b>0</b> quotes</span><span><b>0</b> views</span></div>
-    </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076846398696493383">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076846398696493383" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
+        <div class="top"><div class="top-left"><span class="num">06</span><a class="badge original badge-link" href="https://x.com/Teknium/status/2067709161119551615" target="_blank" rel="noopener">original</a></div><span class="date">Jun 18, 2026 · 1:40 PM PDT</span></div>
+        <a class="headline" href="https://www.techtwitter.com/tweet/f2a6fe49-7542-4939-b80e-a8adc905722b" target="_blank" rel="noopener">Hermes Agent Memory Management Now Supports Batch Operations</a>
+        <p class="tweet-text">We have just merged an expanded form of the memory management tool Hermes Agent uses to save/edit/remove memories so that it can do batch operations, saving many turns of tool calls in most scenarios!\n\nRun `hermes update` in your CLI or update in your GUI to start saving now.</p>
+        <div class="media-grid"><img loading="lazy" src="https://pbs.twimg.com/media/HLH6StuawAA9stw.jpg" alt="Tweet media"></div>
+        
+        <div class="metrics"><span>♡ 306</span><span>↻ 23</span><span>💬 22</span><span>🔖 115</span></div>
+      </div>
+    </article><article class="card original" data-type="original" data-href="https://x.com/Teknium/status/2067576610711314823">
+      <a class="card-stretch" href="https://x.com/Teknium/status/2067576610711314823" target="_blank" rel="noopener" aria-label="Open tweet on X"></a>
       <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">07</span><a class="badge quote badge-link" href="https://x.com/appltrack/status/2076439304516300816" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 14, 2026 · 1:49 AM UTC</time>
-      <div class="main-text clamp-main">Just imagine 🤖🤘#aiagents #agenticai #artificialintelligence https://t.co/AO8huSHbIR</div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">quoted original</div>
-      <a class="ref-author-link" href="https://x.com/appltrack/status/2076439304516300816" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1621211304668143616/vxR4cnGB_normal.jpg" alt=""><div><strong>AppleTrack ✓</strong><span>@appltrack</span></div></div></a>
-      <div class="ref-text clamp-ref">Apple&#x27;s M7 Ultra chip coming in 2029 is rumored to support 1.5TB of RAM.<br><br>This would make the processor much more capable for on-device AI. https://t.co/7162RWZjpN</div>
-      <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/media/HND-B9tasAA8666.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-    </div>
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>3</b> views</span></div>
-    </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076845726525759611">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076845726525759611" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
+        <div class="top"><div class="top-left"><span class="num">07</span><a class="badge original badge-link" href="https://x.com/Teknium/status/2067576610711314823" target="_blank" rel="noopener">original</a></div><span class="date">Jun 18, 2026 · 4:54 AM PDT</span></div>
+        <a class="headline" href="https://www.techtwitter.com/tweet/2658f5c1-e0d0-444b-accb-01e455b17d51" target="_blank" rel="noopener">Hermes Agent Architecture Explained</a>
+        <p class="tweet-text">.@HuggingFace did a nice explainer video of Hermes Agent&#x27;s architecture, check it out here:\n\nhttps://www.youtube.com/watch?v=n32qq7Kwzh0</p>
+        
+        <a class="link-card" href="https://www.youtube.com/watch?v=n32qq7Kwzh0" target="_blank" rel="noopener"><span>youtube.com</span><b>- YouTube</b></a>
+        <div class="metrics"><span>♡ 203</span><span>↻ 20</span><span>💬 8</span><span>🔖 133</span></div>
+      </div>
+    </article><article class="card original" data-type="original" data-href="https://x.com/Teknium/status/2067252581425188935">
+      <a class="card-stretch" href="https://x.com/Teknium/status/2067252581425188935" target="_blank" rel="noopener" aria-label="Open tweet on X"></a>
       <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">08</span><a class="badge quote badge-link" href="https://x.com/isausmanov/status/2076719167810703840" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 14, 2026 · 1:46 AM UTC</time>
-      <div class="main-text clamp-main">Hmmm. some fun stuff goin on here... can easily see how wack are current phones are right now. #ai #aiphones https://t.co/JkCrFJ5HjE</div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">quoted original</div>
-      <a class="ref-author-link" href="https://x.com/isausmanov/status/2076719167810703840" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1909282760583266304/AebWzO5g_normal.jpg" alt=""><div><strong>Isa ✓</strong><span>@isausmanov</span></div></div></a>
-      <div class="ref-text clamp-ref">The agentic phone that won OpenAI Hackathon is replacing my iPhone feature by feature.<br><br>Found Amjad Masad’s contact, emailed Paul Graham, and called on my behalf to reschedule a meeting.<br><br>Its KPI is how little time I have to spend on it while getting more…</div>
-      <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/amplify_video_thumb/2076717203265880064/img/OGc8aM2JhyXL9Y19.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-    </div>
-      <div class="metrics"><span><b>1</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>36</b> views</span></div>
-    </div></article><article class="card reply" data-type="reply" data-href="https://x.com/zbutcher/status/2076845250631581969">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076845250631581969" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
+        <div class="top"><div class="top-left"><span class="num">08</span><a class="badge original badge-link" href="https://x.com/Teknium/status/2067252581425188935" target="_blank" rel="noopener">original</a></div><span class="date">Jun 17, 2026 · 7:26 AM PDT</span></div>
+        <a class="headline" href="https://www.techtwitter.com/tweet/9ba31811-97d8-4403-b73d-492e9279f6ee" target="_blank" rel="noopener">API Keys Made Inaccessible to Agents</a>
+        <p class="tweet-text">Would love more eyes on this PR that adds security to all your API keys and makes them inaccessible by the agent.\n\nIf you have a security focused background, please post any reviews or concerns! \n\nhttps://github.com/NousResearch/hermes-agent/pull/30179</p>
+        <div class="media-grid"><img loading="lazy" src="https://opengraph.githubassets.com/b604b0b58543a228b6356181652fbf2c9f79fe914d601e1bf741be22b8f99e3a/NousResearch/hermes-agent/pull/30179" alt="Tweet media"></div>
+        <a class="link-card" href="https://github.com/NousResearch/hermes-agent/pull/30179" target="_blank" rel="noopener"><span>github.com</span><b>feat(egress): iron-proxy credential-injection firewall for sandboxes by teknium1 · Pull Request #30179 · NousResearch/hermes-agent</b></a>
+        <div class="metrics"><span>♡ 102</span><span>↻ 7</span><span>💬 13</span><span>🔖 24</span></div>
+      </div>
+    </article><article class="card original" data-type="original" data-href="https://x.com/Teknium/status/2067237807308124602">
+      <a class="card-stretch" href="https://x.com/Teknium/status/2067237807308124602" target="_blank" rel="noopener" aria-label="Open tweet on X"></a>
       <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">09</span><a class="badge reply badge-link" href="https://x.com/Teknium/status/2076476335950868708" target="_blank" rel="noopener" title="Open source on X">reply</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 14, 2026 · 1:44 AM UTC</time>
-      <div class="main-text clamp-main">@Teknium Ah man so so sorry - GREAT PIX - has was a handsome fella. Thoughts are w/ya Tek 😪 #staystrong #dogsrule</div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">replying to</div>
-      <a class="ref-author-link" href="https://x.com/Teknium/status/2076476335950868708" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1642401912648777728/2KFikPsE_normal.jpg" alt=""><div><strong>Teknium 🪽 ✓</strong><span>@Teknium</span></div></div></a>
-      <div class="ref-text clamp-ref">Hey everyone. I haven&#x27;t been very responsive on here the last week.<br><br>My dog, Link, who I&#x27;ve raised since he was a puppy over the last 13 years, passed away yesterday after being in the vet ER&#x27;s ICU since last Wednesday for heart failure.<br><br>I put together some…</div>
-      <div class="media-gallery ref-gallery count-4"><figure class="media"><img src="https://pbs.twimg.com/media/HNEYFwga4AAReuo.jpg" alt="tweet media" loading="lazy"></figure><figure class="media"><img src="https://pbs.twimg.com/media/HNEYH2naMAAhEqS.jpg" alt="tweet media" loading="lazy"></figure><figure class="media"><img src="https://pbs.twimg.com/media/HNEYK0nbsAAmmsB.jpg" alt="tweet media" loading="lazy"></figure><figure class="media"><img src="https://pbs.twimg.com/media/HNEYPc-a4AAZAJR.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-    </div>
-      <div class="metrics"><span><b>1</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>7</b> views</span></div>
-    </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076844602179604684">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076844602179604684" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
+        <div class="top"><div class="top-left"><span class="num">09</span><a class="badge original badge-link" href="https://x.com/Teknium/status/2067237807308124602" target="_blank" rel="noopener">original</a></div><span class="date">Jun 17, 2026 · 6:27 AM PDT</span></div>
+        <a class="headline" href="https://www.techtwitter.com/tweet/3d8da468-ba2d-40aa-a582-4c6991ceb9ed" target="_blank" rel="noopener">Hermes agent profiles can be shared and distributed via GitHub</a>
+        <p class="tweet-text">Tip of the Day: Did you know you can share your hermes agent profiles onto github? \n\nShare a profile and others or yourself can download and distribute it with ease! \n\nSee the docs here: https://hermes-agent.nousresearch.com/docs/user-guide/profile-distributions</p>
+        <div class="media-grid"><img loading="lazy" src="https://hermes-agent.nousresearch.com/docs/img/hermes-agent-banner.png" alt="Tweet media"></div>
+        <a class="link-card" href="https://hermes-agent.nousresearch.com/docs/user-guide/profile-distributions" target="_blank" rel="noopener"><span>hermes-agent.nousresearch.com</span><b>Profile Distributions: Share a Whole Agent | Hermes Agent</b></a>
+        <div class="metrics"><span>♡ 9</span><span>↻ 0</span><span>💬 2</span><span>🔖 3</span></div>
+      </div>
+    </article><article class="card original" data-type="original" data-href="https://x.com/Teknium/status/2067222815913447678">
+      <a class="card-stretch" href="https://x.com/Teknium/status/2067222815913447678" target="_blank" rel="noopener" aria-label="Open tweet on X"></a>
       <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">10</span><a class="badge quote badge-link" href="https://x.com/EHuanglu/status/2076419430654128449" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 14, 2026 · 1:41 AM UTC</time>
-      <div class="main-text clamp-main">😂 Sorta sums things up at moment based on allegations. https://t.co/cNWDFQ9AGP</div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">quoted original</div>
-      <a class="ref-author-link" href="https://x.com/EHuanglu/status/2076419430654128449" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1793460098867838976/hoeoWt9M_normal.jpg" alt=""><div><strong>el.cine ✓</strong><span>@EHuanglu</span></div></div></a>
-      <div class="ref-text clamp-ref">sam altman was caught copying apple in 4k https://t.co/XxQoY9B6b7</div>
-      <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/amplify_video_thumb/2076418848551735296/img/BdutfbphK1cjve63.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-    </div>
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>7</b> views</span></div>
-    </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076844128739180740">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076844128739180740" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
-      <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">11</span><a class="badge quote badge-link" href="https://x.com/STudy017aq/status/2076722355284394366" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 14, 2026 · 1:40 AM UTC</time>
-      <div class="main-text clamp-main">😇Great Job💕Well Said🎬 https://t.co/o6EO27tPVw</div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">quoted original</div>
-      <a class="ref-author-link" href="https://x.com/STudy017aq/status/2076722355284394366" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/2051375070019198976/fGcQzfvj_normal.jpg" alt=""><div><strong>꧁𝔓x𝔞tt𝔯ic𝔦olex56_贵族🇨🇱🐾(•̀ᴗ•́)و꧂🐾</strong><span>@STudy017aq</span></div></div></a>
-      <div class="ref-text clamp-ref">RIP Sam Neill and Farewell 🤍<br><br>#Samneill #jurassicpark #jurassicworld #dinosaur #tribute https://t.co/3dUHm2bNhz</div>
-      <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/amplify_video_thumb/2076722274275622912/img/wlidAqsDmtbPJfoH.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-    </div>
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>1</b> views</span></div>
-    </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076791454534635823">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076791454534635823" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
-      <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">12</span><a class="badge quote badge-link" href="https://x.com/JurassicWorld/status/2076714282746605882" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 13, 2026 · 10:10 PM UTC</time>
-      <div class="main-text clamp-main">😔 Sad day - thank you Sam you will be missed! https://t.co/KoN5Kdmjcv</div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">quoted original</div>
-      <a class="ref-author-link" href="https://x.com/JurassicWorld/status/2076714282746605882" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/2001367292849090560/X3awPXof_normal.jpg" alt=""><div><strong>Jurassic World ✓</strong><span>@JurassicWorld</span></div></div></a>
-      <div class="ref-text clamp-ref">Rest in peace, Sam Neill. Thank you for bringing Dr. Grant to life. https://t.co/rAMpNA07B7</div>
-      <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/media/HNH4nkCWgAA80xH.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-    </div>
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>6</b> views</span></div>
-    </div></article><article class="card original" data-type="original" data-href="https://x.com/zbutcher/status/2076790907165454782">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076790907165454782" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
-      <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">13</span><a class="badge original badge-link" href="https://x.com/zbutcher/status/2076790907165454782" target="_blank" rel="noopener" title="Open source on X">original</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 13, 2026 · 10:08 PM UTC</time>
-      <div class="main-text clamp-main">Apologies 4 using X more 4 bookmarking super cool sh^t lately 🤖 there&#x27;s just SO much fun stuff coming outta firehose here that I want 2revisit so I grab it 😂 will try 2actually post more as I come out of hiding more…</div>
-      
-      
-      <div class="metrics"><span><b>1</b> likes</span><span><b>0</b> replies</span><span><b>1</b> reposts</span><span><b>0</b> quotes</span><span><b>11</b> views</span></div>
-    </div></article><article class="card original" data-type="original" data-href="https://x.com/zbutcher/status/2076739672165040278">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076739672165040278" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
-      <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">14</span><a class="badge original badge-link" href="https://x.com/zbutcher/status/2076739672165040278" target="_blank" rel="noopener" title="Open source on X">original</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 13, 2026 · 6:44 PM UTC</time>
-      <div class="main-text clamp-main">🤖 BOOM! Hermes webninja agent auto-posted 🕵️‍♂️ Dude is not play&#x27;n and is and ready for action! 😜 #hermesagent #aiagent https://t.co/KOUNpHURPu</div>
-      <div class="media-gallery  count-1"><figure class="media"><img src="https://pbs.twimg.com/media/HNIPTLCbAAA5aIz.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>13</b> views</span></div>
-    </div></article><article class="card original" data-type="original" data-href="https://x.com/zbutcher/status/2076738003716993118">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076738003716993118" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
-      <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">15</span><a class="badge original badge-link" href="https://x.com/zbutcher/status/2076738003716993118" target="_blank" rel="noopener" title="Open source on X">original</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 13, 2026 · 6:38 PM UTC</time>
-      <div class="main-text clamp-main">🤖 BOOM! Hermes research agent auto-posted 👍 Again like she&#x27;s on Hermes Mountain 🏔️ #hermesagent #aiagent https://t.co/nLdLa9BUpi</div>
-      <div class="media-gallery  count-1"><figure class="media"><img src="https://pbs.twimg.com/media/HNIN7E5bAAAWDnq.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>7</b> views</span></div>
-    </div></article><article class="card original" data-type="original" data-href="https://x.com/zbutcher/status/2076737126016975339">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076737126016975339" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
-      <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">16</span><a class="badge original badge-link" href="https://x.com/zbutcher/status/2076737126016975339" target="_blank" rel="noopener" title="Open source on X">original</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 13, 2026 · 6:34 PM UTC</time>
-      <div class="main-text clamp-main">🤖 BOOM! Another fun tweet with hermes pet robot auto-posted 👍 This one makes me laugh 😂 it&#x27;s like he&#x27;s on Hermes Mountain 🏔️ #hermesagent #aiagent https://t.co/6qXkSOZjhl</div>
-      <div class="media-gallery  count-1"><figure class="media"><img src="https://pbs.twimg.com/media/HNIMjf6boAAvmV5.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>3</b> views</span></div>
-    </div></article><article class="card original" data-type="original" data-href="https://x.com/zbutcher/status/2076734827634753850">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076734827634753850" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
-      <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">17</span><a class="badge original badge-link" href="https://x.com/zbutcher/status/2076734827634753850" target="_blank" rel="noopener" title="Open source on X">original</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 13, 2026 · 6:25 PM UTC</time>
-      <div class="main-text clamp-main">🤖 BOOM! Tweet with single hermes pet robot pix auto-posted 👍 #hermesagent #aiagent https://t.co/Y2s91YF5yX</div>
-      <div class="media-gallery  count-1"><figure class="media"><img src="https://pbs.twimg.com/media/HNIK4bobsAADfck.png" alt="tweet media" loading="lazy"></figure></div>
-      
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>2</b> views</span></div>
-    </div></article><article class="card original" data-type="original" data-href="https://x.com/zbutcher/status/2076732188020916309">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076732188020916309" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
-      <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">18</span><a class="badge original badge-link" href="https://x.com/zbutcher/status/2076732188020916309" target="_blank" rel="noopener" title="Open source on X">original</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 13, 2026 · 6:15 PM UTC</time>
-      <div class="main-text clamp-main">🤖 Shazzaaaammm!!! SUCCESS: Reposts back via ai-agent using xurl 👍 So cool - feels like I&#x27;m some sort of digital magic wizard and I&#x27;m digg&#x27;n it 🪄😂  #hermesagent #aigents</div>
-      
-      
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>0</b> reposts</span><span><b>0</b> quotes</span><span><b>4</b> views</span></div>
-    </div></article><article class="card repost" data-type="repost" data-href="https://x.com/zbutcher/status/2076731124173480273">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076731124173480273" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
-      <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">19</span><a class="badge repost badge-link" href="https://x.com/SamJWasserman/status/2076683075191234692" target="_blank" rel="noopener" title="Open source on X">repost</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 13, 2026 · 6:10 PM UTC</time>
-      <div class="main-text clamp-main"><span class="repost-note">Reposted @SamJWasserman</span></div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">reposted original</div>
-      <a class="ref-author-link" href="https://x.com/SamJWasserman/status/2076683075191234692" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/2045107826130046976/ggHhR0Fh_normal.jpg" alt=""><div><strong>Sam Wasserman ✓</strong><span>@SamJWasserman</span></div></div></a>
-      <div class="ref-text clamp-ref">Full Suite - All 4 open source + free apps/mcps I released this past week can now be found with one link: <br><br>Please find blockout, motion previs studio, stem studio, and my Davinci Mcp are now together in Wasserman&#x27;s Filmmaker Suite. Link and video below.…</div>
-      <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/amplify_video_thumb/2076209460293627904/img/CxbycYwGm7qZSfTI.jpg" alt="tweet media" loading="lazy"></figure></div>
-      
-    </div>
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>21</b> reposts</span><span><b>0</b> quotes</span><span><b>0</b> views</span></div>
-    </div></article><article class="card repost" data-type="repost" data-href="https://x.com/zbutcher/status/2076731122697015608">
-      <a class="card-stretch" href="https://x.com/zbutcher/status/2076731122697015608" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
-      <div class="card-content">
-      
-      <div class="top"><div class="top-left"><span class="num">20</span><a class="badge repost badge-link" href="https://x.com/liu8in/status/2076531199712149638" target="_blank" rel="noopener" title="Open source on X">repost</a></div></div>
-      <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
-      <time>Jul 13, 2026 · 6:10 PM UTC</time>
-      <div class="main-text clamp-main"><span class="repost-note">Reposted @liu8in</span></div>
-      
-      <div class="ref-panel">
-      <div class="ref-label">reposted original</div>
-      <a class="ref-author-link" href="https://x.com/liu8in/status/2076531199712149638" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1627970921108742144/2U2CnUQj_normal.jpg" alt=""><div><strong>Bin Liu ✓</strong><span>@liu8in</span></div></div></a>
-      <div class="ref-text clamp-ref">mind blown - interactive video will be the natural next evolution for @HyperFrames_ https://t.co/J00h6WfZpl</div>
-      
-      <div class="ref-panel nested">
-          <div class="ref-label">quoted original</div>
-          <a class="ref-author-link" href="https://x.com/pascowebdesigns/status/2076475853542961214" target="_blank" rel="noopener"><div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/2076065943277719552/QdRhOZuW_normal.jpg" alt=""><div><strong>Ray Velez ✓</strong><span>@pascowebdesigns</span></div></div></a>
-          <div class="ref-text clamp-nested">HTML isn&#x27;t just markup anymore.<br><br>For AI agents, it&#x27;s becoming the best visualization layer.<br><br>Made with @HyperFrames_ <br>Shoutout to @equinusocio for the css mask inspo<br><br>🔊 Don&#x27;t mute…</div>
-          <div class="media-gallery ref-gallery count-1"><figure class="media"><img src="https://pbs.twimg.com/amplify_video_thumb/2076474777020309504/img/nYQtrBP8x2baza1E.jpg" alt="tweet media" loading="lazy"></figure></div>
-        </div>
-    </div>
-      <div class="metrics"><span><b>0</b> likes</span><span><b>0</b> replies</span><span><b>10</b> reposts</span><span><b>0</b> quotes</span><span><b>0</b> views</span></div>
-    </div></article></section></main>
-
-
-
-
-
-
-
-
-
-
-<script>
-(function(){
-  // Safety: if stretched link is obstructed in some browsers, route non-interactive clicks to my tweet.
-  document.querySelectorAll('.card').forEach(card=>{
-    const mine = card.querySelector('a.card-stretch');
-    if(!mine) return;
-    card.addEventListener('click', (e)=>{
-      const t = e.target;
-      if (t.closest('a, button, input, textarea, select, label, .badge-link, .badge, .sum-item')) return;
-      // if the actual target is the stretch link, let native behavior happen
-      if (t.closest('a.card-stretch')) return;
-      // non-interactive area: open my tweet
-      e.preventDefault();
-      window.open(mine.href, '_blank', 'noopener');
-    });
-  });
-  // filters remain
-  const pills = Array.from(document.querySelectorAll('.sum-item[data-filter]'));
-  const cards = Array.from(document.querySelectorAll('.card[data-type]'));
-  function activeTypes(){return pills.filter(p=>p.classList.contains('active')).map(p=>p.dataset.filter);} 
-  function apply(){
-    const selected=activeTypes();
-    cards.forEach(card=>{
-      const show=!selected.length || selected.includes(card.dataset.type);
-      card.classList.toggle('is-hidden', !show);
-    });
-    let hint=document.querySelector('.filter-hint');
-    if(!hint){hint=document.createElement('div');hint.className='filter-hint';const summary=document.querySelector('.summary'); if(summary) summary.appendChild(hint);} 
-    if(!selected.length){hint.textContent='Showing all · click a category to filter';}
-    else{
-      const nice=selected.map(s=>({original:'originals',quote:'quotes',repost:'reposts',reply:'replies'}[s]||s));
-      const visible=cards.filter(c=>!c.classList.contains('is-hidden')).length;
-      hint.textContent='Showing '+visible+' · filtered to '+nice.join(', ')+' · click again to clear';
-    }
-  }
-  pills.forEach(pill=>{
-    pill.setAttribute('role','button'); pill.setAttribute('tabindex','0'); pill.setAttribute('aria-pressed','false');
-    const activate=(multi)=>{
-      const isActive=pill.classList.contains('active');
-      if(!multi){pills.forEach(p=>{p.classList.remove('active');p.setAttribute('aria-pressed','false');}); if(!isActive){pill.classList.add('active');pill.setAttribute('aria-pressed','true');}}
-      else {pill.classList.toggle('active'); pill.setAttribute('aria-pressed', pill.classList.contains('active')?'true':'false');}
-      apply();
-    };
-    pill.addEventListener('click', e=>{ e.stopPropagation(); activate(e.metaKey||e.ctrlKey||e.shiftKey); });
-    pill.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault(); activate(e.metaKey||e.ctrlKey||e.shiftKey);} });
-  });
-  apply();
-})();
-</script>
-
-</body></html>
+        <div class="top"><div class="top-left"><span class="num">10</span><a class="badge original badge-link" href="https://x.com/Teknium/status/2067222815913447678" target="_blank" rel="noopener">original</a></div><span class="date">Jun 17, 2026 · 5:28 AM PDT</span></div>
+        <a class="headline" href="https://www.techtwitter.com/tweet/12e14b77-fb29-4f95-8688-6e64bd17a734" target="_blank" rel="noopener">Hermes Agent Curator reduces skill consolidation to cut costs</a>
+        <p class="tweet-text">Making a change to the Hermes Agent Curator that will make it so it only Prunes unused skills by default, it will no longer consolidate skills unless you opt in in the config or dashboard.\n\nIt was costing upwards of 16$ per week to operate for some using frontier models and causing some confusion for other users. This is a better middle ground for a default scenario.</p>
+        <div class="media-grid"><img loading="lazy" src="https://pbs.twimg.com/media/HLBALg-asAACH9R.jpg" alt="Tweet media"></div>
+        
+        <div class="metrics"><span>♡ 160</span><span>↻ 14</span><span>💬 17</span><span>🔖 61</span></div>
+      </div>
+    </article></section><p class="footer">Tweet text and metrics are from the captured source pages at generation time.</p></main><script>
+const chips=[...document.querySelectorAll('.chip')];const cards=[...document.querySelectorAll('.card')];const status=document.getElementById('filterStatus');chips.forEach(chip=>chip.addEventListener('click',()=>{chips.forEach(c=>c.classList.remove('active'));chip.classList.add('active');const f=chip.dataset.filter;let shown=0;cards.forEach(card=>{const show=f==='all'||card.dataset.type===f;card.classList.toggle('is-hidden',!show);if(show)shown++;});status.textContent=f==='all'?'Showing all cards.':`Showing ${shown} ${f} cards.`;}));cards.forEach(card=>card.addEventListener('click',e=>{if(e.target.closest('a,button'))return;const mine=card.querySelector('.card-stretch');if(mine)window.open(mine.href,'_blank','noopener');}));
+</script></body></html>

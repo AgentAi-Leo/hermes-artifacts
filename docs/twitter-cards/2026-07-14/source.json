@@ -1,2015 +1,937 @@
 {
-  "saved_at": "2026-07-14T08:38:19.395152+00:00",
-  "query": "from:zbutcher",
-  "count": 20,
-  "kind_counts": {
-    "repost": 5,
-    "quote": 8,
-    "reply": 1,
-    "original": 6
-  },
-  "kinds": [
-    "repost",
-    "quote",
-    "quote",
-    "quote",
-    "repost",
-    "repost",
-    "quote",
-    "quote",
-    "reply",
-    "quote",
-    "quote",
-    "quote",
-    "original",
-    "original",
-    "original",
-    "original",
-    "original",
-    "original",
-    "repost",
-    "repost"
-  ],
-  "items": [
+  "handle": "Teknium",
+  "source_profile": "https://www.techtwitter.com/profiles/Teknium",
+  "generated_at": "2026-07-14T09:09:15.212887+00:00",
+  "records": [
     {
-      "author_id": "62894255",
-      "conversation_id": "2076914105664016617",
-      "created_at": "2026-07-14T06:18:04.000Z",
-      "edit_history_tweet_ids": [
-        "2076914105664016617"
+      "id": "f94b7cb0-b6aa-4c4d-9d66-f2576072a641",
+      "tweet_url": "https://x.com/Teknium/status/2075392507794624803",
+      "tweet_text": "Early days using Sol for Hermes Agent dev, and so far.. I think I like it more than Fable. \\n\\nI've been using claude models for at least the last year primarily, but I just tried it on a relatively common heavy task - and Fable simply refused me of course, but, Sol not only didn't refuse but felt way more thorough, and its obviously way cheaper, and faster.\\n\\nWill be probably trying Sol out for the rest of the week to see how I feel about it across a lot more dev tasks in Hermes Agent.",
+      "summary": "Sol outperforms Fable for Hermes Agent dev tasks: faster, cheaper, and more thorough. Early testing shows Sol handles heavy workloads Claude refuses,...",
+      "author_name": "Teknium 🪽",
+      "author_handle": "Teknium",
+      "timestamp": "2026-07-10T01:31:47+00:00",
+      "comment_count": 74,
+      "like_count": 605,
+      "retweet_count": 18,
+      "submitted_at": "2026-07-10T04:15:41.940321+00:00",
+      "created_at": "2026-07-10T04:15:41.940321+00:00",
+      "seo_title": "Sol outperforms Fable for Hermes Agent development tasks",
+      "bookmark_count": 54,
+      "image_url": null,
+      "keywords": [
+        "artificial intelligence",
+        "machine learning",
+        "programming",
+        "software engineering",
+        "ai models",
+        "ai development",
+        "cost optimization"
       ],
-      "entities": {
-        "mentions": [
-          {
-            "end": 17,
-            "id": "16591288",
-            "start": 3,
-            "username": "martin_casado"
-          }
-        ]
+      "video_url": null,
+      "video_thumbnail_url": null,
+      "image_grid_urls": null,
+      "profile_id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+      "link_card_url": null,
+      "link_card_title": null,
+      "link_card_image_url": null,
+      "link_card_domain": null,
+      "is_pinned": false,
+      "pinned_at": null,
+      "content_type": "tweet",
+      "article_title": null,
+      "article_image_url": null,
+      "slug": null,
+      "quality_score": 4,
+      "noindex": false,
+      "profiles": {
+        "id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+        "bio": "Cofounder and Lead Engineer - Hermes Agent @NousResearch, prev @StabilityAI\\nGithub: http://github.com/teknium1\\nHuggingFace: http://huggingface.co/teknium",
+        "name": "Teknium",
+        "handle": "Teknium",
+        "website": "github.com/sponsors/tekni…",
+        "location": "USA",
+        "verified": true,
+        "avatar_url": "https://dcuhjhnlzlpnshikrfwz.supabase.co/storage/v1/object/public/tweet-media/avatars/teknium.jpg",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1365020011123773442/1679544051/600x200",
+        "joined_date": "2021-02-01T08:00:00+00:00",
+        "tweet_count": 63400,
+        "follower_count": 97400,
+        "following_count": 6108,
+        "twitter_user_id": null
       },
-      "id": "2076914105664016617",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 0,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 11
-      },
-      "referenced_tweets": [
+      "nextTweetId": "ea3f7d45-7cab-4231-bd88-38cb9014e857",
+      "prevTweetId": "d24ae942-7f24-4398-8f2a-75f1904c3551",
+      "detailTopics": [
         {
-          "id": "2076735097026548161",
-          "type": "retweeted"
+          "label": "artificial intelligence",
+          "href": "/search?q=artificial%20intelligence"
+        },
+        {
+          "label": "machine learning",
+          "href": "/search?q=machine%20learning"
+        },
+        {
+          "label": "programming",
+          "href": "/search?q=programming"
+        },
+        {
+          "label": "software engineering",
+          "href": "/search?q=software%20engineering"
+        },
+        {
+          "label": "ai models",
+          "href": "/search?q=ai%20models"
+        },
+        {
+          "label": "ai development",
+          "href": "/search?q=ai%20development"
+        },
+        {
+          "label": "cost optimization",
+          "href": "/search?q=cost%20optimization"
         }
       ],
-      "text": "RT @martin_casado: This is incredible. Brittani is an artist, not a developer.\n\nBut with Fable in Cursor (plus a lot of her art) she's mana…"
+      "techtwitter_url": "https://www.techtwitter.com/tweet/f94b7cb0-b6aa-4c4d-9d66-f2576072a641",
+      "index": 1
     },
     {
-      "author_id": "62894255",
-      "conversation_id": "2076853300025299410",
-      "created_at": "2026-07-14T02:16:27.000Z",
-      "edit_history_tweet_ids": [
-        "2076853300025299410"
+      "id": "113ab62d-efdd-43a4-8375-e69810323356",
+      "tweet_url": "https://x.com/Teknium/status/2075381154669293979",
+      "tweet_text": "Did a quick 5 PR review test benchmark of Sol vs Terra in Hermes Agent for Hermes Agent PRs\\n\\nBoth are quite good. (Fable judged)",
+      "summary": "Hermes Agent PR review benchmark: Sol vs Terra performance comparison. Both blockchains deliver strong results in this Fable-judged test analysis.",
+      "author_name": "Teknium 🪽",
+      "author_handle": "Teknium",
+      "timestamp": "2026-07-10T00:46:40+00:00",
+      "comment_count": 30,
+      "like_count": 328,
+      "retweet_count": 10,
+      "submitted_at": "2026-07-10T04:15:41.981487+00:00",
+      "created_at": "2026-07-10T04:15:41.981487+00:00",
+      "seo_title": "Sol and Terra Perform Similarly in Hermes Agent PR Reviews",
+      "bookmark_count": 31,
+      "image_url": "https://pbs.twimg.com/media/HM08FWKaYAQiCkP.png",
+      "keywords": [
+        "software engineering",
+        "programming",
+        "performance benchmarking",
+        "code review",
+        "artificial intelligence",
+        "machine learning",
+        "saas"
       ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 71,
-            "start": 62,
-            "tag": "aiagents"
-          }
-        ],
-        "urls": [
-          {
-            "display_url": "x.com/Zephyr_hg/stat…",
-            "end": 95,
-            "expanded_url": "https://twitter.com/Zephyr_hg/status/2076405725157298441",
-            "start": 72,
-            "url": "https://t.co/rkwyLhEiV4"
-          }
-        ]
+      "video_url": null,
+      "video_thumbnail_url": null,
+      "image_grid_urls": null,
+      "profile_id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+      "link_card_url": null,
+      "link_card_title": null,
+      "link_card_image_url": null,
+      "link_card_domain": null,
+      "is_pinned": false,
+      "pinned_at": null,
+      "content_type": "tweet",
+      "article_title": null,
+      "article_image_url": null,
+      "slug": null,
+      "quality_score": 6,
+      "noindex": false,
+      "profiles": {
+        "id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+        "bio": "Cofounder and Lead Engineer - Hermes Agent @NousResearch, prev @StabilityAI\\nGithub: http://github.com/teknium1\\nHuggingFace: http://huggingface.co/teknium",
+        "name": "Teknium",
+        "handle": "Teknium",
+        "website": "github.com/sponsors/tekni…",
+        "location": "USA",
+        "verified": true,
+        "avatar_url": "https://dcuhjhnlzlpnshikrfwz.supabase.co/storage/v1/object/public/tweet-media/avatars/teknium.jpg",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1365020011123773442/1679544051/600x200",
+        "joined_date": "2021-02-01T08:00:00+00:00",
+        "tweet_count": 63400,
+        "follower_count": 97400,
+        "following_count": 6108,
+        "twitter_user_id": null
       },
-      "id": "2076853300025299410",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 2,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "referenced_tweets": [
+      "nextTweetId": "78c0388f-771f-4eb5-b9fa-04e36692f614",
+      "prevTweetId": "b35ac275-d465-45ce-9774-d4bab5ec0356",
+      "detailTopics": [
         {
-          "id": "2076405725157298441",
-          "type": "quoted"
+          "label": "software engineering",
+          "href": "/search?q=software%20engineering"
+        },
+        {
+          "label": "programming",
+          "href": "/search?q=programming"
+        },
+        {
+          "label": "performance benchmarking",
+          "href": "/search?q=performance%20benchmarking"
+        },
+        {
+          "label": "code review",
+          "href": "/search?q=code%20review"
+        },
+        {
+          "label": "artificial intelligence",
+          "href": "/search?q=artificial%20intelligence"
+        },
+        {
+          "label": "machine learning",
+          "href": "/search?q=machine%20learning"
+        },
+        {
+          "label": "saas",
+          "href": "/search?q=saas"
         }
       ],
-      "text": "Interesting watch and cool take on where things are head'n 🤖👍 #aiagents https://t.co/rkwyLhEiV4"
+      "techtwitter_url": "https://www.techtwitter.com/tweet/113ab62d-efdd-43a4-8375-e69810323356",
+      "index": 2
     },
     {
-      "author_id": "62894255",
-      "conversation_id": "2076850828728848493",
-      "created_at": "2026-07-14T02:06:38.000Z",
-      "edit_history_tweet_ids": [
-        "2076850828728848493"
+      "id": "685d3154-756f-417f-b911-1a8f16e17ab2",
+      "tweet_url": "https://x.com/Teknium/status/2071728785578479683",
+      "tweet_text": "Hermes Agent now has no problem with scaling huge multi-agent kanban runs, large concurrent sessions, and more with this new update to database concurrency!\\n\\nInstall Hermes Agent or update now and give it a try!",
+      "summary": "Hermes Agent scaling update: Handle massive multi-agent kanban runs and concurrent sessions with improved database concurrency. Install or update now.",
+      "author_name": "Teknium 🪽",
+      "author_handle": "Teknium",
+      "timestamp": "2026-06-29T22:53:27+00:00",
+      "comment_count": 23,
+      "like_count": 157,
+      "retweet_count": 10,
+      "submitted_at": "2026-06-29T23:46:02.68261+00:00",
+      "created_at": "2026-06-29T23:46:02.68261+00:00",
+      "seo_title": "Hermes Agent improves database concurrency for multi-agent tasks",
+      "bookmark_count": 39,
+      "image_url": "https://pbs.twimg.com/media/HMBCSxibIAAglhX.jpg",
+      "keywords": [
+        "multi-agent systems",
+        "software engineering",
+        "scalability",
+        "database optimization",
+        "concurrent processing",
+        "machine learning",
+        "artificial intelligence"
       ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 144,
-            "start": 141,
-            "tag": "ai"
-          }
-        ],
-        "mentions": [
-          {
-            "end": 34,
-            "id": "1001114465692200960",
-            "start": 25,
-            "username": "runwayml"
-          }
-        ],
-        "urls": [
-          {
-            "display_url": "x.com/runwayml/statu…",
-            "end": 168,
-            "expanded_url": "https://twitter.com/runwayml/status/2076679161070891218",
-            "start": 145,
-            "url": "https://t.co/paowv2aonQ"
-          }
-        ]
+      "video_url": null,
+      "video_thumbnail_url": null,
+      "image_grid_urls": null,
+      "profile_id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+      "link_card_url": null,
+      "link_card_title": null,
+      "link_card_image_url": null,
+      "link_card_domain": null,
+      "is_pinned": false,
+      "pinned_at": null,
+      "content_type": "tweet",
+      "article_title": null,
+      "article_image_url": null,
+      "slug": null,
+      "quality_score": 5,
+      "noindex": false,
+      "profiles": {
+        "id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+        "bio": "Cofounder and Lead Engineer - Hermes Agent @NousResearch, prev @StabilityAI\\nGithub: http://github.com/teknium1\\nHuggingFace: http://huggingface.co/teknium",
+        "name": "Teknium",
+        "handle": "Teknium",
+        "website": "github.com/sponsors/tekni…",
+        "location": "USA",
+        "verified": true,
+        "avatar_url": "https://dcuhjhnlzlpnshikrfwz.supabase.co/storage/v1/object/public/tweet-media/avatars/teknium.jpg",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1365020011123773442/1679544051/600x200",
+        "joined_date": "2021-02-01T08:00:00+00:00",
+        "tweet_count": 63400,
+        "follower_count": 97400,
+        "following_count": 6108,
+        "twitter_user_id": null
       },
-      "id": "2076850828728848493",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 8,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "referenced_tweets": [
+      "nextTweetId": "a10255a7-9de1-4443-8de4-95ee4a847fe6",
+      "prevTweetId": "eb7177cc-4971-41ac-a851-1689dc4e34fa",
+      "detailTopics": [
         {
-          "id": "2076679161070891218",
-          "type": "quoted"
+          "label": "multi-agent systems",
+          "href": "/search?q=multi-agent%20systems"
+        },
+        {
+          "label": "software engineering",
+          "href": "/search?q=software%20engineering"
+        },
+        {
+          "label": "scalability",
+          "href": "/search?q=scalability"
+        },
+        {
+          "label": "database optimization",
+          "href": "/search?q=database%20optimization"
+        },
+        {
+          "label": "concurrent processing",
+          "href": "/search?q=concurrent%20processing"
+        },
+        {
+          "label": "machine learning",
+          "href": "/search?q=machine%20learning"
+        },
+        {
+          "label": "artificial intelligence",
+          "href": "/search?q=artificial%20intelligence"
         }
       ],
-      "text": "Excellent little story 🎬 @runwayml (as an editor am curious why they never quickly foxed the leg if they had it so long but that's just me 😂 #ai https://t.co/paowv2aonQ"
+      "techtwitter_url": "https://www.techtwitter.com/tweet/685d3154-756f-417f-b911-1a8f16e17ab2",
+      "index": 3
     },
     {
-      "author_id": "62894255",
-      "conversation_id": "2076849721919119406",
-      "created_at": "2026-07-14T02:02:14.000Z",
-      "edit_history_tweet_ids": [
-        "2076849721919119406"
+      "id": "93790fb9-d15c-4523-817a-0046da9704aa",
+      "tweet_url": "https://x.com/Teknium/status/2071470678554128852",
+      "tweet_text": "Nice video by @WesRoth on Hermes' Stripe integrations! Check it out:\\n\\nhttps://www.youtube.com/watch?v=st_HMMt0T7g",
+      "summary": "Explore Hermes Stripe integrations in this comprehensive video guide by Wes Roth. Learn how to seamlessly connect and optimize payment processing.",
+      "author_name": "Teknium 🪽",
+      "author_handle": "Teknium",
+      "timestamp": "2026-06-29T05:47:50+00:00",
+      "comment_count": 5,
+      "like_count": 43,
+      "retweet_count": 1,
+      "submitted_at": "2026-06-29T08:00:58.460016+00:00",
+      "created_at": "2026-06-29T08:00:58.460016+00:00",
+      "seo_title": "Hermes Stripe Integration Overview",
+      "bookmark_count": 23,
+      "image_url": null,
+      "keywords": [
+        "stripe integration",
+        "payment processing",
+        "saas",
+        "software engineering",
+        "product design",
+        "api development",
+        "fintech"
       ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 57,
-            "start": 45,
-            "tag": "hermesagent"
-          },
-          {
-            "end": 67,
-            "start": 58,
-            "tag": "aiagents"
-          },
-          {
-            "end": 71,
-            "start": 68,
-            "tag": "ai"
-          }
-        ],
-        "mentions": [
-          {
-            "end": 44,
-            "id": "26743780",
-            "start": 30,
-            "username": "iamlukethedev"
-          }
-        ],
-        "urls": [
-          {
-            "display_url": "x.com/iamlukethedev/…",
-            "end": 99,
-            "expanded_url": "https://twitter.com/iamlukethedev/status/2076498531867906070",
-            "start": 76,
-            "url": "https://t.co/Zit2c2c3a7"
-          }
-        ]
+      "video_url": null,
+      "video_thumbnail_url": null,
+      "image_grid_urls": null,
+      "profile_id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+      "link_card_url": "https://www.youtube.com/watch?v=st_HMMt0T7g",
+      "link_card_title": "- YouTube",
+      "link_card_image_url": null,
+      "link_card_domain": "youtube.com",
+      "is_pinned": false,
+      "pinned_at": null,
+      "content_type": "tweet",
+      "article_title": null,
+      "article_image_url": null,
+      "slug": null,
+      "quality_score": 3,
+      "noindex": false,
+      "profiles": {
+        "id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+        "bio": "Cofounder and Lead Engineer - Hermes Agent @NousResearch, prev @StabilityAI\\nGithub: http://github.com/teknium1\\nHuggingFace: http://huggingface.co/teknium",
+        "name": "Teknium",
+        "handle": "Teknium",
+        "website": "github.com/sponsors/tekni…",
+        "location": "USA",
+        "verified": true,
+        "avatar_url": "https://dcuhjhnlzlpnshikrfwz.supabase.co/storage/v1/object/public/tweet-media/avatars/teknium.jpg",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1365020011123773442/1679544051/600x200",
+        "joined_date": "2021-02-01T08:00:00+00:00",
+        "tweet_count": 63400,
+        "follower_count": 97400,
+        "following_count": 6108,
+        "twitter_user_id": null
       },
-      "id": "2076849721919119406",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 204,
-        "like_count": 1,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "referenced_tweets": [
+      "nextTweetId": "4981c8bb-d230-4103-a87c-50feba01ff66",
+      "prevTweetId": "f28d6db2-2aaa-4e82-b526-2921842dea98",
+      "detailTopics": [
         {
-          "id": "2076498531867906070",
-          "type": "quoted"
+          "label": "stripe integration",
+          "href": "/search?q=stripe%20integration"
+        },
+        {
+          "label": "payment processing",
+          "href": "/search?q=payment%20processing"
+        },
+        {
+          "label": "saas",
+          "href": "/search?q=saas"
+        },
+        {
+          "label": "software engineering",
+          "href": "/search?q=software%20engineering"
+        },
+        {
+          "label": "product design",
+          "href": "/search?q=product%20design"
+        },
+        {
+          "label": "api development",
+          "href": "/search?q=api%20development"
+        },
+        {
+          "label": "fintech",
+          "href": "/search?q=fintech"
         }
       ],
-      "text": "Looks fun Luke - WELL DONE!!! @iamlukethedev #hermesagent #aiagents #ai.  . https://t.co/Zit2c2c3a7"
+      "techtwitter_url": "https://www.techtwitter.com/tweet/93790fb9-d15c-4523-817a-0046da9704aa",
+      "index": 4
     },
     {
-      "author_id": "62894255",
-      "conversation_id": "2076847905118531957",
-      "created_at": "2026-07-14T01:55:01.000Z",
-      "edit_history_tweet_ids": [
-        "2076847905118531957"
+      "id": "e72aca84-af8f-4bb3-abc8-789ac636ea41",
+      "tweet_url": "https://x.com/Teknium/status/2070559754414637390",
+      "tweet_text": "Hermes Agent's Kanban got a bit better today!  \\n\\nAdded typed block reasons and a recurrence counter to Kanban tasks so that repeated same-cause blocks escalate to a human instead of looping forever, while dependency blocks auto-resume when their parent completes.",
+      "summary": "Hermes Agent's Kanban improves with typed block reasons and recurrence counters to escalate repeated blocks to humans while auto-resuming dependency tasks.",
+      "author_name": "Teknium 🪽",
+      "author_handle": "Teknium",
+      "timestamp": "2026-06-26T17:28:09+00:00",
+      "comment_count": 16,
+      "like_count": 233,
+      "retweet_count": 12,
+      "submitted_at": "2026-06-26T19:01:01.081258+00:00",
+      "created_at": "2026-06-26T19:01:01.081258+00:00",
+      "seo_title": "Hermes Agent Kanban escalates repeated blocks to humans",
+      "bookmark_count": 95,
+      "image_url": "https://pbs.twimg.com/media/HLwbGUra0AA-zYk.jpg",
+      "keywords": [
+        "product management",
+        "software engineering",
+        "automation",
+        "task management",
+        "workflow optimization",
+        "engineering",
+        "productivity"
       ],
-      "entities": {
-        "mentions": [
-          {
-            "end": 15,
-            "id": "2023431001524072449",
-            "start": 3,
-            "username": "clankrmedia"
-          }
-        ]
+      "video_url": null,
+      "video_thumbnail_url": null,
+      "image_grid_urls": null,
+      "profile_id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+      "link_card_url": null,
+      "link_card_title": null,
+      "link_card_image_url": null,
+      "link_card_domain": null,
+      "is_pinned": false,
+      "pinned_at": null,
+      "content_type": "tweet",
+      "article_title": null,
+      "article_image_url": null,
+      "slug": null,
+      "quality_score": 6,
+      "noindex": false,
+      "profiles": {
+        "id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+        "bio": "Cofounder and Lead Engineer - Hermes Agent @NousResearch, prev @StabilityAI\\nGithub: http://github.com/teknium1\\nHuggingFace: http://huggingface.co/teknium",
+        "name": "Teknium",
+        "handle": "Teknium",
+        "website": "github.com/sponsors/tekni…",
+        "location": "USA",
+        "verified": true,
+        "avatar_url": "https://dcuhjhnlzlpnshikrfwz.supabase.co/storage/v1/object/public/tweet-media/avatars/teknium.jpg",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1365020011123773442/1679544051/600x200",
+        "joined_date": "2021-02-01T08:00:00+00:00",
+        "tweet_count": 63400,
+        "follower_count": 97400,
+        "following_count": 6108,
+        "twitter_user_id": null
       },
-      "id": "2076847905118531957",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 0,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 530
-      },
-      "referenced_tweets": [
+      "nextTweetId": "0b4e9735-71b3-4e28-9236-3b900a8180b0",
+      "prevTweetId": "3f4d9ec9-8add-468c-b0eb-338319bdc5f1",
+      "detailTopics": [
         {
-          "id": "2076593164744376707",
-          "type": "retweeted"
+          "label": "product management",
+          "href": "/search?q=product%20management"
+        },
+        {
+          "label": "software engineering",
+          "href": "/search?q=software%20engineering"
+        },
+        {
+          "label": "automation",
+          "href": "/search?q=automation"
+        },
+        {
+          "label": "task management",
+          "href": "/search?q=task%20management"
+        },
+        {
+          "label": "workflow optimization",
+          "href": "/search?q=workflow%20optimization"
+        },
+        {
+          "label": "engineering",
+          "href": "/search?q=engineering"
+        },
+        {
+          "label": "productivity",
+          "href": "/search?q=productivity"
         }
       ],
-      "text": "RT @clankrmedia: Researchers built a soft floating robot for indoor interaction.\n\nIt uses helium and flapping fins instead of propellers.…"
+      "techtwitter_url": "https://www.techtwitter.com/tweet/e72aca84-af8f-4bb3-abc8-789ac636ea41",
+      "index": 5
     },
     {
-      "author_id": "62894255",
-      "conversation_id": "2076846782336905663",
-      "created_at": "2026-07-14T01:50:33.000Z",
-      "edit_history_tweet_ids": [
-        "2076846782336905663"
+      "id": "f2a6fe49-7542-4939-b80e-a8adc905722b",
+      "tweet_url": "https://x.com/Teknium/status/2067709161119551615",
+      "tweet_text": "We have just merged an expanded form of the memory management tool Hermes Agent uses to save/edit/remove memories so that it can do batch operations, saving many turns of tool calls in most scenarios!\\n\\nRun `hermes update` in your CLI or update in your GUI to start saving now.",
+      "summary": "Hermes Agent memory management tool now supports batch operations for save/edit/remove, reducing tool calls and improving efficiency with latest update.",
+      "author_name": "Teknium 🪽",
+      "author_handle": "Teknium",
+      "timestamp": "2026-06-18T20:40:54+00:00",
+      "comment_count": 22,
+      "like_count": 306,
+      "retweet_count": 23,
+      "submitted_at": "2026-06-18T22:15:25.622459+00:00",
+      "created_at": "2026-06-18T22:15:25.622459+00:00",
+      "seo_title": "Hermes Agent Memory Management Now Supports Batch Operations",
+      "bookmark_count": 115,
+      "image_url": "https://pbs.twimg.com/media/HLH6StuawAA9stw.jpg",
+      "keywords": [
+        "memory management",
+        "ai agents",
+        "software engineering",
+        "machine learning",
+        "automation",
+        "developer tools",
+        "productivity"
       ],
-      "entities": {
-        "mentions": [
-          {
-            "end": 7,
-            "id": "16292242",
-            "start": 3,
-            "username": "auf"
-          }
-        ]
+      "video_url": null,
+      "video_thumbnail_url": null,
+      "image_grid_urls": null,
+      "profile_id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+      "link_card_url": null,
+      "link_card_title": null,
+      "link_card_image_url": null,
+      "link_card_domain": null,
+      "is_pinned": false,
+      "pinned_at": null,
+      "content_type": "tweet",
+      "article_title": null,
+      "article_image_url": null,
+      "slug": null,
+      "quality_score": 6,
+      "noindex": false,
+      "profiles": {
+        "id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+        "bio": "Cofounder and Lead Engineer - Hermes Agent @NousResearch, prev @StabilityAI\\nGithub: http://github.com/teknium1\\nHuggingFace: http://huggingface.co/teknium",
+        "name": "Teknium",
+        "handle": "Teknium",
+        "website": "github.com/sponsors/tekni…",
+        "location": "USA",
+        "verified": true,
+        "avatar_url": "https://dcuhjhnlzlpnshikrfwz.supabase.co/storage/v1/object/public/tweet-media/avatars/teknium.jpg",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1365020011123773442/1679544051/600x200",
+        "joined_date": "2021-02-01T08:00:00+00:00",
+        "tweet_count": 63400,
+        "follower_count": 97400,
+        "following_count": 6108,
+        "twitter_user_id": null
       },
-      "id": "2076846782336905663",
-      "lang": "pt",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 0,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 6406
-      },
-      "referenced_tweets": [
+      "nextTweetId": "7d97eeac-8f07-4551-82f0-f2e21b13ac2f",
+      "prevTweetId": "d39d7a9f-7166-48ad-87b4-206f382bf868",
+      "detailTopics": [
         {
-          "id": "2076638860621086822",
-          "type": "retweeted"
+          "label": "memory management",
+          "href": "/search?q=memory%20management"
+        },
+        {
+          "label": "ai agents",
+          "href": "/search?q=ai%20agents"
+        },
+        {
+          "label": "software engineering",
+          "href": "/search?q=software%20engineering"
+        },
+        {
+          "label": "machine learning",
+          "href": "/search?q=machine%20learning"
+        },
+        {
+          "label": "automation",
+          "href": "/search?q=automation"
+        },
+        {
+          "label": "developer tools",
+          "href": "/search?q=developer%20tools"
+        },
+        {
+          "label": "productivity",
+          "href": "/search?q=productivity"
         }
       ],
-      "text": "RT @auf: Obrigado, Sam Neill, por olhar pra uma paisagem vazia com tanta emoção que me fez acreditar, naquela sala escura de cinema em 1993…"
+      "techtwitter_url": "https://www.techtwitter.com/tweet/f2a6fe49-7542-4939-b80e-a8adc905722b",
+      "index": 6
     },
     {
-      "author_id": "62894255",
-      "conversation_id": "2076846398696493383",
-      "created_at": "2026-07-14T01:49:02.000Z",
-      "edit_history_tweet_ids": [
-        "2076846398696493383"
+      "id": "2658f5c1-e0d0-444b-accb-01e455b17d51",
+      "tweet_url": "https://x.com/Teknium/status/2067576610711314823",
+      "tweet_text": ".@HuggingFace did a nice explainer video of Hermes Agent's architecture, check it out here:\\n\\nhttps://www.youtube.com/watch?v=n32qq7Kwzh0",
+      "summary": "Explore Hermes Agent's architecture in this detailed explainer video by Hugging Face. Learn how this AI agent system works.",
+      "author_name": "Teknium 🪽",
+      "author_handle": "Teknium",
+      "timestamp": "2026-06-18T11:54:12+00:00",
+      "comment_count": 8,
+      "like_count": 203,
+      "retweet_count": 20,
+      "submitted_at": "2026-06-18T13:30:30.726369+00:00",
+      "created_at": "2026-06-18T13:30:30.726369+00:00",
+      "seo_title": "Hermes Agent Architecture Explained",
+      "bookmark_count": 133,
+      "image_url": null,
+      "keywords": [
+        "artificial intelligence",
+        "machine learning",
+        "ai architecture",
+        "neural networks",
+        "software engineering",
+        "ai research",
+        "deep learning"
       ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 24,
-            "start": 15,
-            "tag": "aiagents"
-          },
-          {
-            "end": 35,
-            "start": 25,
-            "tag": "agenticai"
-          },
-          {
-            "end": 59,
-            "start": 36,
-            "tag": "artificialintelligence"
-          }
-        ],
-        "urls": [
-          {
-            "display_url": "x.com/appltrack/stat…",
-            "end": 83,
-            "expanded_url": "https://twitter.com/appltrack/status/2076439304516300816",
-            "start": 60,
-            "url": "https://t.co/AO8huSHbIR"
-          }
-        ]
+      "video_url": null,
+      "video_thumbnail_url": null,
+      "image_grid_urls": null,
+      "profile_id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+      "link_card_url": "https://www.youtube.com/watch?v=n32qq7Kwzh0",
+      "link_card_title": "- YouTube",
+      "link_card_image_url": null,
+      "link_card_domain": "youtube.com",
+      "is_pinned": false,
+      "pinned_at": null,
+      "content_type": "tweet",
+      "article_title": null,
+      "article_image_url": null,
+      "slug": null,
+      "quality_score": 5,
+      "noindex": false,
+      "profiles": {
+        "id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+        "bio": "Cofounder and Lead Engineer - Hermes Agent @NousResearch, prev @StabilityAI\\nGithub: http://github.com/teknium1\\nHuggingFace: http://huggingface.co/teknium",
+        "name": "Teknium",
+        "handle": "Teknium",
+        "website": "github.com/sponsors/tekni…",
+        "location": "USA",
+        "verified": true,
+        "avatar_url": "https://dcuhjhnlzlpnshikrfwz.supabase.co/storage/v1/object/public/tweet-media/avatars/teknium.jpg",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1365020011123773442/1679544051/600x200",
+        "joined_date": "2021-02-01T08:00:00+00:00",
+        "tweet_count": 63400,
+        "follower_count": 97400,
+        "following_count": 6108,
+        "twitter_user_id": null
       },
-      "id": "2076846398696493383",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 3,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "referenced_tweets": [
+      "nextTweetId": "b2f377dc-0dc9-4f7f-a245-291f8e8ce7f8",
+      "prevTweetId": "93475996-14c2-460f-8d18-831176e004b9",
+      "detailTopics": [
         {
-          "id": "2076439304516300816",
-          "type": "quoted"
+          "label": "artificial intelligence",
+          "href": "/search?q=artificial%20intelligence"
+        },
+        {
+          "label": "machine learning",
+          "href": "/search?q=machine%20learning"
+        },
+        {
+          "label": "ai architecture",
+          "href": "/search?q=ai%20architecture"
+        },
+        {
+          "label": "neural networks",
+          "href": "/search?q=neural%20networks"
+        },
+        {
+          "label": "software engineering",
+          "href": "/search?q=software%20engineering"
+        },
+        {
+          "label": "ai research",
+          "href": "/search?q=ai%20research"
+        },
+        {
+          "label": "deep learning",
+          "href": "/search?q=deep%20learning"
         }
       ],
-      "text": "Just imagine 🤖🤘#aiagents #agenticai #artificialintelligence https://t.co/AO8huSHbIR"
+      "techtwitter_url": "https://www.techtwitter.com/tweet/2658f5c1-e0d0-444b-accb-01e455b17d51",
+      "index": 7
     },
     {
-      "author_id": "62894255",
-      "conversation_id": "2076845726525759611",
-      "created_at": "2026-07-14T01:46:21.000Z",
-      "edit_history_tweet_ids": [
-        "2076845726525759611"
+      "id": "9ba31811-97d8-4403-b73d-492e9279f6ee",
+      "tweet_url": "https://x.com/Teknium/status/2067252581425188935",
+      "tweet_text": "Would love more eyes on this PR that adds security to all your API keys and makes them inaccessible by the agent.\\n\\nIf you have a security focused background, please post any reviews or concerns! \\n\\nhttps://github.com/NousResearch/hermes-agent/pull/30179",
+      "summary": "Secure API keys with new PR for Hermes Agent. Review security improvements that make keys inaccessible to agents. Expert feedback welcome.",
+      "author_name": "Teknium 🪽",
+      "author_handle": "Teknium",
+      "timestamp": "2026-06-17T14:26:37+00:00",
+      "comment_count": 13,
+      "like_count": 102,
+      "retweet_count": 7,
+      "submitted_at": "2026-06-17T15:30:28.792236+00:00",
+      "created_at": "2026-06-17T15:30:28.792236+00:00",
+      "seo_title": "API Keys Made Inaccessible to Agents",
+      "bookmark_count": 24,
+      "image_url": null,
+      "keywords": [
+        "api security",
+        "cybersecurity",
+        "software engineering",
+        "programming",
+        "code review",
+        "open source",
+        "authentication",
+        "secure development"
       ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 98,
-            "start": 95,
-            "tag": "ai"
-          },
-          {
-            "end": 108,
-            "start": 99,
-            "tag": "aiphones"
-          }
-        ],
-        "urls": [
-          {
-            "display_url": "x.com/isausmanov/sta…",
-            "end": 132,
-            "expanded_url": "https://twitter.com/isausmanov/status/2076719167810703840",
-            "start": 109,
-            "url": "https://t.co/JkCrFJ5HjE"
-          }
-        ]
+      "video_url": null,
+      "video_thumbnail_url": null,
+      "image_grid_urls": null,
+      "profile_id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+      "link_card_url": "https://github.com/NousResearch/hermes-agent/pull/30179",
+      "link_card_title": "feat(egress): iron-proxy credential-injection firewall for sandboxes by teknium1 · Pull Request #30179 · NousResearch/hermes-agent",
+      "link_card_image_url": "https://opengraph.githubassets.com/b604b0b58543a228b6356181652fbf2c9f79fe914d601e1bf741be22b8f99e3a/NousResearch/hermes-agent/pull/30179",
+      "link_card_domain": "github.com",
+      "is_pinned": false,
+      "pinned_at": null,
+      "content_type": "tweet",
+      "article_title": null,
+      "article_image_url": null,
+      "slug": null,
+      "quality_score": 6,
+      "noindex": false,
+      "profiles": {
+        "id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+        "bio": "Cofounder and Lead Engineer - Hermes Agent @NousResearch, prev @StabilityAI\\nGithub: http://github.com/teknium1\\nHuggingFace: http://huggingface.co/teknium",
+        "name": "Teknium",
+        "handle": "Teknium",
+        "website": "github.com/sponsors/tekni…",
+        "location": "USA",
+        "verified": true,
+        "avatar_url": "https://dcuhjhnlzlpnshikrfwz.supabase.co/storage/v1/object/public/tweet-media/avatars/teknium.jpg",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1365020011123773442/1679544051/600x200",
+        "joined_date": "2021-02-01T08:00:00+00:00",
+        "tweet_count": 63400,
+        "follower_count": 97400,
+        "following_count": 6108,
+        "twitter_user_id": null
       },
-      "id": "2076845726525759611",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 36,
-        "like_count": 1,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "referenced_tweets": [
+      "nextTweetId": "107c6674-1f91-4614-8e58-143aba6a0ece",
+      "prevTweetId": "7d55fdcd-ad02-492b-a8e6-245e02f2b7db",
+      "detailTopics": [
         {
-          "id": "2076719167810703840",
-          "type": "quoted"
+          "label": "api security",
+          "href": "/search?q=api%20security"
+        },
+        {
+          "label": "cybersecurity",
+          "href": "/search?q=cybersecurity"
+        },
+        {
+          "label": "software engineering",
+          "href": "/search?q=software%20engineering"
+        },
+        {
+          "label": "programming",
+          "href": "/search?q=programming"
+        },
+        {
+          "label": "code review",
+          "href": "/search?q=code%20review"
+        },
+        {
+          "label": "open source",
+          "href": "/search?q=open%20source"
+        },
+        {
+          "label": "authentication",
+          "href": "/search?q=authentication"
+        },
+        {
+          "label": "secure development",
+          "href": "/search?q=secure%20development"
         }
       ],
-      "text": "Hmmm. some fun stuff goin on here... can easily see how wack are current phones are right now. #ai #aiphones https://t.co/JkCrFJ5HjE"
+      "techtwitter_url": "https://www.techtwitter.com/tweet/9ba31811-97d8-4403-b73d-492e9279f6ee",
+      "index": 8
     },
     {
-      "author_id": "62894255",
-      "conversation_id": "2076476335950868708",
-      "created_at": "2026-07-14T01:44:28.000Z",
-      "edit_history_tweet_ids": [
-        "2076845250631581969"
+      "id": "3d8da468-ba2d-40aa-a582-4c6991ceb9ed",
+      "tweet_url": "https://x.com/Teknium/status/2067237807308124602",
+      "tweet_text": "Tip of the Day: Did you know you can share your hermes agent profiles onto github? \\n\\nShare a profile and others or yourself can download and distribute it with ease! \\n\\nSee the docs here: https://hermes-agent.nousresearch.com/docs/user-guide/profile-distributions",
+      "summary": "Learn how to share Hermes agent profiles on GitHub for easy distribution and collaboration. Simplify profile management with Hermes documentation.",
+      "author_name": "Teknium 🪽",
+      "author_handle": "Teknium",
+      "timestamp": "2026-06-17T13:27:55+00:00",
+      "comment_count": 2,
+      "like_count": 9,
+      "retweet_count": 0,
+      "submitted_at": "2026-06-17T13:30:24.504857+00:00",
+      "created_at": "2026-06-17T13:30:24.504857+00:00",
+      "seo_title": "Hermes agent profiles can be shared and distributed via GitHub",
+      "bookmark_count": 3,
+      "image_url": null,
+      "keywords": [
+        "ai agents",
+        "software engineering",
+        "github",
+        "machine learning",
+        "automation",
+        "open source",
+        "developer tools",
+        "artificial intelligence"
       ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 103,
-            "start": 92,
-            "tag": "staystrong"
-          },
-          {
-            "end": 113,
-            "start": 104,
-            "tag": "dogsrule"
-          }
-        ],
-        "mentions": [
-          {
-            "end": 8,
-            "id": "1365020011123773442",
-            "start": 0,
-            "username": "Teknium"
-          }
-        ]
+      "video_url": null,
+      "video_thumbnail_url": null,
+      "image_grid_urls": null,
+      "profile_id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+      "link_card_url": "https://hermes-agent.nousresearch.com/docs/user-guide/profile-distributions",
+      "link_card_title": "Profile Distributions: Share a Whole Agent | Hermes Agent",
+      "link_card_image_url": "https://hermes-agent.nousresearch.com/docs/img/hermes-agent-banner.png",
+      "link_card_domain": "hermes-agent.nousresearch.com",
+      "is_pinned": false,
+      "pinned_at": null,
+      "content_type": "tweet",
+      "article_title": null,
+      "article_image_url": null,
+      "slug": null,
+      "quality_score": 4,
+      "noindex": false,
+      "profiles": {
+        "id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+        "bio": "Cofounder and Lead Engineer - Hermes Agent @NousResearch, prev @StabilityAI\\nGithub: http://github.com/teknium1\\nHuggingFace: http://huggingface.co/teknium",
+        "name": "Teknium",
+        "handle": "Teknium",
+        "website": "github.com/sponsors/tekni…",
+        "location": "USA",
+        "verified": true,
+        "avatar_url": "https://dcuhjhnlzlpnshikrfwz.supabase.co/storage/v1/object/public/tweet-media/avatars/teknium.jpg",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1365020011123773442/1679544051/600x200",
+        "joined_date": "2021-02-01T08:00:00+00:00",
+        "tweet_count": 63400,
+        "follower_count": 97400,
+        "following_count": 6108,
+        "twitter_user_id": null
       },
-      "id": "2076845250631581969",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 7,
-        "like_count": 1,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "referenced_tweets": [
+      "nextTweetId": "1331b614-24d2-407c-890a-a82e1e9fdbc3",
+      "prevTweetId": "765e6231-e84c-41ff-89ad-bdb4d702a244",
+      "detailTopics": [
         {
-          "id": "2076476335950868708",
-          "type": "replied_to"
+          "label": "ai agents",
+          "href": "/search?q=ai%20agents"
+        },
+        {
+          "label": "software engineering",
+          "href": "/search?q=software%20engineering"
+        },
+        {
+          "label": "github",
+          "href": "/search?q=github"
+        },
+        {
+          "label": "machine learning",
+          "href": "/search?q=machine%20learning"
+        },
+        {
+          "label": "automation",
+          "href": "/search?q=automation"
+        },
+        {
+          "label": "open source",
+          "href": "/search?q=open%20source"
+        },
+        {
+          "label": "developer tools",
+          "href": "/search?q=developer%20tools"
+        },
+        {
+          "label": "artificial intelligence",
+          "href": "/search?q=artificial%20intelligence"
         }
       ],
-      "text": "@Teknium Ah man so so sorry - GREAT PIX - has was a handsome fella. Thoughts are w/ya Tek 😪 #staystrong #dogsrule"
+      "techtwitter_url": "https://www.techtwitter.com/tweet/3d8da468-ba2d-40aa-a582-4c6991ceb9ed",
+      "index": 9
     },
     {
-      "author_id": "62894255",
-      "conversation_id": "2076844602179604684",
-      "created_at": "2026-07-14T01:41:53.000Z",
-      "edit_history_tweet_ids": [
-        "2076844602179604684"
+      "id": "12e14b77-fb29-4f95-8688-6e64bd17a734",
+      "tweet_url": "https://x.com/Teknium/status/2067222815913447678",
+      "tweet_text": "Making a change to the Hermes Agent Curator that will make it so it only Prunes unused skills by default, it will no longer consolidate skills unless you opt in in the config or dashboard.\\n\\nIt was costing upwards of 16$ per week to operate for some using frontier models and causing some confusion for other users. This is a better middle ground for a default scenario.",
+      "summary": "Hermes Agent Curator now prunes unused skills by default instead of consolidating them, reducing operational costs up to $16/week for frontier models.",
+      "author_name": "Teknium 🪽",
+      "author_handle": "Teknium",
+      "timestamp": "2026-06-17T12:28:21+00:00",
+      "comment_count": 17,
+      "like_count": 160,
+      "retweet_count": 14,
+      "submitted_at": "2026-06-17T13:30:24.568029+00:00",
+      "created_at": "2026-06-17T13:30:24.568029+00:00",
+      "seo_title": "Hermes Agent Curator reduces skill consolidation to cut costs",
+      "bookmark_count": 61,
+      "image_url": "https://pbs.twimg.com/media/HLBALg-asAACH9R.jpg",
+      "keywords": [
+        "product management",
+        "saas",
+        "software engineering",
+        "machine learning",
+        "cost optimization",
+        "user experience",
+        "artificial intelligence"
       ],
-      "entities": {
-        "urls": [
-          {
-            "display_url": "x.com/EHuanglu/statu…",
-            "end": 78,
-            "expanded_url": "https://twitter.com/EHuanglu/status/2076419430654128449",
-            "start": 55,
-            "url": "https://t.co/cNWDFQ9AGP"
-          }
-        ]
+      "video_url": null,
+      "video_thumbnail_url": null,
+      "image_grid_urls": null,
+      "profile_id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+      "link_card_url": null,
+      "link_card_title": null,
+      "link_card_image_url": null,
+      "link_card_domain": null,
+      "is_pinned": false,
+      "pinned_at": null,
+      "content_type": "tweet",
+      "article_title": null,
+      "article_image_url": null,
+      "slug": null,
+      "quality_score": 6,
+      "noindex": false,
+      "profiles": {
+        "id": "00ce2622-73f1-44d2-b07f-c761d66ff237",
+        "bio": "Cofounder and Lead Engineer - Hermes Agent @NousResearch, prev @StabilityAI\\nGithub: http://github.com/teknium1\\nHuggingFace: http://huggingface.co/teknium",
+        "name": "Teknium",
+        "handle": "Teknium",
+        "website": "github.com/sponsors/tekni…",
+        "location": "USA",
+        "verified": true,
+        "avatar_url": "https://dcuhjhnlzlpnshikrfwz.supabase.co/storage/v1/object/public/tweet-media/avatars/teknium.jpg",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1365020011123773442/1679544051/600x200",
+        "joined_date": "2021-02-01T08:00:00+00:00",
+        "tweet_count": 63400,
+        "follower_count": 97400,
+        "following_count": 6108,
+        "twitter_user_id": null
       },
-      "id": "2076844602179604684",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 7,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "referenced_tweets": [
+      "nextTweetId": "f1b35c8d-d9b2-4d2d-bb3a-cce8f3ca7557",
+      "prevTweetId": "1331b614-24d2-407c-890a-a82e1e9fdbc3",
+      "detailTopics": [
         {
-          "id": "2076419430654128449",
-          "type": "quoted"
+          "label": "product management",
+          "href": "/search?q=product%20management"
+        },
+        {
+          "label": "saas",
+          "href": "/search?q=saas"
+        },
+        {
+          "label": "software engineering",
+          "href": "/search?q=software%20engineering"
+        },
+        {
+          "label": "machine learning",
+          "href": "/search?q=machine%20learning"
+        },
+        {
+          "label": "cost optimization",
+          "href": "/search?q=cost%20optimization"
+        },
+        {
+          "label": "user experience",
+          "href": "/search?q=user%20experience"
+        },
+        {
+          "label": "artificial intelligence",
+          "href": "/search?q=artificial%20intelligence"
         }
       ],
-      "text": "😂 Sorta sums things up at moment based on allegations. https://t.co/cNWDFQ9AGP"
-    },
-    {
-      "author_id": "62894255",
-      "conversation_id": "2076844128739180740",
-      "created_at": "2026-07-14T01:40:00.000Z",
-      "edit_history_tweet_ids": [
-        "2076844128739180740"
-      ],
-      "entities": {
-        "urls": [
-          {
-            "display_url": "x.com/STudy017aq/sta…",
-            "end": 45,
-            "expanded_url": "https://twitter.com/STudy017aq/status/2076722355284394366",
-            "start": 22,
-            "url": "https://t.co/o6EO27tPVw"
-          }
-        ]
-      },
-      "id": "2076844128739180740",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 1,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "referenced_tweets": [
-        {
-          "id": "2076722355284394366",
-          "type": "quoted"
-        }
-      ],
-      "text": "😇Great Job💕Well Said🎬 https://t.co/o6EO27tPVw"
-    },
-    {
-      "author_id": "62894255",
-      "conversation_id": "2076791454534635823",
-      "created_at": "2026-07-13T22:10:42.000Z",
-      "edit_history_tweet_ids": [
-        "2076791454534635823"
-      ],
-      "entities": {
-        "urls": [
-          {
-            "display_url": "x.com/JurassicWorld/…",
-            "end": 69,
-            "expanded_url": "https://twitter.com/JurassicWorld/status/2076714282746605882",
-            "start": 46,
-            "url": "https://t.co/KoN5Kdmjcv"
-          }
-        ]
-      },
-      "id": "2076791454534635823",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 6,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "referenced_tweets": [
-        {
-          "id": "2076714282746605882",
-          "type": "quoted"
-        }
-      ],
-      "text": "😔 Sad day - thank you Sam you will be missed! https://t.co/KoN5Kdmjcv"
-    },
-    {
-      "author_id": "62894255",
-      "conversation_id": "2076790907165454782",
-      "created_at": "2026-07-13T22:08:31.000Z",
-      "edit_history_tweet_ids": [
-        "2076790907165454782"
-      ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 237,
-            "start": 234,
-            "tag": "ai"
-          },
-          {
-            "end": 247,
-            "start": 238,
-            "tag": "aiagents"
-          },
-          {
-            "end": 253,
-            "start": 248,
-            "tag": "tech"
-          },
-          {
-            "end": 266,
-            "start": 254,
-            "tag": "interactive"
-          },
-          {
-            "end": 277,
-            "start": 267,
-            "tag": "immersive"
-          }
-        ]
-      },
-      "id": "2076790907165454782",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 1,
-        "impression_count": 11,
-        "like_count": 1,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 1
-      },
-      "text": "Apologies 4 using X more 4 bookmarking super cool sh^t lately 🤖 there's just SO much fun stuff coming outta firehose here that I want 2revisit so I grab it 😂 will try 2actually post more as I come out of hiding more moving fwd -thx 🤘 #ai #aiagents #tech #interactive #immersive"
-    },
-    {
-      "attachments": {
-        "media_keys": [
-          "3_2076739200226099200"
-        ]
-      },
-      "author_id": "62894255",
-      "conversation_id": "2076739672165040278",
-      "created_at": "2026-07-13T18:44:56.000Z",
-      "edit_history_tweet_ids": [
-        "2076739672165040278"
-      ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 110,
-            "start": 98,
-            "tag": "hermesagent"
-          },
-          {
-            "end": 119,
-            "start": 111,
-            "tag": "aiagent"
-          }
-        ],
-        "urls": [
-          {
-            "display_url": "pic.x.com/KOUNpHURPu",
-            "end": 143,
-            "expanded_url": "https://x.com/zbutcher/status/2076739672165040278/photo/1",
-            "media_key": "3_2076739200226099200",
-            "start": 120,
-            "url": "https://t.co/KOUNpHURPu"
-          }
-        ]
-      },
-      "id": "2076739672165040278",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 13,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "text": "🤖 BOOM! Hermes webninja agent auto-posted 🕵️‍♂️ Dude is not play'n and is and ready for action! 😜 #hermesagent #aiagent https://t.co/KOUNpHURPu"
-    },
-    {
-      "attachments": {
-        "media_keys": [
-          "3_2076737686749249536"
-        ]
-      },
-      "author_id": "62894255",
-      "conversation_id": "2076738003716993118",
-      "created_at": "2026-07-13T18:38:18.000Z",
-      "edit_history_tweet_ids": [
-        "2076738003716993118"
-      ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 95,
-            "start": 83,
-            "tag": "hermesagent"
-          },
-          {
-            "end": 104,
-            "start": 96,
-            "tag": "aiagent"
-          }
-        ],
-        "urls": [
-          {
-            "display_url": "pic.x.com/nLdLa9BUpi",
-            "end": 128,
-            "expanded_url": "https://x.com/zbutcher/status/2076738003716993118/photo/1",
-            "media_key": "3_2076737686749249536",
-            "start": 105,
-            "url": "https://t.co/nLdLa9BUpi"
-          }
-        ]
-      },
-      "id": "2076738003716993118",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 7,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "text": "🤖 BOOM! Hermes research agent auto-posted 👍 Again like she's on Hermes Mountain 🏔️ #hermesagent #aiagent https://t.co/nLdLa9BUpi"
-    },
-    {
-      "attachments": {
-        "media_keys": [
-          "3_2076736182172753920"
-        ]
-      },
-      "author_id": "62894255",
-      "conversation_id": "2076737126016975339",
-      "created_at": "2026-07-13T18:34:49.000Z",
-      "edit_history_tweet_ids": [
-        "2076737126016975339"
-      ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 137,
-            "start": 125,
-            "tag": "hermesagent"
-          },
-          {
-            "end": 146,
-            "start": 138,
-            "tag": "aiagent"
-          }
-        ],
-        "urls": [
-          {
-            "display_url": "pic.x.com/6qXkSOZjhl",
-            "end": 170,
-            "expanded_url": "https://x.com/zbutcher/status/2076737126016975339/photo/1",
-            "media_key": "3_2076736182172753920",
-            "start": 147,
-            "url": "https://t.co/6qXkSOZjhl"
-          }
-        ]
-      },
-      "id": "2076737126016975339",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 3,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "text": "🤖 BOOM! Another fun tweet with hermes pet robot auto-posted 👍 This one makes me laugh 😂 it's like he's on Hermes Mountain 🏔️ #hermesagent #aiagent https://t.co/6qXkSOZjhl"
-    },
-    {
-      "attachments": {
-        "media_keys": [
-          "3_2076734342777516032"
-        ]
-      },
-      "author_id": "62894255",
-      "conversation_id": "2076734827634753850",
-      "created_at": "2026-07-13T18:25:41.000Z",
-      "edit_history_tweet_ids": [
-        "2076734827634753850"
-      ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 73,
-            "start": 61,
-            "tag": "hermesagent"
-          },
-          {
-            "end": 82,
-            "start": 74,
-            "tag": "aiagent"
-          }
-        ],
-        "urls": [
-          {
-            "display_url": "pic.x.com/Y2s91YF5yX",
-            "end": 106,
-            "expanded_url": "https://x.com/zbutcher/status/2076734827634753850/photo/1",
-            "media_key": "3_2076734342777516032",
-            "start": 83,
-            "url": "https://t.co/Y2s91YF5yX"
-          }
-        ]
-      },
-      "id": "2076734827634753850",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 2,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "text": "🤖 BOOM! Tweet with single hermes pet robot pix auto-posted 👍 #hermesagent #aiagent https://t.co/Y2s91YF5yX"
-    },
-    {
-      "author_id": "62894255",
-      "conversation_id": "2076732188020916309",
-      "created_at": "2026-07-13T18:15:12.000Z",
-      "edit_history_tweet_ids": [
-        "2076732188020916309"
-      ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 159,
-            "start": 147,
-            "tag": "hermesagent"
-          },
-          {
-            "end": 168,
-            "start": 160,
-            "tag": "aigents"
-          }
-        ]
-      },
-      "id": "2076732188020916309",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 4,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "text": "🤖 Shazzaaaammm!!! SUCCESS: Reposts back via ai-agent using xurl 👍 So cool - feels like I'm some sort of digital magic wizard and I'm digg'n it 🪄😂  #hermesagent #aigents"
-    },
-    {
-      "author_id": "62894255",
-      "conversation_id": "2076731124173480273",
-      "created_at": "2026-07-13T18:10:58.000Z",
-      "edit_history_tweet_ids": [
-        "2076731124173480273"
-      ],
-      "entities": {
-        "mentions": [
-          {
-            "end": 17,
-            "id": "1944528500565905408",
-            "start": 3,
-            "username": "SamJWasserman"
-          }
-        ]
-      },
-      "id": "2076731124173480273",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 0,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 21
-      },
-      "referenced_tweets": [
-        {
-          "id": "2076683075191234692",
-          "type": "retweeted"
-        }
-      ],
-      "text": "RT @SamJWasserman: Full Suite - All 4 open source + free apps/mcps I released this past week can now be found with one link: \n\nPlease find…"
-    },
-    {
-      "author_id": "62894255",
-      "conversation_id": "2076731122697015608",
-      "created_at": "2026-07-13T18:10:58.000Z",
-      "edit_history_tweet_ids": [
-        "2076731122697015608"
-      ],
-      "entities": {
-        "mentions": [
-          {
-            "end": 10,
-            "id": "1376013965675831299",
-            "start": 3,
-            "username": "liu8in"
-          },
-          {
-            "end": 95,
-            "id": "2050178881416843264",
-            "start": 82,
-            "username": "HyperFrames_"
-          }
-        ]
-      },
-      "id": "2076731122697015608",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 0,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 10
-      },
-      "referenced_tweets": [
-        {
-          "id": "2076531199712149638",
-          "type": "retweeted"
-        }
-      ],
-      "text": "RT @liu8in: mind blown - interactive video will be the natural next evolution for @HyperFrames_"
+      "techtwitter_url": "https://www.techtwitter.com/tweet/12e14b77-fb29-4f95-8688-6e64bd17a734",
+      "index": 10
     }
-  ],
-  "includes": {
-    "users": [
-      {
-        "id": "62894255",
-        "name": "Joe B",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg",
-        "username": "zbutcher",
-        "verified": false,
-        "verified_type": "none"
-      },
-      {
-        "id": "16591288",
-        "name": "martin_casado",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/1556885485888237568/HH1iBQNp_normal.jpg",
-        "username": "martin_casado",
-        "verified": true,
-        "verified_type": "blue"
-      },
-      {
-        "id": "1644401923787726849",
-        "name": "Zephyr",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/1741076613939277824/vs_v9C1j_normal.jpg",
-        "username": "Zephyr_hg",
-        "verified": true,
-        "verified_type": "blue"
-      },
-      {
-        "id": "1001114465692200960",
-        "name": "Runway",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/1999115192232292353/zOq5-uwB_normal.jpg",
-        "username": "runwayml",
-        "verified": true,
-        "verified_type": "business"
-      },
-      {
-        "id": "26743780",
-        "name": "Luke The Dev",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/1978432948836749312/hfXIZ_5S_normal.jpg",
-        "username": "iamlukethedev",
-        "verified": true,
-        "verified_type": "blue"
-      },
-      {
-        "id": "2023431001524072449",
-        "name": "clankr",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/2063347037966671872/VFpHBAn8_normal.jpg",
-        "username": "clankrmedia",
-        "verified": true,
-        "verified_type": "blue"
-      },
-      {
-        "id": "16292242",
-        "name": "Alf",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/2052383197174841345/KzLfyBtr_normal.jpg",
-        "username": "auf",
-        "verified": false,
-        "verified_type": "none"
-      },
-      {
-        "id": "1261860420333244416",
-        "name": "AppleTrack",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/1621211304668143616/vxR4cnGB_normal.jpg",
-        "username": "appltrack",
-        "verified": true,
-        "verified_type": "blue"
-      },
-      {
-        "id": "2865522604",
-        "name": "Isa",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/1909282760583266304/AebWzO5g_normal.jpg",
-        "username": "isausmanov",
-        "verified": true,
-        "verified_type": "blue"
-      },
-      {
-        "id": "1365020011123773442",
-        "name": "Teknium 🪽",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/1642401912648777728/2KFikPsE_normal.jpg",
-        "username": "Teknium",
-        "verified": true,
-        "verified_type": "blue"
-      },
-      {
-        "id": "1130161200191303681",
-        "name": "el.cine",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/1793460098867838976/hoeoWt9M_normal.jpg",
-        "username": "EHuanglu",
-        "verified": true,
-        "verified_type": "blue"
-      },
-      {
-        "id": "702762026",
-        "name": "꧁𝔓x𝔞tt𝔯ic𝔦olex56_贵族🇨🇱🐾(•̀ᴗ•́)و꧂🐾",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/2051375070019198976/fGcQzfvj_normal.jpg",
-        "username": "STudy017aq",
-        "verified": false,
-        "verified_type": "none"
-      },
-      {
-        "id": "525808515",
-        "name": "Jurassic World",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/2001367292849090560/X3awPXof_normal.jpg",
-        "username": "JurassicWorld",
-        "verified": true,
-        "verified_type": "business"
-      },
-      {
-        "id": "1944528500565905408",
-        "name": "Sam Wasserman",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/2045107826130046976/ggHhR0Fh_normal.jpg",
-        "username": "SamJWasserman",
-        "verified": true,
-        "verified_type": "blue"
-      },
-      {
-        "id": "1376013965675831299",
-        "name": "Bin Liu",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/1627970921108742144/2U2CnUQj_normal.jpg",
-        "username": "liu8in",
-        "verified": true,
-        "verified_type": "blue"
-      },
-      {
-        "id": "3033318460",
-        "name": "Ray Velez",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/2076065943277719552/QdRhOZuW_normal.jpg",
-        "username": "pascowebdesigns",
-        "verified": true,
-        "verified_type": "blue"
-      },
-      {
-        "id": "1615619424555524096",
-        "name": "Brittani Natali",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/1888169528112087040/nyBNA3R3_normal.jpg",
-        "username": "BrittaniNatali",
-        "verified": true,
-        "verified_type": "blue"
-      }
-    ],
-    "media": [
-      {
-        "height": 1080,
-        "media_key": "13_2076405553065021440",
-        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076405553065021440/img/8MEc0oNH-oqVmBye.jpg",
-        "public_metrics": {
-          "view_count": 40036
-        },
-        "type": "video",
-        "width": 1920
-      },
-      {
-        "height": 946,
-        "media_key": "13_2076678235278954496",
-        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076678235278954496/img/HAEIH74J-Zi7EXll.jpg",
-        "public_metrics": {
-          "view_count": 10388
-        },
-        "type": "video",
-        "width": 2206
-      },
-      {
-        "height": 2160,
-        "media_key": "13_2076497266270142464",
-        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076497266270142464/img/lnVSq_0h6OzChtZg.jpg",
-        "public_metrics": {
-          "view_count": 1739
-        },
-        "type": "video",
-        "width": 3584
-      },
-      {
-        "height": 1080,
-        "media_key": "13_2076593063309246465",
-        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076593063309246465/img/Jd2lWU-vn2CD0rp0.jpg",
-        "public_metrics": {
-          "view_count": 212296
-        },
-        "type": "video",
-        "width": 1920
-      },
-      {
-        "height": 1080,
-        "media_key": "7_1887181350639198208",
-        "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/1887181350639198208/pu/img/LvFNUfykBi2ScK9a.jpg",
-        "public_metrics": {
-          "view_count": 423898
-        },
-        "type": "video",
-        "width": 1920
-      },
-      {
-        "height": 1092,
-        "media_key": "3_2076438737916178432",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HND-B9tasAA8666.jpg",
-        "width": 1960
-      },
-      {
-        "height": 1920,
-        "media_key": "13_2076717203265880064",
-        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076717203265880064/img/OGc8aM2JhyXL9Y19.jpg",
-        "public_metrics": {
-          "view_count": 65532
-        },
-        "type": "video",
-        "width": 1080
-      },
-      {
-        "height": 1789,
-        "media_key": "3_2076467390393802752",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNEYFwga4AAReuo.jpg",
-        "width": 1341
-      },
-      {
-        "height": 1789,
-        "media_key": "3_2076467426393468928",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNEYH2naMAAhEqS.jpg",
-        "width": 1341
-      },
-      {
-        "height": 1043,
-        "media_key": "3_2076467477396303872",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNEYK0nbsAAmmsB.jpg",
-        "width": 575
-      },
-      {
-        "height": 1789,
-        "media_key": "3_2076467556949614592",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNEYPc-a4AAZAJR.jpg",
-        "width": 1007
-      },
-      {
-        "height": 2500,
-        "media_key": "13_2076418848551735296",
-        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076418848551735296/img/BdutfbphK1cjve63.jpg",
-        "public_metrics": {
-          "view_count": 664361
-        },
-        "type": "video",
-        "width": 3312
-      },
-      {
-        "height": 702,
-        "media_key": "13_2076722274275622912",
-        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076722274275622912/img/wlidAqsDmtbPJfoH.jpg",
-        "public_metrics": {
-          "view_count": 775933
-        },
-        "type": "video",
-        "width": 1080
-      },
-      {
-        "height": 1350,
-        "media_key": "3_2076714261766635520",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNH4nkCWgAA80xH.jpg",
-        "width": 1080
-      },
-      {
-        "height": 710,
-        "media_key": "3_2076739200226099200",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNIPTLCbAAA5aIz.jpg",
-        "width": 1718
-      },
-      {
-        "height": 768,
-        "media_key": "3_2076737686749249536",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNIN7E5bAAAWDnq.jpg",
-        "width": 1818
-      },
-      {
-        "height": 700,
-        "media_key": "3_2076736182172753920",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNIMjf6boAAvmV5.jpg",
-        "width": 1694
-      },
-      {
-        "height": 326,
-        "media_key": "3_2076734342777516032",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNIK4bobsAADfck.png",
-        "width": 508
-      },
-      {
-        "height": 1080,
-        "media_key": "13_2076209460293627904",
-        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076209460293627904/img/CxbycYwGm7qZSfTI.jpg",
-        "public_metrics": {
-          "view_count": 3995
-        },
-        "type": "video",
-        "width": 1920
-      },
-      {
-        "height": 2160,
-        "media_key": "13_2073189784743493632",
-        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2073189784743493632/img/Ows8nHJ9CNUI3kJH.jpg",
-        "public_metrics": {
-          "view_count": 4411
-        },
-        "type": "video",
-        "width": 3620
-      },
-      {
-        "height": 1080,
-        "media_key": "13_2076474777020309504",
-        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076474777020309504/img/nYQtrBP8x2baza1E.jpg",
-        "public_metrics": {
-          "view_count": 40754
-        },
-        "type": "video",
-        "width": 1920
-      },
-      {
-        "height": 1080,
-        "media_key": "13_2076708212146098176",
-        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076708212146098176/img/BMaDmtOv7n-ExmVT.jpg",
-        "public_metrics": {
-          "view_count": 9304
-        },
-        "type": "video",
-        "width": 1920
-      }
-    ],
-    "tweets": [
-      {
-        "author_id": "16591288",
-        "conversation_id": "2076735097026548161",
-        "created_at": "2026-07-13T18:26:45.000Z",
-        "edit_history_tweet_ids": [
-          "2076735097026548161"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "x.com/BrittaniNatali…",
-              "end": 176,
-              "expanded_url": "https://twitter.com/BrittaniNatali/status/2076708268840493560",
-              "start": 153,
-              "url": "https://t.co/V8EInYTEmh"
-            }
-          ]
-        },
-        "id": "2076735097026548161",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 93,
-          "impression_count": 21801,
-          "like_count": 238,
-          "quote_count": 2,
-          "reply_count": 10,
-          "retweet_count": 11
-        },
-        "referenced_tweets": [
-          {
-            "id": "2076708268840493560",
-            "type": "quoted"
-          }
-        ],
-        "text": "This is incredible. Brittani is an artist, not a developer.\n\nBut with Fable in Cursor (plus a lot of her art) she's managed a large, immersive 3D world. https://t.co/V8EInYTEmh"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "13_2076405553065021440"
-          ]
-        },
-        "author_id": "1644401923787726849",
-        "conversation_id": "2076405725157298441",
-        "created_at": "2026-07-12T20:37:57.000Z",
-        "edit_history_tweet_ids": [
-          "2076405725157298441"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "pic.x.com/tOOAaSMsBK",
-              "end": 303,
-              "expanded_url": "https://x.com/Zephyr_hg/status/2076405725157298441/video/1",
-              "media_key": "13_2076405553065021440",
-              "start": 280,
-              "url": "https://t.co/tOOAaSMsBK"
-            },
-            {
-              "display_url": "x.com/Zephyr_hg/stat…",
-              "end": 327,
-              "expanded_url": "https://twitter.com/Zephyr_hg/status/2070171729373118742",
-              "start": 304,
-              "url": "https://t.co/gYp19WiEAC"
-            }
-          ]
-        },
-        "id": "2076405725157298441",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 2615,
-          "impression_count": 157248,
-          "like_count": 941,
-          "quote_count": 4,
-          "reply_count": 33,
-          "retweet_count": 113
-        },
-        "referenced_tweets": [
-          {
-            "id": "2070171729373118742",
-            "type": "quoted"
-          }
-        ],
-        "text": "Jacob Bank, former Google product lead:\n\n\"Let's say I had four people at $12,500 per month each. That would be $50,000 a month, and my AI bill is $500 a month.\"\n\nHe runs 40 AI marketing agents as the only marketing person at his company.\n\nIn a 15-minute talk he walks through the https://t.co/tOOAaSMsBK https://t.co/gYp19WiEAC"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "13_2076678235278954496"
-          ]
-        },
-        "author_id": "1001114465692200960",
-        "conversation_id": "2076679161070891218",
-        "created_at": "2026-07-13T14:44:29.000Z",
-        "edit_history_tweet_ids": [
-          "2076679161070891218"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "pic.x.com/XLnHlzvtdx",
-              "end": 304,
-              "expanded_url": "https://x.com/runwayml/status/2076679161070891218/video/1",
-              "media_key": "13_2076678235278954496",
-              "start": 281,
-              "url": "https://t.co/XLnHlzvtdx"
-            }
-          ]
-        },
-        "id": "2076679161070891218",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 115,
-          "impression_count": 53239,
-          "like_count": 264,
-          "quote_count": 13,
-          "reply_count": 20,
-          "retweet_count": 38
-        },
-        "text": "Everyone. Every object. Everything has a story to tell. With Runway, you can share yours, no matter what it is. \n\nFLICKER is a short film about a lamp with a past. Imperfect and all-but-forgotten, FLICKER tells the story of what it means to bring light to others lives.\n\nMake your https://t.co/XLnHlzvtdx"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "13_2076497266270142464"
-          ]
-        },
-        "author_id": "26743780",
-        "conversation_id": "2076498531867906070",
-        "created_at": "2026-07-13T02:46:44.000Z",
-        "edit_history_tweet_ids": [
-          "2076498531867906070"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "pic.x.com/fG9GTb4LMy",
-              "end": 301,
-              "expanded_url": "https://x.com/iamlukethedev/status/2076498531867906070/video/1",
-              "media_key": "13_2076497266270142464",
-              "start": 278,
-              "url": "https://t.co/fG9GTb4LMy"
-            },
-            {
-              "display_url": "x.com/iamlukethedev/…",
-              "end": 325,
-              "expanded_url": "https://x.com/iamlukethedev/status/2073190191502881269",
-              "start": 302,
-              "url": "https://t.co/54CanBVGkT"
-            }
-          ]
-        },
-        "id": "2076498531867906070",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 15,
-          "impression_count": 6744,
-          "like_count": 55,
-          "quote_count": 1,
-          "reply_count": 10,
-          "retweet_count": 2
-        },
-        "referenced_tweets": [
-          {
-            "id": "2073190191502881269",
-            "type": "quoted"
-          }
-        ],
-        "text": "I made restarting Hermes Gateway playable\n\nInstead of opening a terminal…\n\nI walk into Hermes Agora, control my player, and restart the gateway from the 3D office\n\nCompletely unnecessary\n\nWay more fun 😂\n\nThis is the idea behind Hermes Agora:\nturn agent operations into a visual https://t.co/fG9GTb4LMy https://t.co/54CanBVGkT"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "13_2076593063309246465"
-          ]
-        },
-        "author_id": "2023431001524072449",
-        "conversation_id": "2076593164744376707",
-        "created_at": "2026-07-13T09:02:46.000Z",
-        "edit_history_tweet_ids": [
-          "2076593164744376707"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "pic.x.com/M2WzvFCoLO",
-              "end": 291,
-              "expanded_url": "https://x.com/clankrmedia/status/2076593164744376707/video/1",
-              "media_key": "13_2076593063309246465",
-              "start": 268,
-              "url": "https://t.co/M2WzvFCoLO"
-            }
-          ]
-        },
-        "id": "2076593164744376707",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 1959,
-          "impression_count": 873947,
-          "like_count": 4308,
-          "quote_count": 309,
-          "reply_count": 171,
-          "retweet_count": 530
-        },
-        "text": "Researchers built a soft floating robot for indoor interaction.\n\nIt uses helium and flapping fins instead of propellers.\n\nThe result is quiet, lightweight, and safe to touch.\n\nIt can follow people, give reminders, and act as a study buddy.\n\nPublished at ACM DIS 2026. https://t.co/M2WzvFCoLO"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "7_1887181350639198208"
-          ],
-          "media_source_tweet_id": [
-            "1887181471158296743"
-          ]
-        },
-        "author_id": "16292242",
-        "conversation_id": "2076638860621086822",
-        "created_at": "2026-07-13T12:04:21.000Z",
-        "edit_history_tweet_ids": [
-          "2076638860621086822"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "pic.x.com/4hibCb3mLr",
-              "end": 182,
-              "expanded_url": "https://x.com/auf/status/1887181471158296743/video/1",
-              "media_key": "7_1887181350639198208",
-              "start": 159,
-              "url": "https://t.co/4hibCb3mLr"
-            }
-          ]
-        },
-        "id": "2076638860621086822",
-        "lang": "pt",
-        "public_metrics": {
-          "bookmark_count": 2101,
-          "impression_count": 881500,
-          "like_count": 66930,
-          "quote_count": 305,
-          "reply_count": 193,
-          "retweet_count": 6406
-        },
-        "text": "Obrigado, Sam Neill, por olhar pra uma paisagem vazia com tanta emoção que me fez acreditar, naquela sala escura de cinema em 1993, que dinossauros eram reais https://t.co/4hibCb3mLr"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "3_2076438737916178432"
-          ]
-        },
-        "author_id": "1261860420333244416",
-        "conversation_id": "2076439304516300816",
-        "created_at": "2026-07-12T22:51:23.000Z",
-        "edit_history_tweet_ids": [
-          "2076439304516300816"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "pic.x.com/7162RWZjpN",
-              "end": 163,
-              "expanded_url": "https://x.com/appltrack/status/2076439304516300816/photo/1",
-              "media_key": "3_2076438737916178432",
-              "start": 140,
-              "url": "https://t.co/7162RWZjpN"
-            }
-          ]
-        },
-        "id": "2076439304516300816",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 735,
-          "impression_count": 1085329,
-          "like_count": 6864,
-          "quote_count": 247,
-          "reply_count": 366,
-          "retweet_count": 346
-        },
-        "text": "Apple's M7 Ultra chip coming in 2029 is rumored to support 1.5TB of RAM.\n\nThis would make the processor much more capable for on-device AI. https://t.co/7162RWZjpN"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "13_2076717203265880064"
-          ]
-        },
-        "author_id": "2865522604",
-        "conversation_id": "2076719167810703840",
-        "created_at": "2026-07-13T17:23:27.000Z",
-        "edit_history_tweet_ids": [
-          "2076719167810703840"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "pic.x.com/B0PGweIHSx",
-              "end": 285,
-              "expanded_url": "https://x.com/isausmanov/status/2076719167810703840/video/1",
-              "media_key": "13_2076717203265880064",
-              "start": 262,
-              "url": "https://t.co/B0PGweIHSx"
-            }
-          ]
-        },
-        "id": "2076719167810703840",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 1305,
-          "impression_count": 165808,
-          "like_count": 1261,
-          "quote_count": 19,
-          "reply_count": 101,
-          "retweet_count": 46
-        },
-        "text": "The agentic phone that won OpenAI Hackathon is replacing my iPhone feature by feature.\n\nFound Amjad Masad’s contact, emailed Paul Graham, and called on my behalf to reschedule a meeting.\n\nIts KPI is how little time I have to spend on it while getting more done. https://t.co/B0PGweIHSx"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "3_2076467390393802752",
-            "3_2076467426393468928",
-            "3_2076467477396303872",
-            "3_2076467556949614592"
-          ]
-        },
-        "author_id": "1365020011123773442",
-        "conversation_id": "2076476335950868708",
-        "created_at": "2026-07-13T01:18:32.000Z",
-        "edit_history_tweet_ids": [
-          "2076476335950868708"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "pic.x.com/MSnEwaBeA5",
-              "end": 302,
-              "expanded_url": "https://x.com/Teknium/status/2076476335950868708/photo/1",
-              "media_key": "3_2076467390393802752",
-              "start": 279,
-              "url": "https://t.co/MSnEwaBeA5"
-            },
-            {
-              "display_url": "pic.x.com/MSnEwaBeA5",
-              "end": 302,
-              "expanded_url": "https://x.com/Teknium/status/2076476335950868708/photo/1",
-              "media_key": "3_2076467426393468928",
-              "start": 279,
-              "url": "https://t.co/MSnEwaBeA5"
-            },
-            {
-              "display_url": "pic.x.com/MSnEwaBeA5",
-              "end": 302,
-              "expanded_url": "https://x.com/Teknium/status/2076476335950868708/photo/1",
-              "media_key": "3_2076467477396303872",
-              "start": 279,
-              "url": "https://t.co/MSnEwaBeA5"
-            },
-            {
-              "display_url": "pic.x.com/MSnEwaBeA5",
-              "end": 302,
-              "expanded_url": "https://x.com/Teknium/status/2076476335950868708/photo/1",
-              "media_key": "3_2076467556949614592",
-              "start": 279,
-              "url": "https://t.co/MSnEwaBeA5"
-            }
-          ]
-        },
-        "id": "2076476335950868708",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 80,
-          "impression_count": 132086,
-          "like_count": 4844,
-          "quote_count": 9,
-          "reply_count": 857,
-          "retweet_count": 40
-        },
-        "text": "Hey everyone. I haven't been very responsive on here the last week.\n\nMy dog, Link, who I've raised since he was a puppy over the last 13 years, passed away yesterday after being in the vet ER's ICU since last Wednesday for heart failure.\n\nI put together some of my favorite pics https://t.co/MSnEwaBeA5"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "13_2076418848551735296"
-          ]
-        },
-        "author_id": "1130161200191303681",
-        "conversation_id": "2076419430654128449",
-        "created_at": "2026-07-12T21:32:24.000Z",
-        "edit_history_tweet_ids": [
-          "2076419430654128449"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "pic.x.com/XxQoY9B6b7",
-              "end": 65,
-              "expanded_url": "https://x.com/EHuanglu/status/2076419430654128449/video/1",
-              "media_key": "13_2076418848551735296",
-              "start": 42,
-              "url": "https://t.co/XxQoY9B6b7"
-            }
-          ]
-        },
-        "id": "2076419430654128449",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 2581,
-          "impression_count": 1558875,
-          "like_count": 18205,
-          "quote_count": 342,
-          "reply_count": 567,
-          "retweet_count": 1564
-        },
-        "text": "sam altman was caught copying apple in 4k https://t.co/XxQoY9B6b7"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "13_2076722274275622912"
-          ]
-        },
-        "author_id": "702762026",
-        "conversation_id": "2076722355284394366",
-        "created_at": "2026-07-13T17:36:07.000Z",
-        "edit_history_tweet_ids": [
-          "2076722355284394366"
-        ],
-        "entities": {
-          "hashtags": [
-            {
-              "end": 39,
-              "start": 30,
-              "tag": "Samneill"
-            },
-            {
-              "end": 53,
-              "start": 40,
-              "tag": "jurassicpark"
-            },
-            {
-              "end": 68,
-              "start": 54,
-              "tag": "jurassicworld"
-            },
-            {
-              "end": 78,
-              "start": 69,
-              "tag": "dinosaur"
-            },
-            {
-              "end": 87,
-              "start": 79,
-              "tag": "tribute"
-            }
-          ],
-          "urls": [
-            {
-              "display_url": "pic.x.com/3dUHm2bNhz",
-              "end": 111,
-              "expanded_url": "https://x.com/STudy017aq/status/2076722355284394366/video/1",
-              "media_key": "13_2076722274275622912",
-              "start": 88,
-              "url": "https://t.co/3dUHm2bNhz"
-            }
-          ]
-        },
-        "id": "2076722355284394366",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 3403,
-          "impression_count": 1354527,
-          "like_count": 43603,
-          "quote_count": 310,
-          "reply_count": 384,
-          "retweet_count": 6735
-        },
-        "text": "RIP Sam Neill and Farewell 🤍\n\n#Samneill #jurassicpark #jurassicworld #dinosaur #tribute https://t.co/3dUHm2bNhz"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "3_2076714261766635520"
-          ]
-        },
-        "author_id": "525808515",
-        "conversation_id": "2076714282746605882",
-        "created_at": "2026-07-13T17:04:03.000Z",
-        "edit_history_tweet_ids": [
-          "2076714282746605882"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "pic.x.com/rAMpNA07B7",
-              "end": 91,
-              "expanded_url": "https://x.com/JurassicWorld/status/2076714282746605882/photo/1",
-              "media_key": "3_2076714261766635520",
-              "start": 68,
-              "url": "https://t.co/rAMpNA07B7"
-            }
-          ]
-        },
-        "id": "2076714282746605882",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 2348,
-          "impression_count": 853647,
-          "like_count": 82977,
-          "quote_count": 722,
-          "reply_count": 416,
-          "retweet_count": 16546
-        },
-        "text": "Rest in peace, Sam Neill. Thank you for bringing Dr. Grant to life. https://t.co/rAMpNA07B7"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "13_2076209460293627904"
-          ]
-        },
-        "author_id": "1944528500565905408",
-        "conversation_id": "2076683075191234692",
-        "created_at": "2026-07-13T15:00:02.000Z",
-        "edit_history_tweet_ids": [
-          "2076683075191234692"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "description": "Wasserman's Filmmaker Suite — Blockout, Motion Previs Studio, Stem Studio, and the Unofficial DaVinci MCP: AI-native filmmaking from first blocking to final mix. - wassermanproductions/wass...",
-              "display_url": "github.com/wassermanprodu…",
-              "end": 278,
-              "expanded_url": "https://github.com/wassermanproductions/wassermans-filmmaker-suite",
-              "images": [
-                {
-                  "height": 600,
-                  "url": "https://pbs.twimg.com/news_img/2076683081558138880/4AY6BxTw?format=jpg&name=orig",
-                  "width": 1200
-                },
-                {
-                  "height": 150,
-                  "url": "https://pbs.twimg.com/news_img/2076683081558138880/4AY6BxTw?format=jpg&name=150x150",
-                  "width": 150
-                }
-              ],
-              "start": 255,
-              "status": 200,
-              "title": "GitHub - wassermanproductions/wassermans-filmmaker-suite: Wasserman's Filmmaker Suite — Blockout, Motion Previs Studio, Stem Studio, and the Unofficial DaVinci MCP: AI-native filmmaking from first blocking to final mix.",
-              "unwound_url": "https://github.com/wassermanproductions/wassermans-filmmaker-suite",
-              "url": "https://t.co/cPjjaYMZOY"
-            },
-            {
-              "display_url": "pic.x.com/P2MfmiDf6b",
-              "end": 302,
-              "expanded_url": "https://x.com/SamJWasserman/status/2076683075191234692/video/1",
-              "media_key": "13_2076209460293627904",
-              "start": 279,
-              "url": "https://t.co/P2MfmiDf6b"
-            }
-          ]
-        },
-        "id": "2076683075191234692",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 207,
-          "impression_count": 16518,
-          "like_count": 171,
-          "quote_count": 4,
-          "reply_count": 15,
-          "retweet_count": 21
-        },
-        "text": "Full Suite - All 4 open source + free apps/mcps I released this past week can now be found with one link: \n\nPlease find blockout, motion previs studio, stem studio, and my Davinci Mcp are now together in Wasserman's Filmmaker Suite. Link and video below. https://t.co/cPjjaYMZOY https://t.co/P2MfmiDf6b"
-      },
-      {
-        "author_id": "1376013965675831299",
-        "conversation_id": "2076531199712149638",
-        "created_at": "2026-07-13T04:56:32.000Z",
-        "edit_history_tweet_ids": [
-          "2076531199712149638"
-        ],
-        "entities": {
-          "mentions": [
-            {
-              "end": 83,
-              "id": "2050178881416843264",
-              "start": 70,
-              "username": "HyperFrames_"
-            }
-          ],
-          "urls": [
-            {
-              "display_url": "x.com/pascowebdesign…",
-              "end": 107,
-              "expanded_url": "https://twitter.com/pascowebdesigns/status/2076475853542961214",
-              "start": 84,
-              "url": "https://t.co/J00h6WfZpl"
-            }
-          ]
-        },
-        "id": "2076531199712149638",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 248,
-          "impression_count": 24044,
-          "like_count": 208,
-          "quote_count": 0,
-          "reply_count": 4,
-          "retweet_count": 10
-        },
-        "referenced_tweets": [
-          {
-            "id": "2076475853542961214",
-            "type": "quoted"
-          }
-        ],
-        "text": "mind blown - interactive video will be the natural next evolution for @HyperFrames_ https://t.co/J00h6WfZpl"
-      },
-      {
-        "article": {
-          "title": "The Skill Quietly Minting The First Solo Millionaires Of The AI Era"
-        },
-        "author_id": "1644401923787726849",
-        "conversation_id": "2070171729373118742",
-        "created_at": "2026-06-25T15:46:16.000Z",
-        "edit_history_tweet_ids": [
-          "2070171729373118742"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "x.com/i/article/2070…",
-              "end": 23,
-              "expanded_url": "http://x.com/i/article/2070083414510702592",
-              "start": 0,
-              "status": 500,
-              "unwound_url": "https://x.com/i/article/2070083414510702592",
-              "url": "https://t.co/wIRf96S8OR"
-            }
-          ]
-        },
-        "id": "2070171729373118742",
-        "lang": "zxx",
-        "public_metrics": {
-          "bookmark_count": 3552,
-          "impression_count": 1588009,
-          "like_count": 927,
-          "quote_count": 15,
-          "reply_count": 26,
-          "retweet_count": 110
-        },
-        "text": "https://t.co/wIRf96S8OR"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "13_2073189784743493632"
-          ]
-        },
-        "author_id": "26743780",
-        "conversation_id": "2073190191502881269",
-        "created_at": "2026-07-03T23:40:34.000Z",
-        "edit_history_tweet_ids": [
-          "2073190191502881269"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "pic.x.com/AutV4is1wt",
-              "end": 299,
-              "expanded_url": "https://x.com/iamlukethedev/status/2073190191502881269/video/1",
-              "media_key": "13_2073189784743493632",
-              "start": 276,
-              "url": "https://t.co/AutV4is1wt"
-            }
-          ]
-        },
-        "id": "2073190191502881269",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 33,
-          "impression_count": 21654,
-          "like_count": 116,
-          "quote_count": 1,
-          "reply_count": 32,
-          "retweet_count": 11
-        },
-        "text": "I gave my AI agents guns\n\nHermes Agora now has Anger Mode\n\nProbably a bad idea but GTA VI is coming soon so why not?\n\nSame office\nSame agents\nSame desks\n\nExcept now you can switch modes and turn the entire workspace into a destructible playground\n\nShoot furniture\nBreak desks https://t.co/AutV4is1wt"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "13_2076474777020309504"
-          ]
-        },
-        "author_id": "3033318460",
-        "conversation_id": "2076475853542961214",
-        "created_at": "2026-07-13T01:16:37.000Z",
-        "edit_history_tweet_ids": [
-          "2076475853542961214"
-        ],
-        "entities": {
-          "mentions": [
-            {
-              "end": 116,
-              "id": "2050178881416843264",
-              "start": 103,
-              "username": "HyperFrames_"
-            },
-            {
-              "end": 142,
-              "id": "66939834",
-              "start": 130,
-              "username": "equinusocio"
-            }
-          ],
-          "urls": [
-            {
-              "display_url": "pic.x.com/tnHc72zDFg",
-              "end": 208,
-              "expanded_url": "https://x.com/pascowebdesigns/status/2076475853542961214/video/1",
-              "media_key": "13_2076474777020309504",
-              "start": 185,
-              "url": "https://t.co/tnHc72zDFg"
-            }
-          ]
-        },
-        "id": "2076475853542961214",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 1587,
-          "impression_count": 139111,
-          "like_count": 1400,
-          "quote_count": 16,
-          "reply_count": 51,
-          "retweet_count": 116
-        },
-        "text": "HTML isn't just markup anymore.\n\nFor AI agents, it's becoming the best visualization layer.\n\nMade with @HyperFrames_ \nShoutout to @equinusocio for the css mask inspo\n\n🔊 Don't mute this https://t.co/tnHc72zDFg"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "13_2076708212146098176"
-          ]
-        },
-        "author_id": "1615619424555524096",
-        "conversation_id": "2076708268840493560",
-        "created_at": "2026-07-13T16:40:09.000Z",
-        "edit_history_tweet_ids": [
-          "2076708268840493560"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "display_url": "pic.x.com/FT6QU9Qyw6",
-              "end": 56,
-              "expanded_url": "https://x.com/BrittaniNatali/status/2076708268840493560/video/1",
-              "media_key": "13_2076708212146098176",
-              "start": 33,
-              "url": "https://t.co/FT6QU9Qyw6"
-            }
-          ]
-        },
-        "id": "2076708268840493560",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 131,
-          "impression_count": 36755,
-          "like_count": 260,
-          "quote_count": 3,
-          "reply_count": 22,
-          "retweet_count": 18
-        },
-        "text": "World Labs + Fable + Threejs 😮‍💨 https://t.co/FT6QU9Qyw6"
-      }
-    ]
-  },
-  "meta": {
-    "newest_id": "2076914105664016617",
-    "next_token": "b26v89c19zqg8o3juetiey2rndcfh2kd0r91aijh171bx",
-    "oldest_id": "2076731122697015608",
-    "result_count": 20
-  }
+  ]
 }
