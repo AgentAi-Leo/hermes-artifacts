@@ -1,7 +1,13 @@
 {
-  "saved_at": "2026-07-14T07:30:10.968314+00:00",
+  "saved_at": "2026-07-14T07:50:55.158211+00:00",
   "query": "from:zbutcher",
   "count": 20,
+  "kind_counts": {
+    "repost": 5,
+    "quote": 8,
+    "reply": 1,
+    "original": 6
+  },
   "items": [
     {
       "author_id": "62894255",
@@ -179,7 +185,7 @@
       "lang": "en",
       "public_metrics": {
         "bookmark_count": 0,
-        "impression_count": 135,
+        "impression_count": 153,
         "like_count": 1,
         "quote_count": 0,
         "reply_count": 0,
@@ -218,7 +224,7 @@
         "like_count": 0,
         "quote_count": 0,
         "reply_count": 0,
-        "retweet_count": 512
+        "retweet_count": 518
       },
       "referenced_tweets": [
         {
@@ -253,7 +259,7 @@
         "like_count": 0,
         "quote_count": 0,
         "reply_count": 0,
-        "retweet_count": 6174
+        "retweet_count": 6263
       },
       "referenced_tweets": [
         {
@@ -876,7 +882,7 @@
         "media_key": "13_2076405553065021440",
         "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076405553065021440/img/8MEc0oNH-oqVmBye.jpg",
         "public_metrics": {
-          "view_count": 39769
+          "view_count": 39888
         },
         "type": "video",
         "width": 1920
@@ -886,7 +892,7 @@
         "media_key": "13_2076678235278954496",
         "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076678235278954496/img/HAEIH74J-Zi7EXll.jpg",
         "public_metrics": {
-          "view_count": 9864
+          "view_count": 10068
         },
         "type": "video",
         "width": 2206
@@ -896,7 +902,7 @@
         "media_key": "13_2076497266270142464",
         "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076497266270142464/img/lnVSq_0h6OzChtZg.jpg",
         "public_metrics": {
-          "view_count": 1719
+          "view_count": 1723
         },
         "type": "video",
         "width": 3584
@@ -906,7 +912,7 @@
         "media_key": "13_2076593063309246465",
         "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076593063309246465/img/Jd2lWU-vn2CD0rp0.jpg",
         "public_metrics": {
-          "view_count": 203103
+          "view_count": 205864
         },
         "type": "video",
         "width": 1920
@@ -916,7 +922,7 @@
         "media_key": "7_1887181350639198208",
         "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/1887181350639198208/pu/img/LvFNUfykBi2ScK9a.jpg",
         "public_metrics": {
-          "view_count": 404454
+          "view_count": 410943
         },
         "type": "video",
         "width": 1920
@@ -933,7 +939,7 @@
         "media_key": "13_2076717203265880064",
         "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076717203265880064/img/OGc8aM2JhyXL9Y19.jpg",
         "public_metrics": {
-          "view_count": 63756
+          "view_count": 64406
         },
         "type": "video",
         "width": 1080
@@ -971,7 +977,7 @@
         "media_key": "13_2076418848551735296",
         "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076418848551735296/img/BdutfbphK1cjve63.jpg",
         "public_metrics": {
-          "view_count": 656062
+          "view_count": 658708
         },
         "type": "video",
         "width": 3312
@@ -981,7 +987,7 @@
         "media_key": "13_2076722274275622912",
         "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076722274275622912/img/wlidAqsDmtbPJfoH.jpg",
         "public_metrics": {
-          "view_count": 743319
+          "view_count": 754374
         },
         "type": "video",
         "width": 1080
@@ -1026,7 +1032,7 @@
         "media_key": "13_2076209460293627904",
         "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076209460293627904/img/CxbycYwGm7qZSfTI.jpg",
         "public_metrics": {
-          "view_count": 3800
+          "view_count": 3869
         },
         "type": "video",
         "width": 1920
@@ -1054,11 +1060,11 @@
         "id": "2076735097026548161",
         "lang": "en",
         "public_metrics": {
-          "bookmark_count": 91,
-          "impression_count": 20380,
-          "like_count": 226,
+          "bookmark_count": 92,
+          "impression_count": 20793,
+          "like_count": 231,
           "quote_count": 2,
-          "reply_count": 8,
+          "reply_count": 9,
           "retweet_count": 11
         },
         "referenced_tweets": [
@@ -1103,9 +1109,9 @@
         "id": "2076405725157298441",
         "lang": "en",
         "public_metrics": {
-          "bookmark_count": 2585,
-          "impression_count": 156081,
-          "like_count": 933,
+          "bookmark_count": 2596,
+          "impression_count": 156539,
+          "like_count": 938,
           "quote_count": 4,
           "reply_count": 32,
           "retweet_count": 111
@@ -1145,9 +1151,9 @@
         "id": "2076679161070891218",
         "lang": "en",
         "public_metrics": {
-          "bookmark_count": 112,
-          "impression_count": 51152,
-          "like_count": 257,
+          "bookmark_count": 114,
+          "impression_count": 51814,
+          "like_count": 259,
           "quote_count": 13,
           "reply_count": 20,
           "retweet_count": 37
@@ -1189,7 +1195,7 @@
         "lang": "en",
         "public_metrics": {
           "bookmark_count": 15,
-          "impression_count": 6661,
+          "impression_count": 6682,
           "like_count": 55,
           "quote_count": 1,
           "reply_count": 10,
@@ -1230,12 +1236,12 @@
         "id": "2076593164744376707",
         "lang": "en",
         "public_metrics": {
-          "bookmark_count": 1892,
-          "impression_count": 838689,
-          "like_count": 4192,
-          "quote_count": 297,
-          "reply_count": 166,
-          "retweet_count": 512
+          "bookmark_count": 1912,
+          "impression_count": 850169,
+          "like_count": 4231,
+          "quote_count": 300,
+          "reply_count": 168,
+          "retweet_count": 518
         },
         "text": "Researchers built a soft floating robot for indoor interaction.\n\nIt uses helium and flapping fins instead of propellers.\n\nThe result is quiet, lightweight, and safe to touch.\n\nIt can follow people, give reminders, and act as a study buddy.\n\nPublished at ACM DIS 2026. https://t.co/M2WzvFCoLO"
       },
@@ -1269,12 +1275,12 @@
         "id": "2076638860621086822",
         "lang": "pt",
         "public_metrics": {
-          "bookmark_count": 2008,
-          "impression_count": 841755,
-          "like_count": 64440,
-          "quote_count": 298,
-          "reply_count": 183,
-          "retweet_count": 6174
+          "bookmark_count": 2051,
+          "impression_count": 855742,
+          "like_count": 65494,
+          "quote_count": 301,
+          "reply_count": 189,
+          "retweet_count": 6263
         },
         "text": "Obrigado, Sam Neill, por olhar pra uma paisagem vazia com tanta emoção que me fez acreditar, naquela sala escura de cinema em 1993, que dinossauros eram reais https://t.co/4hibCb3mLr"
       },
@@ -1305,9 +1311,9 @@
         "id": "2076439304516300816",
         "lang": "en",
         "public_metrics": {
-          "bookmark_count": 726,
-          "impression_count": 1053385,
-          "like_count": 6839,
+          "bookmark_count": 730,
+          "impression_count": 1063998,
+          "like_count": 6849,
           "quote_count": 246,
           "reply_count": 365,
           "retweet_count": 345
@@ -1341,9 +1347,9 @@
         "id": "2076719167810703840",
         "lang": "en",
         "public_metrics": {
-          "bookmark_count": 1276,
-          "impression_count": 161215,
-          "like_count": 1234,
+          "bookmark_count": 1289,
+          "impression_count": 162920,
+          "like_count": 1240,
           "quote_count": 19,
           "reply_count": 99,
           "retweet_count": 46
@@ -1405,10 +1411,10 @@
         "lang": "en",
         "public_metrics": {
           "bookmark_count": 80,
-          "impression_count": 130902,
-          "like_count": 4826,
+          "impression_count": 131331,
+          "like_count": 4834,
           "quote_count": 9,
-          "reply_count": 853,
+          "reply_count": 854,
           "retweet_count": 40
         },
         "text": "Hey everyone. I haven't been very responsive on here the last week.\n\nMy dog, Link, who I've raised since he was a puppy over the last 13 years, passed away yesterday after being in the vet ER's ICU since last Wednesday for heart failure.\n\nI put together some of my favorite pics https://t.co/MSnEwaBeA5"
@@ -1440,12 +1446,12 @@
         "id": "2076419430654128449",
         "lang": "en",
         "public_metrics": {
-          "bookmark_count": 2564,
-          "impression_count": 1541975,
-          "like_count": 18065,
+          "bookmark_count": 2568,
+          "impression_count": 1547361,
+          "like_count": 18110,
           "quote_count": 340,
-          "reply_count": 563,
-          "retweet_count": 1548
+          "reply_count": 565,
+          "retweet_count": 1553
         },
         "text": "sam altman was caught copying apple in 4k https://t.co/XxQoY9B6b7"
       },
@@ -1503,12 +1509,12 @@
         "id": "2076722355284394366",
         "lang": "en",
         "public_metrics": {
-          "bookmark_count": 3327,
-          "impression_count": 1304673,
-          "like_count": 42536,
+          "bookmark_count": 3355,
+          "impression_count": 1321555,
+          "like_count": 42890,
           "quote_count": 306,
-          "reply_count": 378,
-          "retweet_count": 6587
+          "reply_count": 380,
+          "retweet_count": 6642
         },
         "text": "RIP Sam Neill and Farewell 🤍\n\n#Samneill #jurassicpark #jurassicworld #dinosaur #tribute https://t.co/3dUHm2bNhz"
       },
@@ -1539,12 +1545,12 @@
         "id": "2076714282746605882",
         "lang": "en",
         "public_metrics": {
-          "bookmark_count": 2312,
-          "impression_count": 835427,
-          "like_count": 81496,
-          "quote_count": 716,
-          "reply_count": 406,
-          "retweet_count": 16261
+          "bookmark_count": 2316,
+          "impression_count": 840671,
+          "like_count": 81870,
+          "quote_count": 720,
+          "reply_count": 407,
+          "retweet_count": 16346
         },
         "text": "Rest in peace, Sam Neill. Thank you for bringing Dr. Grant to life. https://t.co/rAMpNA07B7"
       },
@@ -1599,8 +1605,8 @@
         "lang": "en",
         "public_metrics": {
           "bookmark_count": 194,
-          "impression_count": 15603,
-          "like_count": 167,
+          "impression_count": 15876,
+          "like_count": 169,
           "quote_count": 4,
           "reply_count": 15,
           "retweet_count": 21
@@ -1637,7 +1643,7 @@
         "lang": "en",
         "public_metrics": {
           "bookmark_count": 248,
-          "impression_count": 23957,
+          "impression_count": 23988,
           "like_count": 208,
           "quote_count": 0,
           "reply_count": 4,
