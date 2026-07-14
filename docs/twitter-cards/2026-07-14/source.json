@@ -1,26 +1,303 @@
 {
-  "saved_at": "2026-07-14 01:32:00 UTC",
+  "saved_at": "2026-07-14 06:24:24 UTC",
   "query": "from:zbutcher",
   "items": [
     {
       "author_id": "62894255",
-      "conversation_id": "2076791454534635823",
-      "created_at": "2026-07-13T22:10:42.000Z",
+      "conversation_id": "2076914105664016617",
+      "created_at": "2026-07-14T06:18:04.000Z",
       "edit_history_tweet_ids": [
-        "2076791454534635823"
+        "2076914105664016617"
       ],
       "entities": {
-        "urls": [
+        "mentions": [
           {
-            "display_url": "x.com/JurassicWorld/…",
-            "end": 69,
-            "expanded_url": "https://twitter.com/JurassicWorld/status/2076714282746605882",
-            "start": 46,
-            "url": "https://t.co/KoN5Kdmjcv"
+            "end": 17,
+            "id": "16591288",
+            "start": 3,
+            "username": "martin_casado"
           }
         ]
       },
-      "id": "2076791454534635823",
+      "id": "2076914105664016617",
+      "lang": "en",
+      "public_metrics": {
+        "bookmark_count": 0,
+        "impression_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "reply_count": 0,
+        "retweet_count": 10
+      },
+      "referenced_tweets": [
+        {
+          "id": "2076735097026548161",
+          "type": "retweeted"
+        }
+      ],
+      "text": "RT @martin_casado: This is incredible. Brittani is an artist, not a developer.\n\nBut with Fable in Cursor (plus a lot of her art) she's mana…"
+    },
+    {
+      "author_id": "62894255",
+      "conversation_id": "2076853300025299410",
+      "created_at": "2026-07-14T02:16:27.000Z",
+      "edit_history_tweet_ids": [
+        "2076853300025299410"
+      ],
+      "entities": {
+        "hashtags": [
+          {
+            "end": 71,
+            "start": 62,
+            "tag": "aiagents"
+          }
+        ],
+        "urls": [
+          {
+            "display_url": "x.com/Zephyr_hg/stat…",
+            "end": 95,
+            "expanded_url": "https://twitter.com/Zephyr_hg/status/2076405725157298441",
+            "start": 72,
+            "url": "https://t.co/rkwyLhEiV4"
+          }
+        ]
+      },
+      "id": "2076853300025299410",
+      "lang": "en",
+      "public_metrics": {
+        "bookmark_count": 0,
+        "impression_count": 2,
+        "like_count": 0,
+        "quote_count": 0,
+        "reply_count": 0,
+        "retweet_count": 0
+      },
+      "referenced_tweets": [
+        {
+          "id": "2076405725157298441",
+          "type": "quoted"
+        }
+      ],
+      "text": "Interesting watch and cool take on where things are head'n 🤖👍 #aiagents https://t.co/rkwyLhEiV4"
+    },
+    {
+      "author_id": "62894255",
+      "conversation_id": "2076850828728848493",
+      "created_at": "2026-07-14T02:06:38.000Z",
+      "edit_history_tweet_ids": [
+        "2076850828728848493"
+      ],
+      "entities": {
+        "hashtags": [
+          {
+            "end": 144,
+            "start": 141,
+            "tag": "ai"
+          }
+        ],
+        "mentions": [
+          {
+            "end": 34,
+            "id": "1001114465692200960",
+            "start": 25,
+            "username": "runwayml"
+          }
+        ],
+        "urls": [
+          {
+            "display_url": "x.com/runwayml/statu…",
+            "end": 168,
+            "expanded_url": "https://twitter.com/runwayml/status/2076679161070891218",
+            "start": 145,
+            "url": "https://t.co/paowv2aonQ"
+          }
+        ]
+      },
+      "id": "2076850828728848493",
+      "lang": "en",
+      "public_metrics": {
+        "bookmark_count": 0,
+        "impression_count": 8,
+        "like_count": 0,
+        "quote_count": 0,
+        "reply_count": 0,
+        "retweet_count": 0
+      },
+      "referenced_tweets": [
+        {
+          "id": "2076679161070891218",
+          "type": "quoted"
+        }
+      ],
+      "text": "Excellent little story 🎬 @runwayml (as an editor am curious why they never quickly foxed the leg if they had it so long but that's just me 😂 #ai https://t.co/paowv2aonQ"
+    },
+    {
+      "author_id": "62894255",
+      "conversation_id": "2076849721919119406",
+      "created_at": "2026-07-14T02:02:14.000Z",
+      "edit_history_tweet_ids": [
+        "2076849721919119406"
+      ],
+      "entities": {
+        "hashtags": [
+          {
+            "end": 57,
+            "start": 45,
+            "tag": "hermesagent"
+          },
+          {
+            "end": 67,
+            "start": 58,
+            "tag": "aiagents"
+          },
+          {
+            "end": 71,
+            "start": 68,
+            "tag": "ai"
+          }
+        ],
+        "mentions": [
+          {
+            "end": 44,
+            "id": "26743780",
+            "start": 30,
+            "username": "iamlukethedev"
+          }
+        ],
+        "urls": [
+          {
+            "display_url": "x.com/iamlukethedev/…",
+            "end": 99,
+            "expanded_url": "https://twitter.com/iamlukethedev/status/2076498531867906070",
+            "start": 76,
+            "url": "https://t.co/Zit2c2c3a7"
+          }
+        ]
+      },
+      "id": "2076849721919119406",
+      "lang": "en",
+      "public_metrics": {
+        "bookmark_count": 0,
+        "impression_count": 31,
+        "like_count": 1,
+        "quote_count": 0,
+        "reply_count": 0,
+        "retweet_count": 0
+      },
+      "referenced_tweets": [
+        {
+          "id": "2076498531867906070",
+          "type": "quoted"
+        }
+      ],
+      "text": "Looks fun Luke - WELL DONE!!! @iamlukethedev #hermesagent #aiagents #ai.  . https://t.co/Zit2c2c3a7"
+    },
+    {
+      "author_id": "62894255",
+      "conversation_id": "2076847905118531957",
+      "created_at": "2026-07-14T01:55:01.000Z",
+      "edit_history_tweet_ids": [
+        "2076847905118531957"
+      ],
+      "entities": {
+        "mentions": [
+          {
+            "end": 15,
+            "id": "2023431001524072449",
+            "start": 3,
+            "username": "clankrmedia"
+          }
+        ]
+      },
+      "id": "2076847905118531957",
+      "lang": "en",
+      "public_metrics": {
+        "bookmark_count": 0,
+        "impression_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "reply_count": 0,
+        "retweet_count": 493
+      },
+      "referenced_tweets": [
+        {
+          "id": "2076593164744376707",
+          "type": "retweeted"
+        }
+      ],
+      "text": "RT @clankrmedia: Researchers built a soft floating robot for indoor interaction.\n\nIt uses helium and flapping fins instead of propellers.…"
+    },
+    {
+      "author_id": "62894255",
+      "conversation_id": "2076846782336905663",
+      "created_at": "2026-07-14T01:50:33.000Z",
+      "edit_history_tweet_ids": [
+        "2076846782336905663"
+      ],
+      "entities": {
+        "mentions": [
+          {
+            "end": 7,
+            "id": "16292242",
+            "start": 3,
+            "username": "auf"
+          }
+        ]
+      },
+      "id": "2076846782336905663",
+      "lang": "pt",
+      "public_metrics": {
+        "bookmark_count": 0,
+        "impression_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "reply_count": 0,
+        "retweet_count": 5903
+      },
+      "referenced_tweets": [
+        {
+          "id": "2076638860621086822",
+          "type": "retweeted"
+        }
+      ],
+      "text": "RT @auf: Obrigado, Sam Neill, por olhar pra uma paisagem vazia com tanta emoção que me fez acreditar, naquela sala escura de cinema em 1993…"
+    },
+    {
+      "author_id": "62894255",
+      "conversation_id": "2076846398696493383",
+      "created_at": "2026-07-14T01:49:02.000Z",
+      "edit_history_tweet_ids": [
+        "2076846398696493383"
+      ],
+      "entities": {
+        "hashtags": [
+          {
+            "end": 24,
+            "start": 15,
+            "tag": "aiagents"
+          },
+          {
+            "end": 35,
+            "start": 25,
+            "tag": "agenticai"
+          },
+          {
+            "end": 59,
+            "start": 36,
+            "tag": "artificialintelligence"
+          }
+        ],
+        "urls": [
+          {
+            "display_url": "x.com/appltrack/stat…",
+            "end": 83,
+            "expanded_url": "https://twitter.com/appltrack/status/2076439304516300816",
+            "start": 60,
+            "url": "https://t.co/AO8huSHbIR"
+          }
+        ]
+      },
+      "id": "2076846398696493383",
       "lang": "en",
       "public_metrics": {
         "bookmark_count": 0,
@@ -32,554 +309,585 @@
       },
       "referenced_tweets": [
         {
-          "id": "2076714282746605882",
+          "id": "2076439304516300816",
           "type": "quoted"
         }
       ],
-      "text": "😔 Sad day - thank you Sam you will be missed! https://t.co/KoN5Kdmjcv"
+      "text": "Just imagine 🤖🤘#aiagents #agenticai #artificialintelligence https://t.co/AO8huSHbIR"
     },
     {
       "author_id": "62894255",
-      "conversation_id": "2076790907165454782",
-      "created_at": "2026-07-13T22:08:31.000Z",
+      "conversation_id": "2076845726525759611",
+      "created_at": "2026-07-14T01:46:21.000Z",
       "edit_history_tweet_ids": [
-        "2076790907165454782"
+        "2076845726525759611"
       ],
       "entities": {
         "hashtags": [
           {
-            "end": 237,
-            "start": 234,
+            "end": 98,
+            "start": 95,
             "tag": "ai"
           },
           {
-            "end": 247,
-            "start": 238,
-            "tag": "aiagents"
-          },
+            "end": 108,
+            "start": 99,
+            "tag": "aiphones"
+          }
+        ],
+        "urls": [
           {
-            "end": 253,
-            "start": 248,
-            "tag": "tech"
-          },
-          {
-            "end": 266,
-            "start": 254,
-            "tag": "interactive"
-          },
-          {
-            "end": 277,
-            "start": 267,
-            "tag": "immersive"
+            "display_url": "x.com/isausmanov/sta…",
+            "end": 132,
+            "expanded_url": "https://twitter.com/isausmanov/status/2076719167810703840",
+            "start": 109,
+            "url": "https://t.co/JkCrFJ5HjE"
           }
         ]
       },
-      "id": "2076790907165454782",
+      "id": "2076845726525759611",
       "lang": "en",
       "public_metrics": {
-        "bookmark_count": 1,
-        "impression_count": 7,
+        "bookmark_count": 0,
+        "impression_count": 34,
         "like_count": 1,
         "quote_count": 0,
         "reply_count": 0,
-        "retweet_count": 1
-      },
-      "text": "Apologies 4 using X more 4 bookmarking super cool sh^t lately 🤖 there's just SO much fun stuff coming outta firehose here that I want 2revisit so I grab it 😂 will try 2actually post more as I come out of hiding more moving fwd -thx 🤘 #ai #aiagents #tech #interactive #immersive"
-    },
-    {
-      "attachments": {
-        "media_keys": [
-          "3_2076739200226099200"
-        ]
-      },
-      "author_id": "62894255",
-      "conversation_id": "2076739672165040278",
-      "created_at": "2026-07-13T18:44:56.000Z",
-      "edit_history_tweet_ids": [
-        "2076739672165040278"
-      ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 110,
-            "start": 98,
-            "tag": "hermesagent"
-          },
-          {
-            "end": 119,
-            "start": 111,
-            "tag": "aiagent"
-          }
-        ],
-        "urls": [
-          {
-            "display_url": "pic.x.com/KOUNpHURPu",
-            "end": 143,
-            "expanded_url": "https://x.com/zbutcher/status/2076739672165040278/photo/1",
-            "media_key": "3_2076739200226099200",
-            "start": 120,
-            "url": "https://t.co/KOUNpHURPu"
-          }
-        ]
-      },
-      "id": "2076739672165040278",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 12,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
         "retweet_count": 0
-      },
-      "text": "🤖 BOOM! Hermes webninja agent auto-posted 🕵️‍♂️ Dude is not play'n and is and ready for action! 😜 #hermesagent #aiagent https://t.co/KOUNpHURPu"
-    },
-    {
-      "attachments": {
-        "media_keys": [
-          "3_2076737686749249536"
-        ]
-      },
-      "author_id": "62894255",
-      "conversation_id": "2076738003716993118",
-      "created_at": "2026-07-13T18:38:18.000Z",
-      "edit_history_tweet_ids": [
-        "2076738003716993118"
-      ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 95,
-            "start": 83,
-            "tag": "hermesagent"
-          },
-          {
-            "end": 104,
-            "start": 96,
-            "tag": "aiagent"
-          }
-        ],
-        "urls": [
-          {
-            "display_url": "pic.x.com/nLdLa9BUpi",
-            "end": 128,
-            "expanded_url": "https://x.com/zbutcher/status/2076738003716993118/photo/1",
-            "media_key": "3_2076737686749249536",
-            "start": 105,
-            "url": "https://t.co/nLdLa9BUpi"
-          }
-        ]
-      },
-      "id": "2076738003716993118",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 7,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "text": "🤖 BOOM! Hermes research agent auto-posted 👍 Again like she's on Hermes Mountain 🏔️ #hermesagent #aiagent https://t.co/nLdLa9BUpi"
-    },
-    {
-      "attachments": {
-        "media_keys": [
-          "3_2076736182172753920"
-        ]
-      },
-      "author_id": "62894255",
-      "conversation_id": "2076737126016975339",
-      "created_at": "2026-07-13T18:34:49.000Z",
-      "edit_history_tweet_ids": [
-        "2076737126016975339"
-      ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 137,
-            "start": 125,
-            "tag": "hermesagent"
-          },
-          {
-            "end": 146,
-            "start": 138,
-            "tag": "aiagent"
-          }
-        ],
-        "urls": [
-          {
-            "display_url": "pic.x.com/6qXkSOZjhl",
-            "end": 170,
-            "expanded_url": "https://x.com/zbutcher/status/2076737126016975339/photo/1",
-            "media_key": "3_2076736182172753920",
-            "start": 147,
-            "url": "https://t.co/6qXkSOZjhl"
-          }
-        ]
-      },
-      "id": "2076737126016975339",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 2,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "text": "🤖 BOOM! Another fun tweet with hermes pet robot auto-posted 👍 This one makes me laugh 😂 it's like he's on Hermes Mountain 🏔️ #hermesagent #aiagent https://t.co/6qXkSOZjhl"
-    },
-    {
-      "attachments": {
-        "media_keys": [
-          "3_2076734342777516032"
-        ]
-      },
-      "author_id": "62894255",
-      "conversation_id": "2076734827634753850",
-      "created_at": "2026-07-13T18:25:41.000Z",
-      "edit_history_tweet_ids": [
-        "2076734827634753850"
-      ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 73,
-            "start": 61,
-            "tag": "hermesagent"
-          },
-          {
-            "end": 82,
-            "start": 74,
-            "tag": "aiagent"
-          }
-        ],
-        "urls": [
-          {
-            "display_url": "pic.x.com/Y2s91YF5yX",
-            "end": 106,
-            "expanded_url": "https://x.com/zbutcher/status/2076734827634753850/photo/1",
-            "media_key": "3_2076734342777516032",
-            "start": 83,
-            "url": "https://t.co/Y2s91YF5yX"
-          }
-        ]
-      },
-      "id": "2076734827634753850",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 2,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "text": "🤖 BOOM! Tweet with single hermes pet robot pix auto-posted 👍 #hermesagent #aiagent https://t.co/Y2s91YF5yX"
-    },
-    {
-      "author_id": "62894255",
-      "conversation_id": "2076732188020916309",
-      "created_at": "2026-07-13T18:15:12.000Z",
-      "edit_history_tweet_ids": [
-        "2076732188020916309"
-      ],
-      "entities": {
-        "hashtags": [
-          {
-            "end": 159,
-            "start": 147,
-            "tag": "hermesagent"
-          },
-          {
-            "end": 168,
-            "start": 160,
-            "tag": "aigents"
-          }
-        ]
-      },
-      "id": "2076732188020916309",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 4,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 0
-      },
-      "text": "🤖 Shazzaaaammm!!! SUCCESS: Reposts back via ai-agent using xurl 👍 So cool - feels like I'm some sort of digital magic wizard and I'm digg'n it 🪄😂  #hermesagent #aigents"
-    },
-    {
-      "author_id": "62894255",
-      "conversation_id": "2076731124173480273",
-      "created_at": "2026-07-13T18:10:58.000Z",
-      "edit_history_tweet_ids": [
-        "2076731124173480273"
-      ],
-      "entities": {
-        "mentions": [
-          {
-            "end": 17,
-            "id": "1944528500565905408",
-            "start": 3,
-            "username": "SamJWasserman"
-          }
-        ]
-      },
-      "id": "2076731124173480273",
-      "lang": "en",
-      "public_metrics": {
-        "bookmark_count": 0,
-        "impression_count": 0,
-        "like_count": 0,
-        "quote_count": 0,
-        "reply_count": 0,
-        "retweet_count": 16
       },
       "referenced_tweets": [
         {
-          "id": "2076683075191234692",
-          "type": "retweeted"
+          "id": "2076719167810703840",
+          "type": "quoted"
         }
       ],
-      "text": "RT @SamJWasserman: Full Suite - All 4 open source + free apps/mcps I released this past week can now be found with one link: \n\nPlease find…"
+      "text": "Hmmm. some fun stuff goin on here... can easily see how wack are current phones are right now. #ai #aiphones https://t.co/JkCrFJ5HjE"
     }
   ],
   "includes": {
     "media": [
       {
-        "height": 1350,
-        "media_key": "3_2076714261766635520",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNH4nkCWgAA80xH.jpg",
-        "width": 1080
-      },
-      {
-        "height": 710,
-        "media_key": "3_2076739200226099200",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNIPTLCbAAA5aIz.jpg",
-        "width": 1718
-      },
-      {
-        "height": 768,
-        "media_key": "3_2076737686749249536",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNIN7E5bAAAWDnq.jpg",
-        "width": 1818
-      },
-      {
-        "height": 700,
-        "media_key": "3_2076736182172753920",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNIMjf6boAAvmV5.jpg",
-        "width": 1694
-      },
-      {
-        "height": 326,
-        "media_key": "3_2076734342777516032",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HNIK4bobsAADfck.png",
-        "width": 508
-      },
-      {
         "height": 1080,
-        "media_key": "13_2076209460293627904",
-        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076209460293627904/img/CxbycYwGm7qZSfTI.jpg",
+        "media_key": "13_2076405553065021440",
+        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076405553065021440/img/8MEc0oNH-oqVmBye.jpg",
         "public_metrics": {
-          "view_count": 2062
+          "view_count": 39216
         },
         "type": "video",
         "width": 1920
       },
       {
-        "height": 1280,
-        "media_key": "13_2076631183358869504",
-        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076631183358869504/img/ngjXIGkFqgJyu_bc.jpg",
+        "height": 946,
+        "media_key": "13_2076678235278954496",
+        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076678235278954496/img/HAEIH74J-Zi7EXll.jpg",
         "public_metrics": {
-          "view_count": 15692
+          "view_count": 9428
         },
         "type": "video",
-        "width": 720
+        "width": 2206
+      },
+      {
+        "height": 2160,
+        "media_key": "13_2076497266270142464",
+        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076497266270142464/img/lnVSq_0h6OzChtZg.jpg",
+        "public_metrics": {
+          "view_count": 1695
+        },
+        "type": "video",
+        "width": 3584
+      },
+      {
+        "height": 1080,
+        "media_key": "13_2076593063309246465",
+        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076593063309246465/img/Jd2lWU-vn2CD0rp0.jpg",
+        "public_metrics": {
+          "view_count": 194680
+        },
+        "type": "video",
+        "width": 1920
+      },
+      {
+        "height": 1080,
+        "media_key": "7_1887181350639198208",
+        "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/1887181350639198208/pu/img/LvFNUfykBi2ScK9a.jpg",
+        "public_metrics": {
+          "view_count": 385616
+        },
+        "type": "video",
+        "width": 1920
+      },
+      {
+        "height": 1092,
+        "media_key": "3_2076438737916178432",
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HND-B9tasAA8666.jpg",
+        "width": 1960
+      },
+      {
+        "height": 1920,
+        "media_key": "13_2076717203265880064",
+        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076717203265880064/img/OGc8aM2JhyXL9Y19.jpg",
+        "public_metrics": {
+          "view_count": 59716
+        },
+        "type": "video",
+        "width": 1080
+      },
+      {
+        "height": 1789,
+        "media_key": "3_2076467390393802752",
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HNEYFwga4AAReuo.jpg",
+        "width": 1341
+      },
+      {
+        "height": 1789,
+        "media_key": "3_2076467426393468928",
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HNEYH2naMAAhEqS.jpg",
+        "width": 1341
+      },
+      {
+        "height": 1043,
+        "media_key": "3_2076467477396303872",
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HNEYK0nbsAAmmsB.jpg",
+        "width": 575
+      },
+      {
+        "height": 1789,
+        "media_key": "3_2076467556949614592",
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HNEYPc-a4AAZAJR.jpg",
+        "width": 1007
+      },
+      {
+        "height": 2500,
+        "media_key": "13_2076418848551735296",
+        "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076418848551735296/img/BdutfbphK1cjve63.jpg",
+        "public_metrics": {
+          "view_count": 645123
+        },
+        "type": "video",
+        "width": 3312
       }
     ],
     "tweets": [
       {
-        "attachments": {
-          "media_keys": [
-            "3_2076714261766635520"
-          ]
-        },
-        "author_id": "525808515",
-        "conversation_id": "2076714282746605882",
-        "created_at": "2026-07-13T17:04:03.000Z",
+        "author_id": "16591288",
+        "conversation_id": "2076735097026548161",
+        "created_at": "2026-07-13T18:26:45.000Z",
         "edit_history_tweet_ids": [
-          "2076714282746605882"
+          "2076735097026548161"
         ],
         "entities": {
           "urls": [
             {
-              "display_url": "pic.x.com/rAMpNA07B7",
-              "end": 91,
-              "expanded_url": "https://x.com/JurassicWorld/status/2076714282746605882/photo/1",
-              "media_key": "3_2076714261766635520",
-              "start": 68,
-              "url": "https://t.co/rAMpNA07B7"
+              "display_url": "x.com/BrittaniNatali…",
+              "end": 176,
+              "expanded_url": "https://twitter.com/BrittaniNatali/status/2076708268840493560",
+              "start": 153,
+              "url": "https://t.co/V8EInYTEmh"
             }
           ]
         },
-        "id": "2076714282746605882",
+        "id": "2076735097026548161",
         "lang": "en",
         "public_metrics": {
-          "bookmark_count": 1930,
-          "impression_count": 655161,
-          "like_count": 66622,
-          "quote_count": 587,
-          "reply_count": 324,
-          "retweet_count": 13532
-        },
-        "text": "Rest in peace, Sam Neill. Thank you for bringing Dr. Grant to life. https://t.co/rAMpNA07B7"
-      },
-      {
-        "attachments": {
-          "media_keys": [
-            "13_2076209460293627904"
-          ]
-        },
-        "author_id": "1944528500565905408",
-        "conversation_id": "2076683075191234692",
-        "created_at": "2026-07-13T15:00:02.000Z",
-        "edit_history_tweet_ids": [
-          "2076683075191234692"
-        ],
-        "entities": {
-          "urls": [
-            {
-              "description": "Wasserman's Filmmaker Suite — Blockout, Motion Previs Studio, Stem Studio, and the Unofficial DaVinci MCP: AI-native filmmaking from first blocking to final mix. - wassermanproductions/wass...",
-              "display_url": "github.com/wassermanprodu…",
-              "end": 278,
-              "expanded_url": "https://github.com/wassermanproductions/wassermans-filmmaker-suite",
-              "images": [
-                {
-                  "height": 600,
-                  "url": "https://pbs.twimg.com/news_img/2076683081558138880/4AY6BxTw?format=jpg&name=orig",
-                  "width": 1200
-                },
-                {
-                  "height": 150,
-                  "url": "https://pbs.twimg.com/news_img/2076683081558138880/4AY6BxTw?format=jpg&name=150x150",
-                  "width": 150
-                }
-              ],
-              "start": 255,
-              "status": 200,
-              "title": "GitHub - wassermanproductions/wassermans-filmmaker-suite: Wasserman's Filmmaker Suite — Blockout, Motion Previs Studio, Stem Studio, and the Unofficial DaVinci MCP: AI-native filmmaking from first blocking to final mix.",
-              "unwound_url": "https://github.com/wassermanproductions/wassermans-filmmaker-suite",
-              "url": "https://t.co/cPjjaYMZOY"
-            },
-            {
-              "display_url": "pic.x.com/P2MfmiDf6b",
-              "end": 302,
-              "expanded_url": "https://x.com/SamJWasserman/status/2076683075191234692/video/1",
-              "media_key": "13_2076209460293627904",
-              "start": 279,
-              "url": "https://t.co/P2MfmiDf6b"
-            }
-          ]
-        },
-        "id": "2076683075191234692",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 126,
-          "impression_count": 7711,
-          "like_count": 127,
-          "quote_count": 4,
-          "reply_count": 11,
-          "retweet_count": 16
-        },
-        "text": "Full Suite - All 4 open source + free apps/mcps I released this past week can now be found with one link: \n\nPlease find blockout, motion previs studio, stem studio, and my Davinci Mcp are now together in Wasserman's Filmmaker Suite. Link and video below. https://t.co/cPjjaYMZOY https://t.co/P2MfmiDf6b"
-      },
-      {
-        "author_id": "1376013965675831299",
-        "conversation_id": "2076531199712149638",
-        "created_at": "2026-07-13T04:56:32.000Z",
-        "edit_history_tweet_ids": [
-          "2076531199712149638"
-        ],
-        "entities": {
-          "mentions": [
-            {
-              "end": 83,
-              "id": "2050178881416843264",
-              "start": 70,
-              "username": "HyperFrames_"
-            }
-          ],
-          "urls": [
-            {
-              "display_url": "x.com/pascowebdesign…",
-              "end": 107,
-              "expanded_url": "https://twitter.com/pascowebdesigns/status/2076475853542961214",
-              "start": 84,
-              "url": "https://t.co/J00h6WfZpl"
-            }
-          ]
-        },
-        "id": "2076531199712149638",
-        "lang": "en",
-        "public_metrics": {
-          "bookmark_count": 190,
-          "impression_count": 18671,
-          "like_count": 159,
-          "quote_count": 0,
-          "reply_count": 4,
-          "retweet_count": 9
+          "bookmark_count": 82,
+          "impression_count": 18753,
+          "like_count": 210,
+          "quote_count": 2,
+          "reply_count": 8,
+          "retweet_count": 10
         },
         "referenced_tweets": [
           {
-            "id": "2076475853542961214",
+            "id": "2076708268840493560",
             "type": "quoted"
           }
         ],
-        "text": "mind blown - interactive video will be the natural next evolution for @HyperFrames_ https://t.co/J00h6WfZpl"
+        "text": "This is incredible. Brittani is an artist, not a developer.\n\nBut with Fable in Cursor (plus a lot of her art) she's managed a large, immersive 3D world. https://t.co/V8EInYTEmh"
       },
       {
         "attachments": {
           "media_keys": [
-            "13_2076631183358869504"
+            "13_2076405553065021440"
           ]
         },
-        "author_id": "3461819533",
-        "conversation_id": "2076631238870466773",
-        "created_at": "2026-07-13T11:34:03.000Z",
+        "author_id": "1644401923787726849",
+        "conversation_id": "2076405725157298441",
+        "created_at": "2026-07-12T20:37:57.000Z",
         "edit_history_tweet_ids": [
-          "2076631238870466773"
+          "2076405725157298441"
         ],
         "entities": {
           "urls": [
             {
-              "display_url": "pic.x.com/DWmDzL80io",
-              "end": 195,
-              "expanded_url": "https://x.com/impalementd/status/2076631238870466773/video/1",
-              "media_key": "13_2076631183358869504",
-              "start": 172,
-              "url": "https://t.co/DWmDzL80io"
+              "display_url": "pic.x.com/tOOAaSMsBK",
+              "end": 303,
+              "expanded_url": "https://x.com/Zephyr_hg/status/2076405725157298441/video/1",
+              "media_key": "13_2076405553065021440",
+              "start": 280,
+              "url": "https://t.co/tOOAaSMsBK"
+            },
+            {
+              "display_url": "x.com/Zephyr_hg/stat…",
+              "end": 327,
+              "expanded_url": "https://twitter.com/Zephyr_hg/status/2070171729373118742",
+              "start": 304,
+              "url": "https://t.co/gYp19WiEAC"
             }
           ]
         },
-        "id": "2076631238870466773",
-        "lang": "ko",
+        "id": "2076405725157298441",
+        "lang": "en",
         "public_metrics": {
-          "bookmark_count": 589,
-          "impression_count": 38546,
-          "like_count": 645,
+          "bookmark_count": 2549,
+          "impression_count": 153865,
+          "like_count": 920,
           "quote_count": 4,
-          "reply_count": 21,
-          "retweet_count": 101
+          "reply_count": 32,
+          "retweet_count": 110
         },
-        "text": "터치만 하면 애니메이션으로! 마법의 펜 프롬프트 \n\n이런 감각적인 분위기, CF에서 좀 본 것 같지?\n이 프롬프트 쓰면 너도 바로 딸깍 할 수 있어..!\n\n준비물\n1. Seedance 2.0이나 Mini에 넣고 10초로 제작\n2. 변주를 주고 싶다면 GPT나 클로드랑 대화해봐!\n\n프롬프트는 하단 게시글에! https://t.co/DWmDzL80io"
+        "referenced_tweets": [
+          {
+            "id": "2070171729373118742",
+            "type": "quoted"
+          }
+        ],
+        "text": "Jacob Bank, former Google product lead:\n\n\"Let's say I had four people at $12,500 per month each. That would be $50,000 a month, and my AI bill is $500 a month.\"\n\nHe runs 40 AI marketing agents as the only marketing person at his company.\n\nIn a 15-minute talk he walks through the https://t.co/tOOAaSMsBK https://t.co/gYp19WiEAC"
+      },
+      {
+        "attachments": {
+          "media_keys": [
+            "13_2076678235278954496"
+          ]
+        },
+        "author_id": "1001114465692200960",
+        "conversation_id": "2076679161070891218",
+        "created_at": "2026-07-13T14:44:29.000Z",
+        "edit_history_tweet_ids": [
+          "2076679161070891218"
+        ],
+        "entities": {
+          "urls": [
+            {
+              "display_url": "pic.x.com/XLnHlzvtdx",
+              "end": 304,
+              "expanded_url": "https://x.com/runwayml/status/2076679161070891218/video/1",
+              "media_key": "13_2076678235278954496",
+              "start": 281,
+              "url": "https://t.co/XLnHlzvtdx"
+            }
+          ]
+        },
+        "id": "2076679161070891218",
+        "lang": "en",
+        "public_metrics": {
+          "bookmark_count": 106,
+          "impression_count": 49197,
+          "like_count": 249,
+          "quote_count": 13,
+          "reply_count": 18,
+          "retweet_count": 36
+        },
+        "text": "Everyone. Every object. Everything has a story to tell. With Runway, you can share yours, no matter what it is. \n\nFLICKER is a short film about a lamp with a past. Imperfect and all-but-forgotten, FLICKER tells the story of what it means to bring light to others lives.\n\nMake your https://t.co/XLnHlzvtdx"
+      },
+      {
+        "attachments": {
+          "media_keys": [
+            "13_2076497266270142464"
+          ]
+        },
+        "author_id": "26743780",
+        "conversation_id": "2076498531867906070",
+        "created_at": "2026-07-13T02:46:44.000Z",
+        "edit_history_tweet_ids": [
+          "2076498531867906070"
+        ],
+        "entities": {
+          "urls": [
+            {
+              "display_url": "pic.x.com/fG9GTb4LMy",
+              "end": 301,
+              "expanded_url": "https://x.com/iamlukethedev/status/2076498531867906070/video/1",
+              "media_key": "13_2076497266270142464",
+              "start": 278,
+              "url": "https://t.co/fG9GTb4LMy"
+            },
+            {
+              "display_url": "x.com/iamlukethedev/…",
+              "end": 325,
+              "expanded_url": "https://x.com/iamlukethedev/status/2073190191502881269",
+              "start": 302,
+              "url": "https://t.co/54CanBVGkT"
+            }
+          ]
+        },
+        "id": "2076498531867906070",
+        "lang": "en",
+        "public_metrics": {
+          "bookmark_count": 15,
+          "impression_count": 6531,
+          "like_count": 55,
+          "quote_count": 1,
+          "reply_count": 10,
+          "retweet_count": 2
+        },
+        "referenced_tweets": [
+          {
+            "id": "2073190191502881269",
+            "type": "quoted"
+          }
+        ],
+        "text": "I made restarting Hermes Gateway playable\n\nInstead of opening a terminal…\n\nI walk into Hermes Agora, control my player, and restart the gateway from the 3D office\n\nCompletely unnecessary\n\nWay more fun 😂\n\nThis is the idea behind Hermes Agora:\nturn agent operations into a visual https://t.co/fG9GTb4LMy https://t.co/54CanBVGkT"
+      },
+      {
+        "attachments": {
+          "media_keys": [
+            "13_2076593063309246465"
+          ]
+        },
+        "author_id": "2023431001524072449",
+        "conversation_id": "2076593164744376707",
+        "created_at": "2026-07-13T09:02:46.000Z",
+        "edit_history_tweet_ids": [
+          "2076593164744376707"
+        ],
+        "entities": {
+          "urls": [
+            {
+              "display_url": "pic.x.com/M2WzvFCoLO",
+              "end": 291,
+              "expanded_url": "https://x.com/clankrmedia/status/2076593164744376707/video/1",
+              "media_key": "13_2076593063309246465",
+              "start": 268,
+              "url": "https://t.co/M2WzvFCoLO"
+            }
+          ]
+        },
+        "id": "2076593164744376707",
+        "lang": "en",
+        "public_metrics": {
+          "bookmark_count": 1829,
+          "impression_count": 800731,
+          "like_count": 4050,
+          "quote_count": 287,
+          "reply_count": 163,
+          "retweet_count": 493
+        },
+        "text": "Researchers built a soft floating robot for indoor interaction.\n\nIt uses helium and flapping fins instead of propellers.\n\nThe result is quiet, lightweight, and safe to touch.\n\nIt can follow people, give reminders, and act as a study buddy.\n\nPublished at ACM DIS 2026. https://t.co/M2WzvFCoLO"
+      },
+      {
+        "attachments": {
+          "media_keys": [
+            "7_1887181350639198208"
+          ],
+          "media_source_tweet_id": [
+            "1887181471158296743"
+          ]
+        },
+        "author_id": "16292242",
+        "conversation_id": "2076638860621086822",
+        "created_at": "2026-07-13T12:04:21.000Z",
+        "edit_history_tweet_ids": [
+          "2076638860621086822"
+        ],
+        "entities": {
+          "urls": [
+            {
+              "display_url": "pic.x.com/4hibCb3mLr",
+              "end": 182,
+              "expanded_url": "https://x.com/auf/status/1887181471158296743/video/1",
+              "media_key": "7_1887181350639198208",
+              "start": 159,
+              "url": "https://t.co/4hibCb3mLr"
+            }
+          ]
+        },
+        "id": "2076638860621086822",
+        "lang": "pt",
+        "public_metrics": {
+          "bookmark_count": 1897,
+          "impression_count": 801250,
+          "like_count": 61528,
+          "quote_count": 287,
+          "reply_count": 179,
+          "retweet_count": 5903
+        },
+        "text": "Obrigado, Sam Neill, por olhar pra uma paisagem vazia com tanta emoção que me fez acreditar, naquela sala escura de cinema em 1993, que dinossauros eram reais https://t.co/4hibCb3mLr"
+      },
+      {
+        "attachments": {
+          "media_keys": [
+            "3_2076438737916178432"
+          ]
+        },
+        "author_id": "1261860420333244416",
+        "conversation_id": "2076439304516300816",
+        "created_at": "2026-07-12T22:51:23.000Z",
+        "edit_history_tweet_ids": [
+          "2076439304516300816"
+        ],
+        "entities": {
+          "urls": [
+            {
+              "display_url": "pic.x.com/7162RWZjpN",
+              "end": 163,
+              "expanded_url": "https://x.com/appltrack/status/2076439304516300816/photo/1",
+              "media_key": "3_2076438737916178432",
+              "start": 140,
+              "url": "https://t.co/7162RWZjpN"
+            }
+          ]
+        },
+        "id": "2076439304516300816",
+        "lang": "en",
+        "public_metrics": {
+          "bookmark_count": 718,
+          "impression_count": 1020902,
+          "like_count": 6791,
+          "quote_count": 243,
+          "reply_count": 363,
+          "retweet_count": 343
+        },
+        "text": "Apple's M7 Ultra chip coming in 2029 is rumored to support 1.5TB of RAM.\n\nThis would make the processor much more capable for on-device AI. https://t.co/7162RWZjpN"
+      },
+      {
+        "attachments": {
+          "media_keys": [
+            "13_2076717203265880064"
+          ]
+        },
+        "author_id": "2865522604",
+        "conversation_id": "2076719167810703840",
+        "created_at": "2026-07-13T17:23:27.000Z",
+        "edit_history_tweet_ids": [
+          "2076719167810703840"
+        ],
+        "entities": {
+          "urls": [
+            {
+              "display_url": "pic.x.com/B0PGweIHSx",
+              "end": 285,
+              "expanded_url": "https://x.com/isausmanov/status/2076719167810703840/video/1",
+              "media_key": "13_2076717203265880064",
+              "start": 262,
+              "url": "https://t.co/B0PGweIHSx"
+            }
+          ]
+        },
+        "id": "2076719167810703840",
+        "lang": "en",
+        "public_metrics": {
+          "bookmark_count": 1215,
+          "impression_count": 151654,
+          "like_count": 1165,
+          "quote_count": 18,
+          "reply_count": 99,
+          "retweet_count": 44
+        },
+        "text": "The agentic phone that won OpenAI Hackathon is replacing my iPhone feature by feature.\n\nFound Amjad Masad’s contact, emailed Paul Graham, and called on my behalf to reschedule a meeting.\n\nIts KPI is how little time I have to spend on it while getting more done. https://t.co/B0PGweIHSx"
+      },
+      {
+        "attachments": {
+          "media_keys": [
+            "3_2076467390393802752",
+            "3_2076467426393468928",
+            "3_2076467477396303872",
+            "3_2076467556949614592"
+          ]
+        },
+        "author_id": "1365020011123773442",
+        "conversation_id": "2076476335950868708",
+        "created_at": "2026-07-13T01:18:32.000Z",
+        "edit_history_tweet_ids": [
+          "2076476335950868708"
+        ],
+        "entities": {
+          "urls": [
+            {
+              "display_url": "pic.x.com/MSnEwaBeA5",
+              "end": 302,
+              "expanded_url": "https://x.com/Teknium/status/2076476335950868708/photo/1",
+              "media_key": "3_2076467390393802752",
+              "start": 279,
+              "url": "https://t.co/MSnEwaBeA5"
+            },
+            {
+              "display_url": "pic.x.com/MSnEwaBeA5",
+              "end": 302,
+              "expanded_url": "https://x.com/Teknium/status/2076476335950868708/photo/1",
+              "media_key": "3_2076467426393468928",
+              "start": 279,
+              "url": "https://t.co/MSnEwaBeA5"
+            },
+            {
+              "display_url": "pic.x.com/MSnEwaBeA5",
+              "end": 302,
+              "expanded_url": "https://x.com/Teknium/status/2076476335950868708/photo/1",
+              "media_key": "3_2076467477396303872",
+              "start": 279,
+              "url": "https://t.co/MSnEwaBeA5"
+            },
+            {
+              "display_url": "pic.x.com/MSnEwaBeA5",
+              "end": 302,
+              "expanded_url": "https://x.com/Teknium/status/2076476335950868708/photo/1",
+              "media_key": "3_2076467556949614592",
+              "start": 279,
+              "url": "https://t.co/MSnEwaBeA5"
+            }
+          ]
+        },
+        "id": "2076476335950868708",
+        "lang": "en",
+        "public_metrics": {
+          "bookmark_count": 80,
+          "impression_count": 129348,
+          "like_count": 4804,
+          "quote_count": 9,
+          "reply_count": 850,
+          "retweet_count": 40
+        },
+        "text": "Hey everyone. I haven't been very responsive on here the last week.\n\nMy dog, Link, who I've raised since he was a puppy over the last 13 years, passed away yesterday after being in the vet ER's ICU since last Wednesday for heart failure.\n\nI put together some of my favorite pics https://t.co/MSnEwaBeA5"
+      },
+      {
+        "attachments": {
+          "media_keys": [
+            "13_2076418848551735296"
+          ]
+        },
+        "author_id": "1130161200191303681",
+        "conversation_id": "2076419430654128449",
+        "created_at": "2026-07-12T21:32:24.000Z",
+        "edit_history_tweet_ids": [
+          "2076419430654128449"
+        ],
+        "entities": {
+          "urls": [
+            {
+              "display_url": "pic.x.com/XxQoY9B6b7",
+              "end": 65,
+              "expanded_url": "https://x.com/EHuanglu/status/2076419430654128449/video/1",
+              "media_key": "13_2076418848551735296",
+              "start": 42,
+              "url": "https://t.co/XxQoY9B6b7"
+            }
+          ]
+        },
+        "id": "2076419430654128449",
+        "lang": "en",
+        "public_metrics": {
+          "bookmark_count": 2538,
+          "impression_count": 1522191,
+          "like_count": 17884,
+          "quote_count": 339,
+          "reply_count": 558,
+          "retweet_count": 1532
+        },
+        "text": "sam altman was caught copying apple in 4k https://t.co/XxQoY9B6b7"
       }
     ],
     "users": [
@@ -592,43 +900,91 @@
         "verified_type": "none"
       },
       {
-        "id": "525808515",
-        "name": "Jurassic World",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/2001367292849090560/X3awPXof_normal.jpg",
-        "username": "JurassicWorld",
+        "id": "16591288",
+        "name": "martin_casado",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1556885485888237568/HH1iBQNp_normal.jpg",
+        "username": "martin_casado",
+        "verified": true,
+        "verified_type": "blue"
+      },
+      {
+        "id": "1644401923787726849",
+        "name": "Zephyr",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1741076613939277824/vs_v9C1j_normal.jpg",
+        "username": "Zephyr_hg",
+        "verified": true,
+        "verified_type": "blue"
+      },
+      {
+        "id": "1001114465692200960",
+        "name": "Runway",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1999115192232292353/zOq5-uwB_normal.jpg",
+        "username": "runwayml",
         "verified": true,
         "verified_type": "business"
       },
       {
-        "id": "1944528500565905408",
-        "name": "Sam Wasserman",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/2045107826130046976/ggHhR0Fh_normal.jpg",
-        "username": "SamJWasserman",
+        "id": "26743780",
+        "name": "Luke The Dev",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1978432948836749312/hfXIZ_5S_normal.jpg",
+        "username": "iamlukethedev",
         "verified": true,
         "verified_type": "blue"
       },
       {
-        "id": "1376013965675831299",
-        "name": "Bin Liu",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/1627970921108742144/2U2CnUQj_normal.jpg",
-        "username": "liu8in",
+        "id": "2023431001524072449",
+        "name": "clankr",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2063347037966671872/VFpHBAn8_normal.jpg",
+        "username": "clankrmedia",
         "verified": true,
         "verified_type": "blue"
       },
       {
-        "id": "3461819533",
-        "name": "1p(1mpal)",
-        "profile_image_url": "https://pbs.twimg.com/profile_images/2027995143270502404/WL1feP3J_normal.jpg",
-        "username": "impalementd",
+        "id": "16292242",
+        "name": "Alf",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2052383197174841345/KzLfyBtr_normal.jpg",
+        "username": "auf",
+        "verified": false,
+        "verified_type": "none"
+      },
+      {
+        "id": "1261860420333244416",
+        "name": "AppleTrack",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1621211304668143616/vxR4cnGB_normal.jpg",
+        "username": "appltrack",
+        "verified": true,
+        "verified_type": "blue"
+      },
+      {
+        "id": "2865522604",
+        "name": "Isa",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1909282760583266304/AebWzO5g_normal.jpg",
+        "username": "isausmanov",
+        "verified": true,
+        "verified_type": "blue"
+      },
+      {
+        "id": "1365020011123773442",
+        "name": "Teknium 🪽",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1642401912648777728/2KFikPsE_normal.jpg",
+        "username": "Teknium",
+        "verified": true,
+        "verified_type": "blue"
+      },
+      {
+        "id": "1130161200191303681",
+        "name": "el.cine",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1793460098867838976/hoeoWt9M_normal.jpg",
+        "username": "EHuanglu",
         "verified": true,
         "verified_type": "blue"
       }
     ]
   },
   "meta": {
-    "newest_id": "2076791454534635823",
-    "next_token": "b26v89c19zqg8o3juetiey2rndcfgx0f3jzvt7arqwk1p",
-    "oldest_id": "2076731121283576244",
+    "newest_id": "2076914105664016617",
+    "next_token": "b26v89c19zqg8o3juetif07sppm3mk73xj313lo7a2cu5",
+    "oldest_id": "2076844602179604684",
     "result_count": 10
   }
 }
