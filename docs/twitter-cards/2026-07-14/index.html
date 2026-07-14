@@ -63,9 +63,24 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
 .badge-link{pointer-events:auto;z-index:5}
 .ref-panel,.ref-panel *{position:relative;z-index:3}
 .sum-item{position:relative;z-index:2}
+
+/* click model: empty card body -> my tweet via stretch link; pills/links stay clickable */
+.card{position:relative}
+.card-stretch{position:absolute;inset:0;z-index:1;border-radius:inherit;background:transparent;text-indent:-9999px;overflow:hidden}
+.card-content{position:relative;z-index:2;pointer-events:none}
+.card-content a,
+.card-content button,
+.card .badge,
+.card .badge-link,
+.card .ref-panel a,
+.card .ref-author-link,
+.card .fallback-link,
+.card .sum-item{pointer-events:auto;position:relative;z-index:5}
+.badge-link{z-index:6}
 </style></head><body><main class="wrap"><section class="hero"><h1>Twitter/X cards - @zbutcher</h1><div class="summary"><button type="button" class="sum-item original" data-filter="original"><b>6</b> originals</button><button type="button" class="sum-item quote" data-filter="quote"><b>8</b> quotes</button><button type="button" class="sum-item repost" data-filter="repost"><b>5</b> reposts</button><button type="button" class="sum-item reply" data-filter="reply"><b>1</b> replies</button></div></section><section class="masonry"><article class="card repost" data-type="repost" data-href="https://x.com/zbutcher/status/2076914105664016617">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076914105664016617" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">01</span><a class="badge repost badge-link" href="https://x.com/martin_casado/status/2076735097026548161" target="_blank" rel="noopener" title="Open source on X">repost</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 14, 2026 · 6:18 AM UTC</time>
@@ -87,6 +102,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076853300025299410">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076853300025299410" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">02</span><a class="badge quote badge-link" href="https://x.com/Zephyr_hg/status/2076405725157298441" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 14, 2026 · 2:16 AM UTC</time>
@@ -103,6 +119,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076850828728848493">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076850828728848493" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">03</span><a class="badge quote badge-link" href="https://x.com/runwayml/status/2076679161070891218" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 14, 2026 · 2:06 AM UTC</time>
@@ -119,6 +136,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076849721919119406">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076849721919119406" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">04</span><a class="badge quote badge-link" href="https://x.com/iamlukethedev/status/2076498531867906070" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 14, 2026 · 2:02 AM UTC</time>
@@ -140,6 +158,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card repost" data-type="repost" data-href="https://x.com/zbutcher/status/2076847905118531957">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076847905118531957" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">05</span><a class="badge repost badge-link" href="https://x.com/clankrmedia/status/2076593164744376707" target="_blank" rel="noopener" title="Open source on X">repost</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 14, 2026 · 1:55 AM UTC</time>
@@ -156,6 +175,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card repost" data-type="repost" data-href="https://x.com/zbutcher/status/2076846782336905663">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076846782336905663" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">06</span><a class="badge repost badge-link" href="https://x.com/auf/status/2076638860621086822" target="_blank" rel="noopener" title="Open source on X">repost</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 14, 2026 · 1:50 AM UTC</time>
@@ -172,6 +192,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076846398696493383">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076846398696493383" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">07</span><a class="badge quote badge-link" href="https://x.com/appltrack/status/2076439304516300816" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 14, 2026 · 1:49 AM UTC</time>
@@ -188,6 +209,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076845726525759611">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076845726525759611" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">08</span><a class="badge quote badge-link" href="https://x.com/isausmanov/status/2076719167810703840" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 14, 2026 · 1:46 AM UTC</time>
@@ -204,6 +226,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card reply" data-type="reply" data-href="https://x.com/zbutcher/status/2076845250631581969">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076845250631581969" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">09</span><a class="badge reply badge-link" href="https://x.com/Teknium/status/2076476335950868708" target="_blank" rel="noopener" title="Open source on X">reply</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 14, 2026 · 1:44 AM UTC</time>
@@ -220,6 +243,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076844602179604684">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076844602179604684" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">10</span><a class="badge quote badge-link" href="https://x.com/EHuanglu/status/2076419430654128449" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 14, 2026 · 1:41 AM UTC</time>
@@ -236,6 +260,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076844128739180740">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076844128739180740" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">11</span><a class="badge quote badge-link" href="https://x.com/STudy017aq/status/2076722355284394366" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 14, 2026 · 1:40 AM UTC</time>
@@ -252,6 +277,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card quote" data-type="quote" data-href="https://x.com/zbutcher/status/2076791454534635823">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076791454534635823" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">12</span><a class="badge quote badge-link" href="https://x.com/JurassicWorld/status/2076714282746605882" target="_blank" rel="noopener" title="Open source on X">quote</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 13, 2026 · 10:10 PM UTC</time>
@@ -268,6 +294,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card original" data-type="original" data-href="https://x.com/zbutcher/status/2076790907165454782">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076790907165454782" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">13</span><a class="badge original badge-link" href="https://x.com/zbutcher/status/2076790907165454782" target="_blank" rel="noopener" title="Open source on X">original</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 13, 2026 · 10:08 PM UTC</time>
@@ -278,6 +305,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card original" data-type="original" data-href="https://x.com/zbutcher/status/2076739672165040278">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076739672165040278" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">14</span><a class="badge original badge-link" href="https://x.com/zbutcher/status/2076739672165040278" target="_blank" rel="noopener" title="Open source on X">original</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 13, 2026 · 6:44 PM UTC</time>
@@ -288,6 +316,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card original" data-type="original" data-href="https://x.com/zbutcher/status/2076738003716993118">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076738003716993118" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">15</span><a class="badge original badge-link" href="https://x.com/zbutcher/status/2076738003716993118" target="_blank" rel="noopener" title="Open source on X">original</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 13, 2026 · 6:38 PM UTC</time>
@@ -298,6 +327,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card original" data-type="original" data-href="https://x.com/zbutcher/status/2076737126016975339">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076737126016975339" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">16</span><a class="badge original badge-link" href="https://x.com/zbutcher/status/2076737126016975339" target="_blank" rel="noopener" title="Open source on X">original</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 13, 2026 · 6:34 PM UTC</time>
@@ -308,6 +338,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card original" data-type="original" data-href="https://x.com/zbutcher/status/2076734827634753850">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076734827634753850" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">17</span><a class="badge original badge-link" href="https://x.com/zbutcher/status/2076734827634753850" target="_blank" rel="noopener" title="Open source on X">original</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 13, 2026 · 6:25 PM UTC</time>
@@ -318,6 +349,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card original" data-type="original" data-href="https://x.com/zbutcher/status/2076732188020916309">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076732188020916309" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">18</span><a class="badge original badge-link" href="https://x.com/zbutcher/status/2076732188020916309" target="_blank" rel="noopener" title="Open source on X">original</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 13, 2026 · 6:15 PM UTC</time>
@@ -328,6 +360,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card repost" data-type="repost" data-href="https://x.com/zbutcher/status/2076731124173480273">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076731124173480273" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">19</span><a class="badge repost badge-link" href="https://x.com/SamJWasserman/status/2076683075191234692" target="_blank" rel="noopener" title="Open source on X">repost</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 13, 2026 · 6:10 PM UTC</time>
@@ -344,6 +377,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
     </div></article><article class="card repost" data-type="repost" data-href="https://x.com/zbutcher/status/2076731122697015608">
       <a class="card-stretch" href="https://x.com/zbutcher/status/2076731122697015608" target="_blank" rel="noopener" aria-label="Open my tweet on X"></a>
       <div class="card-content">
+      
       <div class="top"><div class="top-left"><span class="num">20</span><a class="badge repost badge-link" href="https://x.com/liu8in/status/2076531199712149638" target="_blank" rel="noopener" title="Open source on X">repost</a></div></div>
       <div class="author"><img class="avatar" src="https://pbs.twimg.com/profile_images/1640789983861829634/7HdOmgYc_normal.jpg" alt=""><div><strong>Joe B</strong><span>@zbutcher</span></div></div>
       <time>Jul 13, 2026 · 6:10 PM UTC</time>
@@ -370,8 +404,26 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
 
 
 
+
+
+
 <script>
-(function () {
+(function(){
+  // Safety: if stretched link is obstructed in some browsers, route non-interactive clicks to my tweet.
+  document.querySelectorAll('.card').forEach(card=>{
+    const mine = card.querySelector('a.card-stretch');
+    if(!mine) return;
+    card.addEventListener('click', (e)=>{
+      const t = e.target;
+      if (t.closest('a, button, input, textarea, select, label, .badge-link, .badge, .sum-item')) return;
+      // if the actual target is the stretch link, let native behavior happen
+      if (t.closest('a.card-stretch')) return;
+      // non-interactive area: open my tweet
+      e.preventDefault();
+      window.open(mine.href, '_blank', 'noopener');
+    });
+  });
+  // filters remain
   const pills = Array.from(document.querySelectorAll('.sum-item[data-filter]'));
   const cards = Array.from(document.querySelectorAll('.card[data-type]'));
   function activeTypes(){return pills.filter(p=>p.classList.contains('active')).map(p=>p.dataset.filter);} 
@@ -398,7 +450,7 @@ button.sum-item{appearance:none;-webkit-appearance:none;font:inherit;margin:0}
       else {pill.classList.toggle('active'); pill.setAttribute('aria-pressed', pill.classList.contains('active')?'true':'false');}
       apply();
     };
-    pill.addEventListener('click', e=>activate(e.metaKey||e.ctrlKey||e.shiftKey));
+    pill.addEventListener('click', e=>{ e.stopPropagation(); activate(e.metaKey||e.ctrlKey||e.shiftKey); });
     pill.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault(); activate(e.metaKey||e.ctrlKey||e.shiftKey);} });
   });
   apply();
