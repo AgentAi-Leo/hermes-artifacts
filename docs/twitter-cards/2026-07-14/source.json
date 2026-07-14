@@ -1,5 +1,5 @@
 {
-  "saved_at": "2026-07-14 01:17:05 UTC",
+  "saved_at": "2026-07-14 01:32:00 UTC",
   "query": "from:zbutcher",
   "items": [
     {
@@ -336,7 +336,7 @@
         "like_count": 0,
         "quote_count": 0,
         "reply_count": 0,
-        "retweet_count": 15
+        "retweet_count": 16
       },
       "referenced_tweets": [
         {
@@ -389,7 +389,7 @@
         "media_key": "13_2076209460293627904",
         "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076209460293627904/img/CxbycYwGm7qZSfTI.jpg",
         "public_metrics": {
-          "view_count": 2011
+          "view_count": 2062
         },
         "type": "video",
         "width": 1920
@@ -399,7 +399,7 @@
         "media_key": "13_2076631183358869504",
         "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2076631183358869504/img/ngjXIGkFqgJyu_bc.jpg",
         "public_metrics": {
-          "view_count": 15185
+          "view_count": 15692
         },
         "type": "video",
         "width": 720
@@ -433,12 +433,12 @@
         "id": "2076714282746605882",
         "lang": "en",
         "public_metrics": {
-          "bookmark_count": 1898,
-          "impression_count": 644749,
-          "like_count": 65797,
-          "quote_count": 579,
-          "reply_count": 321,
-          "retweet_count": 13358
+          "bookmark_count": 1930,
+          "impression_count": 655161,
+          "like_count": 66622,
+          "quote_count": 587,
+          "reply_count": 324,
+          "retweet_count": 13532
         },
         "text": "Rest in peace, Sam Neill. Thank you for bringing Dr. Grant to life. https://t.co/rAMpNA07B7"
       },
@@ -492,12 +492,12 @@
         "id": "2076683075191234692",
         "lang": "en",
         "public_metrics": {
-          "bookmark_count": 122,
-          "impression_count": 7438,
-          "like_count": 123,
+          "bookmark_count": 126,
+          "impression_count": 7711,
+          "like_count": 127,
           "quote_count": 4,
           "reply_count": 11,
-          "retweet_count": 15
+          "retweet_count": 16
         },
         "text": "Full Suite - All 4 open source + free apps/mcps I released this past week can now be found with one link: \n\nPlease find blockout, motion previs studio, stem studio, and my Davinci Mcp are now together in Wasserman's Filmmaker Suite. Link and video below. https://t.co/cPjjaYMZOY https://t.co/P2MfmiDf6b"
       },
@@ -530,9 +530,9 @@
         "id": "2076531199712149638",
         "lang": "en",
         "public_metrics": {
-          "bookmark_count": 187,
-          "impression_count": 18205,
-          "like_count": 154,
+          "bookmark_count": 190,
+          "impression_count": 18671,
+          "like_count": 159,
           "quote_count": 0,
           "reply_count": 4,
           "retweet_count": 9
@@ -572,12 +572,12 @@
         "id": "2076631238870466773",
         "lang": "ko",
         "public_metrics": {
-          "bookmark_count": 577,
-          "impression_count": 37329,
-          "like_count": 625,
-          "quote_count": 3,
+          "bookmark_count": 589,
+          "impression_count": 38546,
+          "like_count": 645,
+          "quote_count": 4,
           "reply_count": 21,
-          "retweet_count": 98
+          "retweet_count": 101
         },
         "text": "터치만 하면 애니메이션으로! 마법의 펜 프롬프트 \n\n이런 감각적인 분위기, CF에서 좀 본 것 같지?\n이 프롬프트 쓰면 너도 바로 딸깍 할 수 있어..!\n\n준비물\n1. Seedance 2.0이나 Mini에 넣고 10초로 제작\n2. 변주를 주고 싶다면 GPT나 클로드랑 대화해봐!\n\n프롬프트는 하단 게시글에! https://t.co/DWmDzL80io"
       }
