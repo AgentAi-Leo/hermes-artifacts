@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data: blob:; connect-src 'none'; media-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; base-uri 'none'; form-action 'none'"><meta charset="utf-8"><title>AI Morning Brief — 2026-07-16</title><style id="hermes-brief-player-style">
+<!doctype html><html><head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data: blob:; connect-src 'none'; media-src 'none'; object-src 'none'; frame-src 'self' file:; worker-src 'none'; base-uri 'none'; form-action 'none'"><meta charset="utf-8"><title>AI Morning Brief — 2026-07-16</title><style id="hermes-brief-player-style">
 html, body { width: 100% !important; max-width: none !important; overflow-x: hidden !important; }
 .wrap { width: 100% !important; max-width: none !important; margin: 0 !important; }
 .hermes-brief-player-sticky {
@@ -877,49 +877,62 @@ body .hermes-topic-container { border: 0 !important; border-radius: 0 !important
     init();
   }
 })();
-</script><script id="hermes-brief-export-navigation-controller">
+</script><style id="hermes-ai-stable-date-frame-style">
+html.hermes-ai-date-frame-active, html.hermes-ai-date-frame-active body { overflow: hidden !important; }
+html.hermes-ai-date-frame-active body > :not(#hermes-ai-stable-date-frame) { display: none !important; }
+#hermes-ai-stable-date-frame { position: fixed !important; inset: 0 !important; z-index: 2147483647 !important; display: block !important; width: 100vw !important; height: 100vh !important; border: 0 !important; background: #0b1020 !important; color-scheme: dark !important; }
+</style><script id="hermes-brief-export-navigation-controller">
 (() => {
   const state = {"selectedDate":"2026-07-15","archiveDates":["2026-07-16","2026-07-15","2026-07-14","2026-07-06","2026-07-05"],"files":{"2026-07-16":"BRIEFS-AI - 2026-07-16.html","2026-07-15":"BRIEFS-AI - 2026-07-15.html","2026-07-14":"BRIEFS-AI - 2026-07-14.html","2026-07-06":"BRIEFS-AI - 2026-07-06.html","2026-07-05":"BRIEFS-AI - 2026-07-05.html"}};
-  const VIEWPORT_HASH_PREFIX = "#hermes-stock-viewport=";
-  function captureViewportPosition() {
-    return { scrollX: window.scrollX, scrollY: window.scrollY };
+  const FILE_TO_DATE = Object.fromEntries(Object.entries(state.files).map(([date, file]) => [file, date]));
+  let currentDate = state.selectedDate;
+  let frame = null;
+
+  function activeFrame() {
+    return document.getElementById("hermes-ai-stable-date-frame");
   }
-  function safePosition(position) {
-    return {
-      scrollX: Number.isFinite(position?.scrollX) ? Math.max(0, position.scrollX) : Math.max(0, window.scrollX),
-      scrollY: Number.isFinite(position?.scrollY) ? Math.max(0, position.scrollY) : Math.max(0, window.scrollY),
-    };
+  function publishFullscreenState() {
+    const target = activeFrame();
+    target?.contentWindow?.postMessage({ type: "hermes-ai-fullscreen-state", active: Boolean(document.fullscreenElement) }, "*");
   }
-  function destination(file, position) {
-    const value = safePosition(position);
-    return file + VIEWPORT_HASH_PREFIX + encodeURIComponent(String(value.scrollX) + "," + String(value.scrollY));
-  }
-  function navigate(direction, position) {
-    const current = state.archiveDates.indexOf(state.selectedDate);
-    const offset = direction === "newer" ? -1 : direction === "older" ? 1 : 0;
-    const date = state.archiveDates[current + offset];
-    const file = date && state.files[date];
-    if (file) window.location.href = destination(file, position);
-  }
-  function restoreViewportFromHash() {
-    if (!window.location.hash.startsWith(VIEWPORT_HASH_PREFIX)) return;
-    let decoded = "";
+  async function toggleStableFullscreen() {
     try {
-      decoded = decodeURIComponent(window.location.hash.slice(VIEWPORT_HASH_PREFIX.length));
+      if (document.fullscreenElement) await document.exitFullscreen();
+      else await document.documentElement.requestFullscreen();
     } catch (_reason) {
+      // Browser fullscreen denial leaves the stable date frame unchanged.
+    }
+    publishFullscreenState();
+  }
+  function ensureStableFrame() {
+    frame = activeFrame();
+    if (!frame) {
+      frame = document.createElement("iframe");
+      frame.id = "hermes-ai-stable-date-frame";
+      frame.title = "AI Brief date preview";
+      frame.allowFullscreen = true;
+      frame.setAttribute("allow", "fullscreen");
+      frame.addEventListener("load", publishFullscreenState);
+      document.body.appendChild(frame);
+    }
+    document.documentElement.classList.add("hermes-ai-date-frame-active");
+    return frame;
+  }
+  function requestFile(file) {
+    if (!file) return;
+    if (window.parent !== window) {
+      window.parent.postMessage({ type: "hermes-ai-export-date-load", file }, "*");
       return;
     }
-    const values = decoded.split(",").map(Number);
-    if (!Number.isFinite(values[0]) || !Number.isFinite(values[1])) return;
-    const targetX = Math.max(0, values[0]);
-    const targetY = Math.max(0, values[1]);
-    let framesRemaining = 8;
-    const applyPosition = () => {
-      window.scrollTo(targetX, targetY);
-      framesRemaining -= 1;
-      if (framesRemaining > 0) requestAnimationFrame(applyPosition);
-    };
-    requestAnimationFrame(() => requestAnimationFrame(applyPosition));
+    currentDate = FILE_TO_DATE[file] || currentDate;
+    const target = ensureStableFrame();
+    if (target.getAttribute("src") !== file) target.src = file;
+  }
+  function navigate(direction) {
+    const current = state.archiveDates.indexOf(currentDate);
+    const offset = direction === "newer" ? -1 : direction === "older" ? 1 : 0;
+    const date = state.archiveDates[current + offset];
+    requestFile(date && state.files[date]);
   }
   document.querySelectorAll("#hermes-brief-export-shell a[href]").forEach((link) => {
     link.addEventListener("click", (event) => {
@@ -927,13 +940,22 @@ body .hermes-topic-container { border: 0 !important; border-radius: 0 !important
       const file = link.getAttribute("href");
       if (!file) return;
       event.preventDefault();
-      window.location.href = destination(file, captureViewportPosition());
+      requestFile(file);
     });
   });
   window.addEventListener("message", (event) => {
-    if (event.source !== window || event.data?.type !== "hermes-brief-date-navigation") return;
-    navigate(event.data.direction, event.data.position);
+    const target = activeFrame();
+    if (event.source !== window && event.source !== target?.contentWindow) return;
+    if (event.data?.type === "hermes-ai-export-date-load") {
+      requestFile(event.data.file);
+      return;
+    }
+    if (event.data?.type === "hermes-brief-date-navigation") {
+      navigate(event.data.direction);
+      return;
+    }
+    if (event.data?.type === "hermes-ai-fullscreen-toggle") void toggleStableFullscreen();
   });
-  restoreViewportFromHash();
+  document.addEventListener("fullscreenchange", publishFullscreenState);
 })();
-</script><!-- HERMES_BRIEFS_EXPORT_MANIFEST {"accepted_ui":"v54-ai-fullscreen-date-parity","format":"html","kind":"ai","html_self_contained":true,"inline_css":true,"inline_javascript":true,"companion_html_pattern":"BRIEFS-AI - YYYY-MM-DD.html","purpose":"Standalone visual and interactive recreation of the accepted Briefs dashboard archive."} --></body></html>
+</script><!-- HERMES_BRIEFS_EXPORT_MANIFEST {"accepted_ui":"v55-ai-fullscreen-date-persistence","format":"html","kind":"ai","html_self_contained":true,"inline_css":true,"inline_javascript":true,"companion_html_pattern":"BRIEFS-AI - YYYY-MM-DD.html","purpose":"Standalone visual and interactive recreation of the accepted Briefs dashboard archive."} --></body></html>
