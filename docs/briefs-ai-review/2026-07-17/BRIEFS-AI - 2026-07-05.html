@@ -1,4 +1,228 @@
-<!doctype html><html><head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data: blob:; connect-src 'none'; media-src 'none'; object-src 'none'; frame-src 'self' file:; worker-src 'none'; base-uri 'none'; form-action 'none'"><meta charset="utf-8"><title>AI Morning Brief — 2026-07-16</title><style id="hermes-brief-player-style">
+<!doctype html><html lang="en"><head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data: blob:; connect-src 'none'; media-src 'none'; object-src 'none'; frame-src 'self' file:; worker-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <title>AI Morning Brief</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#5b6472;
+      --link:#0b57d0;
+      --border:#d9dee7;
+      --accent:#111827;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:#0f1115;
+        --card:#171a21;
+        --text:#f3f4f6;
+        --muted:#a8b0bd;
+        --link:#8ab4ff;
+        --border:#2b303a;
+        --accent:#f3f4f6;
+      }
+    }
+
+    body {
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+
+    .wrap {
+      max-width:920px;
+      margin:0 auto;
+      padding:20px 18px 32px;
+    }
+
+    header {
+      margin-bottom:14px;
+    }
+
+    .title-row {
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    h1 {
+      font-size:1.6rem;
+      line-height:1.1;
+      margin:0;
+      letter-spacing:-0.02em;
+    }
+
+    .timestamp {
+      color:var(--muted);
+      font-size:.85rem;
+      white-space:nowrap;
+    }
+
+    .player {
+      display:flex;
+      align-items:center;
+      gap:6px;
+    }
+
+    .player button {
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:999px;
+      color:var(--text);
+      cursor:pointer;
+      font-size:.85rem;
+      height:28px;
+      min-width:28px;
+      padding:0 8px;
+    }
+
+    .player button:hover {
+      border-color:var(--muted);
+    }
+
+    .player input[type="range"] {
+      accent-color:var(--link);
+      width:70px;
+    }
+
+    .player .player-status {
+      color:var(--muted);
+      font-size:.75rem;
+      min-width:0;
+    }
+
+    .meta {
+      color:var(--muted);
+      margin:2px 0;
+    }
+
+    a {
+      color:var(--link);
+      text-decoration:none;
+    }
+
+    a:hover {
+      text-decoration:underline;
+    }
+
+    .cards {
+      display:grid;
+      gap:10px;
+    }
+
+    .card {
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:14px;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+    }
+
+    .card h2 {
+      font-size:1.05rem;
+      line-height:1.25;
+      margin:0 0 6px;
+      letter-spacing:-0.01em;
+      color:#FFD766;
+    }
+
+    .summary {
+      margin:0 0 8px;
+    }
+
+    .takeaway {
+      margin:0 0 8px;
+      padding:8px 10px;
+      border-left:3px solid var(--accent);
+      background:color-mix(in srgb, var(--card), var(--bg) 45%);
+      border-radius:6px;
+    }
+
+    .sources {
+      color:var(--muted);
+      font-size:.9rem;
+      margin:0;
+    }
+
+    footer {
+      color:var(--muted);
+      font-size:.85rem;
+      margin-top:16px;
+      padding-top:12px;
+      border-top:1px solid var(--border);
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding:14px 12px 24px;
+      }
+
+      h1 {
+        font-size:1.3rem;
+      }
+
+      .title-row {
+        gap:8px;
+      }
+
+      .timestamp {
+        font-size:.78rem;
+      }
+
+      .player {
+        gap:4px;
+      }
+
+      .player button {
+        height:32px;
+        min-width:32px;
+        font-size:.9rem;
+      }
+
+      .player input[type="range"] {
+        width:60px;
+      }
+
+      .player .player-status {
+        display:none;
+      }
+
+      .card {
+        padding:12px;
+        border-radius:8px;
+      }
+
+      .card h2 {
+        font-size:.98rem;
+      }
+
+      .summary {
+        font-size:.92rem;
+        line-height:1.45;
+      }
+
+      .takeaway {
+        font-size:.9rem;
+        padding:7px 9px;
+      }
+
+      .sources {
+        font-size:.85rem;
+      }
+
+      footer {
+        font-size:.8rem;
+      }
+    }
+  </style>
+<style id="hermes-brief-player-style">
 html, body { width: 100% !important; max-width: none !important; overflow-x: hidden !important; }
 .wrap { width: 100% !important; max-width: none !important; margin: 0 !important; }
 .hermes-brief-player-sticky {
@@ -213,26 +437,78 @@ body .hermes-topic-container { border: 0 !important; border-radius: 0 !important
 #hermes-brief-export-shell .hermes-export-dates a { padding: 8px 12px; border: 1px solid rgba(249,222,201,.35); color: inherit; text-decoration: none; }
 #hermes-brief-export-shell .hermes-export-dates a:hover, #hermes-brief-export-shell .hermes-export-dates a:focus-visible { border-color: #67e8f9; color: #67e8f9; outline: none; }
 #hermes-brief-export-shell .hermes-export-dates [aria-current="date"] { background: #f9dec9; color: #03211f; font-weight: 800; }
-</style></head><body><section id="hermes-brief-export-shell" data-hermes-exclude-from-player><div class="hermes-export-title">BRIEFS-AI</div><div class="hermes-export-meta">Self-contained dashboard export · 2026-07-05</div><div class="hermes-export-dates" aria-label="Archive dates"><a href="BRIEFS-AI - 2026-07-16.html">2026-07-16</a><a href="BRIEFS-AI - 2026-07-15.html">2026-07-15</a><a href="BRIEFS-AI - 2026-07-14.html">2026-07-14</a><a href="BRIEFS-AI - 2026-07-06.html">2026-07-06</a><a href="BRIEFS-AI - 2026-07-05.html" aria-current="date">2026-07-05</a></div></section><main>
-<header data-hermes-date-normalized="true"><span class="pill">July 5, 2026</span><div class="hermes-ai-title-row"><h1>AI Morning Brief</h1><button id="hermes-ai-fullscreen-button" type="button" aria-label="Enter AI Brief fullscreen" title="Enter fullscreen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="m21 3-7 7"></path><path d="m3 21 7-7"></path></svg></button></div><p class="date">2:08pm - America/Los_Angeles</p></header>
-<section class="takeaways"><div class="hermes-takeaways-heading-row"><h2>FOUNDER TAKEAWAYS</h2><span class="hermes-ai-active-date-pill" role="status" aria-label="AI brief date: July 5, 2026">July 5, 2026</span></div><ol>
-<li><strong>Regulatory openings can become distribution openings.</strong><span class="takeaway-detail">The EU's Android interoperability push creates practical opportunities for assistants that can own one high-value workflow instead of trying to replace the whole device experience.</span></li>
-<li><strong>The implementation layer is becoming its own category.</strong><span class="takeaway-detail">The Ode thesis validates a large market for operators who can translate models into production workflows, controls, integrations, and measurable outcomes.</span></li>
-<li><strong>Model choice and model deployment are now separate decisions.</strong><span class="takeaway-detail">Leadership reshuffling and platform expansion make it important to preserve portability across providers while building durable workflow and data advantages.</span></li>
-<li><strong>Memory is becoming product infrastructure.</strong><span class="takeaway-detail">Claude's cross-chat memory expansion raises the baseline for continuity, but trust depends on explicit controls, retention policies, and clear user expectations.</span></li>
-<li><strong>Industrial AI rewards constrained, measurable problems.</strong><span class="takeaway-detail">Micron's AI-factory investment highlights opportunities around inspection, maintenance, scheduling, yield, and energy optimization where ROI can be proven.</span></li>
-<li><strong>AI hardware is diversifying beyond one accelerator path.</strong><span class="takeaway-detail">Amazon's Trainium program shows buyers want credible alternatives that reduce cost and dependency; software compatibility remains a key wedge.</span></li>
-<li><strong>The autonomous enterprise will emerge workflow by workflow.</strong><span class="takeaway-detail">The near-term market favors scoped agents with permissions, monitoring, rollback, and human escalation—not unsupervised general autonomy.</span></li>
-</ol></section>
-<section class="topics" aria-label="Seven AI news topics">
-<article class="card"><h2>1) EU orders Google to open Android features to rival AI services</h2><p>Summary: The European Commission specified Digital Markets Act changes requiring Google to open 11 Android features to AI rivals and provide competitors greater access to search data. The goal is to let services such as rival assistants compete more directly with Gemini, including through key device functions.</p><p>Why it matters for founders/operators: Distribution at the operating-system layer could become less exclusive, creating openings for specialist assistants while adding new interoperability and compliance requirements.</p><p>Actionable implication: Identify one Android-native workflow—voice, messaging, calendar, navigation, or device action—and draft an integration that does not depend on exclusive Gemini access.</p><div class="hermes-ai-sources-row"><p class="sources">Sources: Reuters · Associated Press via U.S. News</p><span class="hermes-ai-active-date-pill" role="status" aria-label="AI brief date: July 5, 2026">July 5, 2026</span></div></article>
-<article class="card"><h2>2) Anthropic and Blackstone put a name to the AI implementation bet</h2><p>Summary: TechCrunch detailed Ode with Anthropic, the $1.5 billion implementation company formed with Blackstone, Hellman &amp; Friedman, Goldman Sachs, and others. Its thesis is that deploying AI into core processes—not merely supplying models—can become a massive category.</p><p>Why it matters for founders/operators: Large capital is moving toward the services, change-management, integration, and workflow layers where most enterprise value is actually captured.</p><p>Actionable implication: Package one repeatable implementation offer around a measurable business process, including baseline metrics, data readiness, controls, rollout, and post-deployment monitoring.</p><div class="hermes-ai-sources-row"><p class="sources">Sources: TechCrunch · Ode announcement</p><span class="hermes-ai-active-date-pill" role="status" aria-label="AI brief date: July 5, 2026">July 5, 2026</span></div></article>
-<article class="card"><h2>3) Meta names a new Llama leader while expanding AI access</h2><p>Summary: Meta appointed Shengjia Zhao to lead its Llama organization as the company continues reorganizing its AI efforts. In parallel, reporting highlighted Meta's efforts to broaden access to AI tools and models across products and developer channels.</p><p>Why it matters for founders/operators: Leadership and product strategy shifts at a major open-model supplier can change roadmaps, licensing expectations, release cadence, and the economics of building on that ecosystem.</p><p>Actionable implication: Review every production dependency on a single model family and document a tested fallback for model, inference provider, and prompt/evaluation compatibility.</p><div class="hermes-ai-sources-row"><p class="sources">Sources: TechCrunch · Meta AI</p><span class="hermes-ai-active-date-pill" role="status" aria-label="AI brief date: July 5, 2026">July 5, 2026</span></div></article>
-<article class="card"><h2>4) Anthropic brings cross-chat memory to more Claude users</h2><p>Summary: Anthropic expanded Claude's ability to remember context across conversations to additional subscription tiers, making persistent personalization and project continuity available to a broader user base.</p><p>Why it matters for founders/operators: Memory is moving from a premium novelty toward a standard interface expectation, increasing pressure on products to explain what is retained, how it is used, and how users can inspect or erase it.</p><p>Actionable implication: Add a memory contract to your AI product: define allowed facts, retention duration, user controls, provenance, deletion behavior, and tests for stale or incorrect memory.</p><div class="hermes-ai-sources-row"><p class="sources">Sources: TechCrunch · Anthropic Support</p><span class="hermes-ai-active-date-pill" role="status" aria-label="AI brief date: July 5, 2026">July 5, 2026</span></div></article>
-<article class="card"><h2>5) Micron plans a large Singapore AI chip factory</h2><p>Summary: Micron announced plans for a major advanced-memory manufacturing facility in Singapore aimed at supporting growing AI demand, with a multibillion-dollar investment and production expected later in the decade.</p><p>Why it matters for founders/operators: The AI infrastructure buildout is extending into memory capacity, manufacturing automation, logistics, energy, and industrial software—not just model and application companies.</p><p>Actionable implication: If you serve industrial customers, prioritize one constrained workflow with hard metrics such as downtime, defect rate, cycle time, energy usage, or yield.</p><div class="hermes-ai-sources-row"><p class="sources">Sources: Reuters · Micron</p><span class="hermes-ai-active-date-pill" role="status" aria-label="AI brief date: July 5, 2026">July 5, 2026</span></div></article>
-<article class="card"><h2>6) Amazon expands Trainium's role in the AI accelerator market</h2><p>Summary: Amazon continues investing in Trainium chips and related cloud infrastructure as an alternative to dominant GPU platforms, positioning custom silicon as a way to improve price-performance for training and inference workloads.</p><p>Why it matters for founders/operators: Accelerator competition can reduce costs and supplier concentration, but portability depends on software tooling, kernel support, model compatibility, and realistic workload benchmarking.</p><p>Actionable implication: Benchmark one representative production workload across your current accelerator and at least one credible alternative, measuring total cost, latency, throughput, migration effort, and operational risk.</p><div class="hermes-ai-sources-row"><p class="sources">Sources: Reuters · AWS</p><span class="hermes-ai-active-date-pill" role="status" aria-label="AI brief date: July 5, 2026">July 5, 2026</span></div></article>
-<article class="card"><h2>7) The autonomous enterprise narrative gains momentum</h2><p>Summary: Enterprise vendors and investors are increasingly describing a future in which AI agents execute significant portions of business workflows, coordinating across systems with less direct human input.</p><p>Why it matters for founders/operators: The commercial opportunity is real, but successful adoption will depend on permissions, observability, exception handling, audit trails, and reliable escalation—not autonomy claims alone.</p><p>Actionable implication: Design the next agent rollout around a bounded workflow with explicit tools, approval thresholds, rollback, logs, and a human owner for every exception class.</p><div class="hermes-ai-sources-row"><p class="sources">Sources: Reuters · World Economic Forum</p><span class="hermes-ai-active-date-pill" role="status" aria-label="AI brief date: July 5, 2026">July 5, 2026</span></div></article>
-</section></main>
+</style></head>
+<body><section id="hermes-brief-export-shell" data-hermes-exclude-from-player><div class="hermes-export-title">BRIEFS-AI</div><div class="hermes-export-meta">Self-contained dashboard export · 2026-07-05</div><div class="hermes-export-dates" aria-label="Archive dates"><a href="BRIEFS-AI - 2026-07-16.html">2026-07-16</a><a href="BRIEFS-AI - 2026-07-15.html">2026-07-15</a><a href="BRIEFS-AI - 2026-07-14.html">2026-07-14</a><a href="BRIEFS-AI - 2026-07-06.html">2026-07-06</a><a href="BRIEFS-AI - 2026-07-05.html" aria-current="date">2026-07-05</a></div></section>
+  <main class="wrap">
+    <header data-hermes-date-normalized="true">
+      <div class="title-row">
+        <div class="hermes-ai-title-row"><h1>AI Morning Brief</h1><button id="hermes-ai-fullscreen-button" type="button" aria-label="Enter AI Brief fullscreen" title="Enter fullscreen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="m21 3-7 7"></path><path d="m3 21 7-7"></path></svg></button></div>
+        <div class="player" aria-label="Read brief aloud">
+          <button id="tts-prev" type="button" title="Previous topic" aria-label="Previous topic">⏮</button>
+          <button id="tts-toggle" type="button" title="Read topics aloud" aria-label="Play or pause reading">▶</button>
+          <button id="tts-next" type="button" title="Next topic" aria-label="Next topic">⏭</button>
+          <input id="tts-volume" type="range" min="0" max="1" step="0.05" value="1" title="Volume" aria-label="Volume">
+          <span id="tts-status" class="player-status"></span>
+        </div>
+        <span class="timestamp">Run timestamp: 2026-07-05 08:00 PDT · AI curated items</span>
+      </div>
+      
+    </header>
+
+    <section class="cards" aria-label="AI news cards">
+
+      <article class="card">
+        <h2>1. $85K in tokens: scaling agentic coding at Lovable</h2>
+        <p class="summary">A Lovable engineer shares lessons after pushing agentic coding to ~$25K/month in personal token spend, evolving from one human + three agents to one human orchestrating 6-7 agents hitting 150+ merged PRs/week. Human code review is now the exception, reserved for high-risk changes classified by an AI risk-tiering workflow.</p>
+        <p class="takeaway"><strong>Founder takeaway:</strong> The leverage curve is real — a solo founder can now ship like a small team if they build a risk-classification layer and shift human attention to RFCs/ADRs instead of line-by-line review.</p>
+        <p class="sources"><strong>Source:</strong> <a href="https://lovable.dev/blog/85000-in-tokens-later-scaling-agentic-coding-at-lovable" target="_blank" rel="noopener noreferrer">lovable.dev</a><br><strong>Discussion:</strong> <a href="https://news.ycombinator.com/item?id=48789042" target="_blank" rel="noopener noreferrer">Hacker News</a></p>
+      </article>
+      <article class="card">
+        <h2>2. Better Models, Worse Tools: SOTA Claude hallucinates tool schemas</h2>
+        <p class="summary">Armin Ronacher reports that newer Claude models (Opus 4.8, Sonnet 5) increasingly emit invented fields in tool-call arguments while older models did not. The core edit payload is usually correct; the model just appends nonsense keys, causing tool rejection — and the failure is context-dependent, worsening with long agentic histories.</p>
+        <p class="takeaway"><strong>Founder takeaway:</strong> If you build custom tool schemas, assume SOTA models will drift from your schema over time — wire up strict/grammar-constrained tool invocation rather than relying on the model to self-police.</p>
+        <p class="sources"><strong>Source:</strong> <a href="https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/" target="_blank" rel="noopener noreferrer">lucumr.pocoo.org</a><br><strong>Discussion:</strong> <a href="https://news.ycombinator.com/item?id=48788599" target="_blank" rel="noopener noreferrer">Hacker News</a></p>
+      </article>
+      <article class="card">
+        <h2>3. Claude Code session/cache leakage across workspace instances</h2>
+        <p class="summary">A GitHub issue reports Claude Code apparently leaking context between isolated workspace instances — an Enterprise ZDR user's agent suddenly started asking about "Minecraft temple bricks" unrelated to their work. This raises questions about cache isolation in enterprise environments and where sensitive session content may be going.</p>
+        <p class="takeaway"><strong>Founder takeaway:</strong> Don't assume agent session state is hermetic across workspaces, even on enterprise plans — treat secrets and sensitive context as potentially cross-bleeding until clarified, and avoid running unrelated projects in the same agent session.</p>
+        <p class="sources"><strong>Source:</strong> <a href="https://github.com/anthropics/claude-code/issues/74066" target="_blank" rel="noopener noreferrer">github.com/anthropics</a><br><strong>Discussion:</strong> <a href="https://news.ycombinator.com/item?id=48785485" target="_blank" rel="noopener noreferrer">Hacker News</a></p>
+      </article>
+      <article class="card">
+        <h2>4. GLM-5.2 on AMD MI355X: 2,626 tok/s/node at &gt;2x lower cost than Blackwell</h2>
+        <p class="summary">Wafer.ai demonstrates GLM-5.2 served on AMD MI355X hitting 2,626 tok/s/node aggregate and 213 tok/s single-stream via MXFP4 quantization on sglang — roughly 80% of B200 throughput at over 2x lower GPU cost. The team fixed two speculative-decode ROCm bugs and hand-tuned MoE kernel selection, concluding "SOTA on AMD is becoming more a matter of support, not software."</p>
+        <p class="takeaway"><strong>Founder takeaway:</strong> The CUDA moat is eroding in real time — when budgeting inference, price out AMD capacity; the perf-per-dollar gap is now narrow enough to matter for cost-sensitive agent workloads.</p>
+        <p class="sources"><strong>Source:</strong> <a href="https://wafer.ai/blog/glm52-amd" target="_blank" rel="noopener noreferrer">wafer.ai</a><br><strong>Discussion:</strong> <a href="https://news.ycombinator.com/item?id=48780417" target="_blank" rel="noopener noreferrer">Hacker News</a></p>
+      </article>
+      <article class="card">
+        <h2>5. Leanstral 1.5: Mistral ships a theorem-proving model</h2>
+        <p class="summary">Mistral released Leanstral 1.5, a model specialized for Lean 4 theorem proving — auto-completing proofs, repairing broken proof steps, and contributing to formal math repositories. The release frames "proof abundance" as the goal: making formal verification approachable for mathematicians and software engineers who aren't Lean experts.</p>
+        <p class="takeaway"><strong>Founder takeaway:</strong> Domain-specialized models are arriving fast — if your work involves formal methods, verification, or correctness-critical code, watch the Lean/Coq model niche; generalist LLMs are not the ceiling here.</p>
+        <p class="sources"><strong>Source:</strong> <a href="https://mistral.ai/news/leanstral-1-5/" target="_blank" rel="noopener noreferrer">mistral.ai</a><br><strong>Discussion:</strong> <a href="https://news.ycombinator.com/item?id=48780801" target="_blank" rel="noopener noreferrer">Hacker News</a></p>
+      </article>
+      <article class="card">
+        <h2>6. GPT-5.5 Codex reasoning-token clustering may degrade performance</h2>
+        <p class="summary">A GitHub issue flags that GPT-5.5 Codex's reasoning-token clustering pattern appears correlated with degraded coding output. The report is early-stage but documents observable artifact patterns in the model's reasoning traces that may impact agentic coding reliability.</p>
+        <p class="takeaway"><strong>Founder takeaway:</strong> Watch reasoning-token artifacts in your own traces — if you rely on Codex-class models for agents, set up evals that catch output-quality regressions tied to reasoning-token patterns rather than trusting the model is stable.</p>
+        <p class="sources"><strong>Source:</strong> <a href="https://github.com/openai/codex/issues/30364" target="_blank" rel="noopener noreferrer">github.com/openai</a><br><strong>Discussion:</strong> <a href="https://news.ycombinator.com/item?id=48789428" target="_blank" rel="noopener noreferrer">Hacker News</a></p>
+      </article>
+      <article class="card">
+        <h2>7. Nvidia has quietly become the bank behind the AI boom</h2>
+        <p class="summary">A Startup Fortune piece reports Nvidia is increasingly financing GPU purchases and AI infrastructure for customers — effectively acting as a lender to keep the AI buildout funded when cloud capex isn't enough. This extends Nvidia's role beyond silicon vendor into the financial plumbing of the AI economy.</p>
+        <p class="takeaway"><strong>Founder takeaway:</strong> GPU supply and financing are now coupled — when negotiating large inference commitments, vendor financing terms (not just list price) are a real lever, and Nvidia's balance-sheet exposure is itself a macro signal for the AI cycle.</p>
+        <p class="sources"><strong>Source:</strong> <a href="https://startupfortune.com/nvidia-has-quietly-become-the-bank-behind-the-ai-boom/" target="_blank" rel="noopener noreferrer">startupfortune.com</a><br><strong>Discussion:</strong> <a href="https://news.ycombinator.com/item?id=48790151" target="_blank" rel="noopener noreferrer">Hacker News</a></p>
+      </article>
+    </section>
+
+    <footer>
+      Generated by Hermes cron job <code>01_AI-MORNING-BRIEF</code>.
+    </footer>
+  </main>
+
+  
+
+
 <script id="hermes-brief-player-controller">
 (() => {
   const MESSAGE_TYPE = "hermes-brief-player-command";
@@ -877,6 +1153,10 @@ body .hermes-topic-container { border: 0 !important; border-radius: 0 !important
         updateFullscreenButton(Boolean(event.data.active));
         return;
       }
+      if (event.data?.type === "hermes-ai-stop-audio") {
+        stopSpeech({ clearHighlight: true });
+        return;
+      }
       if (event.data?.type === "hermes-ai-viewport-restore") {
         restoreViewportPosition(event.data.position);
         return;
@@ -936,6 +1216,11 @@ html.hermes-ai-date-frame-active body > :not(#hermes-ai-stable-date-frame) { dis
     publishFullscreenState();
     restoreChildViewport();
   }
+  function stopActiveAudio() {
+    window.speechSynthesis?.cancel();
+    const target = activeFrame();
+    target?.contentWindow?.postMessage({ type: "hermes-ai-stop-audio" }, "*");
+  }
   async function toggleStableFullscreen() {
     try {
       if (document.fullscreenElement) await document.exitFullscreen();
@@ -966,6 +1251,7 @@ html.hermes-ai-date-frame-active body > :not(#hermes-ai-stable-date-frame) { dis
       window.parent.postMessage({ type: "hermes-ai-export-date-load", file, position: viewportPosition }, "*");
       return;
     }
+    stopActiveAudio();
     pendingPosition = viewportPosition;
     currentDate = FILE_TO_DATE[file] || currentDate;
     const target = ensureStableFrame();
@@ -1002,4 +1288,4 @@ html.hermes-ai-date-frame-active body > :not(#hermes-ai-stable-date-frame) { dis
   });
   document.addEventListener("fullscreenchange", publishFullscreenState);
 })();
-</script><!-- HERMES_BRIEFS_EXPORT_MANIFEST {"accepted_ui":"v57-ai-viewport-persistence","format":"html","kind":"ai","html_self_contained":true,"inline_css":true,"inline_javascript":true,"companion_html_pattern":"BRIEFS-AI - YYYY-MM-DD.html","purpose":"Standalone visual and interactive recreation of the accepted Briefs dashboard archive."} --></body></html>
+</script><!-- HERMES_BRIEFS_EXPORT_MANIFEST {"accepted_ui":"v58-active-date-audio-handoff","format":"html","kind":"ai","html_self_contained":true,"inline_css":true,"inline_javascript":true,"companion_html_pattern":"BRIEFS-AI - YYYY-MM-DD.html","purpose":"Standalone visual and interactive recreation of the accepted Briefs dashboard archive."} --></body></html>
