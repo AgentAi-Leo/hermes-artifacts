@@ -1061,9 +1061,17 @@ html.hermes-ai-date-frame-active body > :not(#hermes-ai-stable-date-frame) { dis
     const target = activeFrame();
     target?.contentWindow?.postMessage({ type: "hermes-ai-viewport-restore", position: pendingPosition }, "*");
   }
+  function focusActiveFrame() {
+    const target = activeFrame();
+    if (!target) return;
+    target.focus({ preventScroll: true });
+    target.contentWindow?.focus();
+  }
   function publishFrameState() {
     publishFullscreenState();
     restoreChildViewport();
+    focusActiveFrame();
+    window.requestAnimationFrame(focusActiveFrame);
   }
   function stopActiveAudio() {
     window.speechSynthesis?.cancel();
@@ -1145,4 +1153,4 @@ html.hermes-ai-date-frame-active body > :not(#hermes-ai-stable-date-frame) { dis
   });
   document.addEventListener("fullscreenchange", publishFullscreenState);
 })();
-</script><!-- HERMES_BRIEFS_EXPORT_MANIFEST {"accepted_ui":"v60-founder-space-toggle-only","format":"html","kind":"ai","html_self_contained":true,"inline_css":true,"inline_javascript":true,"companion_html_pattern":"BRIEFS-AI - YYYY-MM-DD.html","purpose":"Standalone visual and interactive recreation of the accepted Briefs dashboard archive."} --></body></html>
+</script><!-- HERMES_BRIEFS_EXPORT_MANIFEST {"accepted_ui":"v61-date-load-keyboard-focus","format":"html","kind":"ai","html_self_contained":true,"inline_css":true,"inline_javascript":true,"companion_html_pattern":"BRIEFS-AI - YYYY-MM-DD.html","purpose":"Standalone visual and interactive recreation of the accepted Briefs dashboard archive."} --></body></html>
