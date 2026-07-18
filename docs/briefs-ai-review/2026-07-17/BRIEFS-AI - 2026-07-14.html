@@ -310,6 +310,7 @@ body .hermes-topic-container { border: 0 !important; border-radius: 0 !important
 
   let cards = [];
   let index = 0;
+  let activeCardIndex = 0;
   let navigationStarted = false;
   let playing = false;
   let paused = false;
@@ -354,10 +355,45 @@ body .hermes-topic-container { border: 0 !important; border-radius: 0 !important
   }
 
   function captureViewportPosition() {
-    return { scrollX: window.scrollX, scrollY: window.scrollY };
+    return { scrollX: window.scrollX, scrollY: window.scrollY, topicIndex: activeCardIndex };
+  }
+
+  function restoreActiveCard(topicIndex) {
+    const requestedIndex = Math.trunc(topicIndex);
+    let target = null;
+    if (requestedIndex === -1 && founderTakeaways) {
+      activeCardIndex = -1;
+      cards.forEach((card) => {
+        card.classList.remove("active");
+        card.removeAttribute("aria-current");
+        applyCardVisualState(card, false);
+      });
+      founderTakeaways.classList.add("hermes-playable-card", "active");
+      founderTakeaways.setAttribute("aria-current", "true");
+      applyCardVisualState(founderTakeaways, true);
+      target = founderTakeaways;
+    } else {
+      index = Math.max(0, Math.min(cards.length - 1, requestedIndex));
+      activeCardIndex = index;
+      navigationStarted = true;
+      mark({ behavior: "auto", scroll: false });
+      target = cards[index];
+    }
+    if (!target) return;
+    let framesRemaining = 8;
+    const alignCard = () => {
+      target.scrollIntoView({ behavior: "auto", block: "start" });
+      framesRemaining -= 1;
+      if (framesRemaining > 0) requestAnimationFrame(alignCard);
+    };
+    requestAnimationFrame(() => requestAnimationFrame(alignCard));
   }
 
   function restoreViewportPosition(position) {
+    if (Number.isInteger(position?.topicIndex)) {
+      restoreActiveCard(position.topicIndex);
+      return;
+    }
     const targetX = Number.isFinite(position?.scrollX) ? Math.max(0, position.scrollX) : 0;
     const targetY = Number.isFinite(position?.scrollY) ? Math.max(0, position.scrollY) : 0;
     let framesRemaining = 8;
@@ -619,6 +655,7 @@ body .hermes-topic-container { border: 0 !important; border-radius: 0 !important
   }
 
   function mark(options = {}) {
+    activeCardIndex = index;
     if (founderTakeaways) {
       founderTakeaways.classList.remove("active");
       founderTakeaways.removeAttribute("aria-current");
@@ -759,6 +796,7 @@ body .hermes-topic-container { border: 0 !important; border-radius: 0 !important
       card.removeAttribute("aria-current");
       applyCardVisualState(card, false);
     });
+    activeCardIndex = -1;
     founderTakeaways.classList.add("hermes-playable-card", "active");
     founderTakeaways.setAttribute("aria-current", "true");
     applyCardVisualState(founderTakeaways, true);
@@ -872,6 +910,7 @@ body .hermes-topic-container { border: 0 !important; border-radius: 0 !important
     normalizeAiVisualStructure();
     normalizeTakeawayDetails();
     if (!controls()) return;
+    window.__hermesAiCaptureActiveCard = captureViewportPosition;
     ensureDateNavigator();
     synth.cancel();
     synth.getVoices();
@@ -970,15 +1009,18 @@ html.hermes-ai-date-frame-active body > :not(#hermes-ai-stable-date-frame) { dis
   const FILE_TO_DATE = Object.fromEntries(Object.entries(state.files).map(([date, file]) => [file, date]));
   let currentDate = state.selectedDate;
   let frame = null;
-  let pendingPosition = { scrollX: 0, scrollY: 0 };
+  let pendingPosition = { scrollX: 0, scrollY: 0, topicIndex: 0 };
+  const activeCardByDate = new Map();
 
   function captureViewportPosition() {
-    return { scrollX: window.scrollX, scrollY: window.scrollY };
+    const activeCard = window.__hermesAiCaptureActiveCard?.();
+    return activeCard || { scrollX: window.scrollX, scrollY: window.scrollY, topicIndex: 0 };
   }
   function safePosition(position) {
     return {
       scrollX: Number.isFinite(position?.scrollX) ? Math.max(0, position.scrollX) : 0,
       scrollY: Number.isFinite(position?.scrollY) ? Math.max(0, position.scrollY) : 0,
+      topicIndex: Number.isInteger(position?.topicIndex) ? position.topicIndex : 0,
     };
   }
 
@@ -1027,14 +1069,22 @@ html.hermes-ai-date-frame-active body > :not(#hermes-ai-stable-date-frame) { dis
   }
   function requestFile(file, position = captureViewportPosition()) {
     if (!file) return;
-    const viewportPosition = safePosition(position);
+    let viewportPosition = safePosition(position);
     if (window.parent !== window) {
       window.parent.postMessage({ type: "hermes-ai-export-date-load", file, position: viewportPosition }, "*");
       return;
     }
+    const destinationDate = FILE_TO_DATE[file] || currentDate;
+    activeCardByDate.set(currentDate, viewportPosition.topicIndex);
+    const rememberedTopicIndex = activeCardByDate.get(destinationDate);
+    if (Number.isInteger(rememberedTopicIndex)) {
+      viewportPosition = { ...viewportPosition, topicIndex: rememberedTopicIndex };
+    } else {
+      activeCardByDate.set(destinationDate, viewportPosition.topicIndex);
+    }
     stopActiveAudio();
     pendingPosition = viewportPosition;
-    currentDate = FILE_TO_DATE[file] || currentDate;
+    currentDate = destinationDate;
     const target = ensureStableFrame();
     if (target.getAttribute("src") !== file) target.src = file;
     else restoreChildViewport();
@@ -1069,4 +1119,4 @@ html.hermes-ai-date-frame-active body > :not(#hermes-ai-stable-date-frame) { dis
   });
   document.addEventListener("fullscreenchange", publishFullscreenState);
 })();
-</script><!-- HERMES_BRIEFS_EXPORT_MANIFEST {"accepted_ui":"v58-active-date-audio-handoff","format":"html","kind":"ai","html_self_contained":true,"inline_css":true,"inline_javascript":true,"companion_html_pattern":"BRIEFS-AI - YYYY-MM-DD.html","purpose":"Standalone visual and interactive recreation of the accepted Briefs dashboard archive."} --></body></html>
+</script><!-- HERMES_BRIEFS_EXPORT_MANIFEST {"accepted_ui":"v59-per-date-active-card-memory","format":"html","kind":"ai","html_self_contained":true,"inline_css":true,"inline_javascript":true,"companion_html_pattern":"BRIEFS-AI - YYYY-MM-DD.html","purpose":"Standalone visual and interactive recreation of the accepted Briefs dashboard archive."} --></body></html>
